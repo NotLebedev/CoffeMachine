@@ -1,23 +1,16 @@
 #include "ExecutionProcessor/ExecutionProcessor.h"
+#include "CommandProcessor/CommandProcessor.h"
 
 int main() {
 
     ExecutionProcessor *executionProcessor = new ExecutionProcessor();
+    CommandProcessor *commandProcessor = new CommandProcessor(executionProcessor);
 
-    long data[5] = {1, 2, 3, 4, 3};
+    while (true) {
 
-    executionProcessor->stackIN(&data[0]);
-    executionProcessor->stackIN(&data[1]);
-    executionProcessor->stackIN(&data[2]);
-    executionProcessor->stackIN(&data[3]);
-    executionProcessor->stackIN(&data[4]);
+        commandProcessor->nextCommand();
 
-    executionProcessor->roll();
-
-    executionProcessor->stackOut();
-    executionProcessor->stackOut();
-    executionProcessor->stackOut();
-    executionProcessor->stackOut();
+    }
 
     return 0;
 }

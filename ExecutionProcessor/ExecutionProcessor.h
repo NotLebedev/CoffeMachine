@@ -5,11 +5,11 @@
 #ifndef COFFEMACHINE_EXECUTIONPROCESSOR_H
 #define COFFEMACHINE_EXECUTIONPROCESSOR_H
 
-#include "../DataProcessor/DataProcessor.h"
 
 #include <cstdint>
 
-#define ERROR_TYPE int8_t
+#include "../DataProcessor/DataProcessor.h"
+#include "../Types.h"
 
 class ExecutionProcessor {
 

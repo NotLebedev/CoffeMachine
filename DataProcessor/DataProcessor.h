@@ -5,6 +5,8 @@
 #ifndef COFFEMACHINE_DATAPROCCESOR_H
 #define COFFEMACHINE_DATAPROCCESOR_H
 
+#include "../Types.h"
+
 #define STACK_SIZE 128
 
 #include "Stack.h"

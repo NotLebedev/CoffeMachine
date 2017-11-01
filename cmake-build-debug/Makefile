@@ -123,6 +123,33 @@ CoffeMachine/fast:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/build
 .PHONY : CoffeMachine/fast
 
+CommandProcessor/CommandProcessor.o: CommandProcessor/CommandProcessor.cpp.o
+
+.PHONY : CommandProcessor/CommandProcessor.o
+
+# target to build an object file
+CommandProcessor/CommandProcessor.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
+.PHONY : CommandProcessor/CommandProcessor.cpp.o
+
+CommandProcessor/CommandProcessor.i: CommandProcessor/CommandProcessor.cpp.i
+
+.PHONY : CommandProcessor/CommandProcessor.i
+
+# target to preprocess a source file
+CommandProcessor/CommandProcessor.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.i
+.PHONY : CommandProcessor/CommandProcessor.cpp.i
+
+CommandProcessor/CommandProcessor.s: CommandProcessor/CommandProcessor.cpp.s
+
+.PHONY : CommandProcessor/CommandProcessor.s
+
+# target to generate assembly for a file
+CommandProcessor/CommandProcessor.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.s
+.PHONY : CommandProcessor/CommandProcessor.cpp.s
+
 DataProcessor/DataProcessor.o: DataProcessor/DataProcessor.cpp.o
 
 .PHONY : DataProcessor/DataProcessor.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CoffeMachine"
+	@echo "... CommandProcessor/CommandProcessor.o"
+	@echo "... CommandProcessor/CommandProcessor.i"
+	@echo "... CommandProcessor/CommandProcessor.s"
 	@echo "... DataProcessor/DataProcessor.o"
 	@echo "... DataProcessor/DataProcessor.i"
 	@echo "... DataProcessor/DataProcessor.s"

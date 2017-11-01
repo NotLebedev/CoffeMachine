@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp
+CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+string
+-
+iostream
+-
+algorithm
+-
+
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+cstdint
+-
+../Types.h
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
 DataProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+../Types.h
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
 Stack.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 
@@ -25,6 +45,8 @@ cstddef
 -
 cstdint
 -
+../Types.h
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
 cstdio
@@ -33,12 +55,18 @@ ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
-../DataProcessor/DataProcessor.h
-/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 cstdint
 -
+../DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+../Types.h
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/main.cpp
 ExecutionProcessor/ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 

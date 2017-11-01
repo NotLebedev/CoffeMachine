@@ -8,8 +8,7 @@
 #include <cstddef>
 #include <cstdint>
 
-#define ERROR_TYPE int8_t
-#define WORD long
+#include "../Types.h"
 
 #define STACK_OUT_OF_SIZE           -1
 #define STACK_NO_ELEMENTS           -2

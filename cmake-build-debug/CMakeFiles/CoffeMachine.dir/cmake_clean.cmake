@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o"
   "CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o"
   "CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o"
+  "CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o"
   "CoffeMachine.pdb"
   "CoffeMachine.exe"
   "libCoffeMachine.dll.a"
