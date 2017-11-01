@@ -1,6 +1,23 @@
-#include <iostream>
+#include "ExecutionProcessor/ExecutionProcessor.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    ExecutionProcessor *executionProcessor = new ExecutionProcessor();
+
+    long data[5] = {1, 2, 3, 4, 3};
+
+    executionProcessor->stackIN(&data[0]);
+    executionProcessor->stackIN(&data[1]);
+    executionProcessor->stackIN(&data[2]);
+    executionProcessor->stackIN(&data[3]);
+    executionProcessor->stackIN(&data[4]);
+
+    executionProcessor->roll();
+
+    executionProcessor->stackOut();
+    executionProcessor->stackOut();
+    executionProcessor->stackOut();
+    executionProcessor->stackOut();
+
     return 0;
 }

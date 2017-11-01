@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
+DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+Stack.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp
+Stack.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
+cstring
+-
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
+cstddef
+-
+cstdint
+-
+
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
+cstdio
+-
+ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+../DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+cstdint
+-
+
+/cygdrive/d/endearing/Work/CoffeMachine/main.cpp
+ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+
