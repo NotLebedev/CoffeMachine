@@ -5,7 +5,6 @@
 #include "CommandProcessor.h"
 #include "Commands.h"
 
-#include <string>
 #include <iostream>
 #include <algorithm>
 
@@ -16,6 +15,7 @@ bool isNumber(const std::string& s) {
 CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
 
     this->executionProcessor = exec;
+    this->flags = flags;
 
 }
 
@@ -23,45 +23,72 @@ ERROR_TYPE CommandProcessor::nextCommand() {
 
     //printf("\n> ");
 
-    std::string command = "";
+    std::string command;
 
     std::cin >> command;
 
-    if(command == DUPLICATE) {
-        executionProcessor->duplicate();
-    }else if(command == DROP) {
-        executionProcessor->drop();
-    }else if(command == OVER) {
-        executionProcessor->over();
-    }else if(command == ROTATE) {
-        executionProcessor->rotate();
-    }else if(command == SWAP) {
-        executionProcessor->swap();
-    }else if(command == PICK) {
-        executionProcessor->pick();
-    }else if(command == ROLL) {
-        executionProcessor->roll();
-    }else if(command == OUT) {
-        executionProcessor->stackOut();
-    }else if(command == ADD) {
-        executionProcessor->add();
-    }else if(command == SUBSTRACT) {
-        executionProcessor->substract();
-    }else if(command == MULTIPLY) {
-        executionProcessor->multiply();
-    }else if(command == DIVIDE) {
-        executionProcessor->divide();
-    }else if(command == MODULE) {
-        executionProcessor->module();
-    }else if(command == NEGATE) {
-        executionProcessor->negate();
-    }else if(command == HALT) {
-        flags[0] = true;
-    }else if(isNumber(command)) {
+    std::__detail::_Node_iterator<std::pair<const std::string, size_t>, false, true> got = commands.find(command);
 
-        WORD in = std::stoi(command);
+    if(!got._M_cur) {
+        if(isNumber(command)) {
 
-        executionProcessor->stackIN(&in);
+            WORD in = std::stoi(command);
+
+            executionProcessor->stackIN(&in);
+
+        }
+    }else {
+
+        switch (got->second) {
+
+            case 0:
+                executionProcessor->duplicate();
+                break;
+            case 1:
+                executionProcessor->drop();
+                break;
+            case 2:
+                executionProcessor->over();
+                break;
+            case 3:
+                executionProcessor->rotate();
+                break;
+            case 4:
+                executionProcessor->swap();
+                break;
+            case 5:
+                executionProcessor->pick();
+                break;
+            case 6:
+                executionProcessor->roll();
+                break;
+            case 7:
+                executionProcessor->stackOut();
+                break;
+            case 8:
+                executionProcessor->add();
+                break;
+            case 9:
+                executionProcessor->substract();
+                break;
+            case 10:
+                executionProcessor->multiply();
+                break;
+            case 11:
+                executionProcessor->divide();
+                break;
+            case 12:
+                executionProcessor->module();
+                break;
+            case 13:
+                executionProcessor->negate();
+                break;
+            case 14:
+                flags[0] = true;
+                break;
+
+            default:break;
+        }
 
     }
 

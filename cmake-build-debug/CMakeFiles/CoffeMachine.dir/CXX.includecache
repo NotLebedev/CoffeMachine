@@ -11,8 +11,6 @@ CommandProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 Commands.h
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
-string
--
 iostream
 -
 algorithm
@@ -27,8 +25,20 @@ cstdint
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
+cstddef
+-
+string
+-
+unordered_map
+-
 
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
+cstddef
+-
+string
+-
+unordered_map
+-
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
 DataProcessor.h

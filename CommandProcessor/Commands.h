@@ -5,6 +5,10 @@
 #ifndef COFFEMACHINE_COMMANDS_H
 #define COFFEMACHINE_COMMANDS_H
 
+#include <cstddef>
+#include <string>
+#include <unordered_map>
+
 extern const char *DUPLICATE;
 extern const char *DROP;
 extern const char *OVER;
@@ -23,5 +27,7 @@ extern const char *MODULE;
 extern const char *NEGATE;
 
 extern const char *HALT;
+
+extern std::unordered_map<std::string, size_t> commands;
 
 #endif //COFFEMACHINE_COMMANDS_H

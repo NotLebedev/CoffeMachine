@@ -18,7 +18,7 @@ Processor::Processor() {
 
 void Processor::run() {
 
-    while (halt) {
+    while (!*halt) {
 
         commandProcessor->nextCommand();
 
