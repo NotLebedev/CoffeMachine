@@ -177,13 +177,63 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o.provides: CM
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o.provides.build: CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
 
 
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o: CMakeFiles/CoffeMachine.dir/flags.make
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CoffeMachine.dir/Processor.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CoffeMachine.dir/Processor.cpp.o -c /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
+
+CMakeFiles/CoffeMachine.dir/Processor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CoffeMachine.dir/Processor.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp > CMakeFiles/CoffeMachine.dir/Processor.cpp.i
+
+CMakeFiles/CoffeMachine.dir/Processor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CoffeMachine.dir/Processor.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp -o CMakeFiles/CoffeMachine.dir/Processor.cpp.s
+
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o.requires:
+
+.PHONY : CMakeFiles/CoffeMachine.dir/Processor.cpp.o.requires
+
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o.provides: CMakeFiles/CoffeMachine.dir/Processor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/Processor.cpp.o.provides.build
+.PHONY : CMakeFiles/CoffeMachine.dir/Processor.cpp.o.provides
+
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o.provides.build: CMakeFiles/CoffeMachine.dir/Processor.cpp.o
+
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o: CMakeFiles/CoffeMachine.dir/flags.make
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o: ../CommandProcessor/Commands.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o -c /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp > CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.i
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp -o CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.s
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.requires:
+
+.PHONY : CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.requires
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.provides: CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.provides.build
+.PHONY : CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.provides
+
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.provides.build: CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o
+
+
 # Object files for target CoffeMachine
 CoffeMachine_OBJECTS = \
 "CMakeFiles/CoffeMachine.dir/main.cpp.o" \
 "CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o" \
 "CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o" \
 "CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o" \
-"CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o"
+"CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o" \
+"CMakeFiles/CoffeMachine.dir/Processor.cpp.o" \
+"CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o"
 
 # External object files for target CoffeMachine
 CoffeMachine_EXTERNAL_OBJECTS =
@@ -193,9 +243,11 @@ CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o
 CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o
 CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o
 CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
+CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/Processor.cpp.o
+CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o
 CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/build.make
 CoffeMachine.exe: CMakeFiles/CoffeMachine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CoffeMachine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CoffeMachine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CoffeMachine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +260,8 @@ CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/DataProcessor/
 CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o.requires
 CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o.requires
 CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o.requires
+CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/Processor.cpp.o.requires
+CMakeFiles/CoffeMachine.dir/requires: CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o.requires
 
 .PHONY : CMakeFiles/CoffeMachine.dir/requires
 

@@ -9,6 +9,8 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/Types.h
+CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o
+ /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
@@ -24,10 +26,19 @@ CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/Types.h
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o
+ /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
+ /cygdrive/d/endearing/Work/CoffeMachine/Processor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/Processor.h
  /cygdrive/d/endearing/Work/CoffeMachine/Types.h
  /cygdrive/d/endearing/Work/CoffeMachine/main.cpp

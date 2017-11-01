@@ -14,7 +14,7 @@
 class ExecutionProcessor {
 
 public:
-    ExecutionProcessor();
+    ExecutionProcessor(DataProcessor *data);
 
     //Stack commands
     ERROR_TYPE stackIN(WORD *data);     // Number
@@ -35,7 +35,7 @@ public:
     ERROR_TYPE negate();                //NEGATE
 
 private:
-    DataProccessor *dataProccesor;
+    DataProcessor *dataProccesor;
 
 };
 

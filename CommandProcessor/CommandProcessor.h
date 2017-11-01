@@ -12,12 +12,13 @@
 class CommandProcessor {
 
 public:
-    CommandProcessor(ExecutionProcessor *exec);
+    CommandProcessor(ExecutionProcessor *exec, bool *flags);
 
     ERROR_TYPE nextCommand();
 
 private:
     ExecutionProcessor *executionProcessor;
+    bool *flags; //Flag 0 - halt
 
 };
 

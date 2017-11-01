@@ -150,6 +150,33 @@ CommandProcessor/CommandProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.s
 .PHONY : CommandProcessor/CommandProcessor.cpp.s
 
+CommandProcessor/Commands.o: CommandProcessor/Commands.cpp.o
+
+.PHONY : CommandProcessor/Commands.o
+
+# target to build an object file
+CommandProcessor/Commands.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o
+.PHONY : CommandProcessor/Commands.cpp.o
+
+CommandProcessor/Commands.i: CommandProcessor/Commands.cpp.i
+
+.PHONY : CommandProcessor/Commands.i
+
+# target to preprocess a source file
+CommandProcessor/Commands.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.i
+.PHONY : CommandProcessor/Commands.cpp.i
+
+CommandProcessor/Commands.s: CommandProcessor/Commands.cpp.s
+
+.PHONY : CommandProcessor/Commands.s
+
+# target to generate assembly for a file
+CommandProcessor/Commands.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.s
+.PHONY : CommandProcessor/Commands.cpp.s
+
 DataProcessor/DataProcessor.o: DataProcessor/DataProcessor.cpp.o
 
 .PHONY : DataProcessor/DataProcessor.o
@@ -231,6 +258,33 @@ ExecutionProcessor/ExecutionProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.s
 .PHONY : ExecutionProcessor/ExecutionProcessor.cpp.s
 
+Processor.o: Processor.cpp.o
+
+.PHONY : Processor.o
+
+# target to build an object file
+Processor.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/Processor.cpp.o
+.PHONY : Processor.cpp.o
+
+Processor.i: Processor.cpp.i
+
+.PHONY : Processor.i
+
+# target to preprocess a source file
+Processor.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/Processor.cpp.i
+.PHONY : Processor.cpp.i
+
+Processor.s: Processor.cpp.s
+
+.PHONY : Processor.s
+
+# target to generate assembly for a file
+Processor.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/Processor.cpp.s
+.PHONY : Processor.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -270,6 +324,9 @@ help:
 	@echo "... CommandProcessor/CommandProcessor.o"
 	@echo "... CommandProcessor/CommandProcessor.i"
 	@echo "... CommandProcessor/CommandProcessor.s"
+	@echo "... CommandProcessor/Commands.o"
+	@echo "... CommandProcessor/Commands.i"
+	@echo "... CommandProcessor/Commands.s"
 	@echo "... DataProcessor/DataProcessor.o"
 	@echo "... DataProcessor/DataProcessor.i"
 	@echo "... DataProcessor/DataProcessor.s"
@@ -279,6 +336,9 @@ help:
 	@echo "... ExecutionProcessor/ExecutionProcessor.o"
 	@echo "... ExecutionProcessor/ExecutionProcessor.i"
 	@echo "... ExecutionProcessor/ExecutionProcessor.s"
+	@echo "... Processor.o"
+	@echo "... Processor.i"
+	@echo "... Processor.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

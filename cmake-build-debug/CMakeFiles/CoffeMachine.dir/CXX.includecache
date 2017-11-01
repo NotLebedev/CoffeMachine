@@ -26,6 +26,8 @@ cstdint
 ../ExecutionProcessor/ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
+
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
@@ -66,11 +68,21 @@ cstdint
 ../Types.h
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
+Processor.h
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
+DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
+CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/main.cpp
-ExecutionProcessor/ExecutionProcessor.h
-/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
-CommandProcessor/CommandProcessor.h
-/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+Processor.h
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
 

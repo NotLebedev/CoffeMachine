@@ -13,7 +13,7 @@ bool isNumber(const std::string& s) {
     return !s.empty() && std::find_if(s.begin(), s.end(), [](char c) { return !std::isdigit(c); }) == s.end();
 }
 
-CommandProcessor::CommandProcessor(ExecutionProcessor *exec) {
+CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
 
     this->executionProcessor = exec;
 
@@ -21,7 +21,7 @@ CommandProcessor::CommandProcessor(ExecutionProcessor *exec) {
 
 ERROR_TYPE CommandProcessor::nextCommand() {
 
-    printf("\n> ");
+    //printf("\n> ");
 
     std::string command = "";
 
@@ -55,6 +55,8 @@ ERROR_TYPE CommandProcessor::nextCommand() {
         executionProcessor->module();
     }else if(command == NEGATE) {
         executionProcessor->negate();
+    }else if(command == HALT) {
+        flags[0] = true;
     }else if(isNumber(command)) {
 
         WORD in = std::stoi(command);

@@ -6,9 +6,9 @@
 #include "ExecutionProcessor.h"
 
 //Constructor
-ExecutionProcessor::ExecutionProcessor() {
+ExecutionProcessor::ExecutionProcessor(DataProcessor *data) {
 
-    dataProccesor = new DataProccessor();
+    dataProccesor = data;
 
 }
 //Constructor
@@ -26,7 +26,7 @@ ERROR_TYPE ExecutionProcessor::stackOut() {
     WORD *data = new WORD;
     dataProccesor->userStackPop(data);
 
-    printf("%d ", *data);//TODO: add IO processor
+    printf("%li ", *data);//TODO: add IO processor
 
     return 0;
 }

@@ -5,21 +5,23 @@
 #ifndef COFFEMACHINE_COMMANDS_H
 #define COFFEMACHINE_COMMANDS_H
 
-#define DUPLICATE "DUP"
-#define DROP "DROP"
-#define OVER "OVER"
-#define ROTATE "ROT"
-#define SWAP "SWAP"
-#define PICK "PICK"
-#define ROLL "ROLL"
+extern const char *DUPLICATE;
+extern const char *DROP;
+extern const char *OVER;
+extern const char *ROTATE;
+extern const char *SWAP;
+extern const char *PICK;
+extern const char *ROLL;
 
-#define OUT "."
+extern const char *OUT;
 
-#define ADD "+"
-#define SUBSTRACT "-"
-#define MULTIPLY "*"
-#define DIVIDE "/"
-#define MODULE "MOD"
-#define NEGATE "NEGATE"
+extern const char *ADD;
+extern const char *SUBSTRACT;
+extern const char *MULTIPLY;
+extern const char *DIVIDE;
+extern const char *MODULE;
+extern const char *NEGATE;
+
+extern const char *HALT;
 
 #endif //COFFEMACHINE_COMMANDS_H

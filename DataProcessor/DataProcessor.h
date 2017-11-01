@@ -11,10 +11,10 @@
 
 #include "Stack.h"
 
-class DataProccessor {
+class DataProcessor {
 
 public:
-    DataProccessor();
+    DataProcessor();
 
     ERROR_TYPE userStackPush(WORD *data);
     ERROR_TYPE userStackPop(WORD *data);

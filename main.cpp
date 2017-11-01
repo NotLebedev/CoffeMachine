@@ -1,16 +1,11 @@
-#include "ExecutionProcessor/ExecutionProcessor.h"
-#include "CommandProcessor/CommandProcessor.h"
+#include "Processor.h"
 
 int main() {
 
-    ExecutionProcessor *executionProcessor = new ExecutionProcessor();
-    CommandProcessor *commandProcessor = new CommandProcessor(executionProcessor);
 
-    while (true) {
+    Processor *processor = new Processor();
 
-        commandProcessor->nextCommand();
-
-    }
+    processor->run();
 
     return 0;
 }
