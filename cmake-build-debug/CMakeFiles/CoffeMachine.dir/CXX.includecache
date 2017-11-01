@@ -9,6 +9,8 @@
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp
 CommandProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+Commands.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
 string
 -
 iostream
@@ -23,6 +25,8 @@ cstdint
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 ../ExecutionProcessor/ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
 DataProcessor.h

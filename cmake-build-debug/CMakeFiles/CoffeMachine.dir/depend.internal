@@ -4,6 +4,7 @@
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h

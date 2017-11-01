@@ -5,6 +5,15 @@
 #include <cstdio>
 #include "ExecutionProcessor.h"
 
+//Constructor
+ExecutionProcessor::ExecutionProcessor() {
+
+    dataProccesor = new DataProccessor();
+
+}
+//Constructor
+
+//Stack commands
 ERROR_TYPE ExecutionProcessor::stackIN(WORD *data) {
 
     dataProccesor->userStackPush(data);
@@ -84,18 +93,113 @@ ERROR_TYPE ExecutionProcessor::roll() {
 
     return 0;
 }
+//Stack commands
 
+//Math commands
 ERROR_TYPE ExecutionProcessor::add() {
+
+    WORD *params = new WORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[0] += params[1];
+
+    dataProccesor->userStackPush(&params[0]);
+
     return 0;
 }
 
 ERROR_TYPE ExecutionProcessor::substract() {
+    WORD *params = new WORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[0] -= params[1];
+
+    dataProccesor->userStackPush(&params[0]);
+
     return 0;
 }
 
-ExecutionProcessor::ExecutionProcessor() {
 
-    dataProccesor = new DataProccessor();
+ERROR_TYPE ExecutionProcessor::multiply() {
+    WORD *params = new WORD[2];
 
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[0] *= params[1];
+
+    dataProccesor->userStackPush(&params[0]);
+
+    return 0;
 }
+
+ERROR_TYPE ExecutionProcessor::divide() {
+    WORD *params = new WORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[0] /= params[1];
+
+    dataProccesor->userStackPush(&params[0]);
+
+    return 0;
+}
+
+ERROR_TYPE ExecutionProcessor::module() {
+    WORD *params = new WORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[0] %= params[1];
+
+    dataProccesor->userStackPush(&params[0]);
+
+    return 0;
+}
+
+ERROR_TYPE ExecutionProcessor::negate() {
+    WORD *param = new WORD;
+
+    if(dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
+            return 0;
+    }
+
+    *param = -*param;
+
+    dataProccesor->userStackPush(param);
+
+    return 0;
+}
+//Math commands
 

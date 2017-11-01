@@ -3,6 +3,7 @@
 
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandProcessor/CommandProcessor.cpp
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandProcessor/CommandProcessor.h
+CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandProcessor/Commands.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/DataProcessor.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h

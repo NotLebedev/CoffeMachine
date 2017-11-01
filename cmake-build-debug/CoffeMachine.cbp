@@ -86,6 +86,9 @@
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
