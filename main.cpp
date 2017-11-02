@@ -2,7 +2,6 @@
 
 int main() {
 
-
     Processor *processor = new Processor();
 
     processor->run();

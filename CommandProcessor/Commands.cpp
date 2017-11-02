@@ -16,6 +16,10 @@ const char *ROLL = "ROLL";
 
 const char *OUT = ".";
 
+const char *DECIMAL = "DECIMAL";
+const char *HEXAL = "HEX";
+const char *OCTAL = "OCTAL";
+
 const char *ADD = "+";
 const char *SUBSTRACT = "-";
 const char *MULTIPLY = "*";
@@ -37,6 +41,10 @@ std::unordered_map<std::string, size_t> commands = {
 
         {OUT, 7},
 
+        {DECIMAL, 15},
+        {HEXAL, 16},
+        {OCTAL, 17}
+
         {ADD, 8},
         {SUBSTRACT, 9},
         {MULTIPLY, 10},
@@ -44,5 +52,5 @@ std::unordered_map<std::string, size_t> commands = {
         {MODULE, 12},
         {NEGATE, 13},
 
-        {HALT, 14}
+        {HALT, 14},
 };

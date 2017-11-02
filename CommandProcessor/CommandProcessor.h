@@ -19,8 +19,8 @@ public:
 private:
     ExecutionProcessor *executionProcessor;
     bool *flags; //Flag 0 - halt
+    uint8_t base;
 
 };
-
 
 #endif //COFFEMACHINE_COMMANDPROCESSOR_H

@@ -16,6 +16,7 @@ CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
 
     this->executionProcessor = exec;
     this->flags = flags;
+    this->base = 10;
 
 }
 
@@ -32,7 +33,7 @@ ERROR_TYPE CommandProcessor::nextCommand() {
     if(!got._M_cur) {
         if(isNumber(command)) {
 
-            WORD in = std::stoi(command);
+            WORD in = std::stol(command, nullptr, base);
 
             executionProcessor->stackIN(&in);
 
@@ -85,6 +86,15 @@ ERROR_TYPE CommandProcessor::nextCommand() {
                 break;
             case 14:
                 flags[0] = true;
+                break;
+            case 15:
+                base = 10;
+                break;
+            case 16:
+                base = 16;
+                break;
+            case 17:
+                base = 8;
                 break;
 
             default:break;
