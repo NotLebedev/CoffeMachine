@@ -43,7 +43,7 @@ std::unordered_map<std::string, size_t> commands = {
 
         {DECIMAL, 15},
         {HEXAL, 16},
-        {OCTAL, 17}
+        {OCTAL, 17},
 
         {ADD, 8},
         {SUBSTRACT, 9},
@@ -52,5 +52,5 @@ std::unordered_map<std::string, size_t> commands = {
         {MODULE, 12},
         {NEGATE, 13},
 
-        {HALT, 14},
+        {HALT, 14}
 };
