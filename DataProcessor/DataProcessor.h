@@ -10,6 +10,7 @@
 #define STACK_SIZE 128
 
 #include "Stack.h"
+#include "Dictionary.h"
 
 class DataProcessor {
 
@@ -22,8 +23,19 @@ public:
     ERROR_TYPE userStackPick(size_t idx);
     ERROR_TYPE userStackRoll(size_t idx);
 
+    ERROR_TYPE returnStackPush(WORD *data);
+    ERROR_TYPE returnStackPop(WORD *data);
+
+    ERROR_TYPE returnStackPick(size_t idx);
+    ERROR_TYPE returnStackRoll(size_t idx);
+
+    ERROR_TYPE dictionaryFecth(size_t idx, WORD *data);
+    ERROR_TYPE dictionaryStore(size_t idx, WORD *data);
+
 private:
     Stack *userStack;
+    Stack *returnStack;
+    Dictionary *dictionary;
 
 };
 

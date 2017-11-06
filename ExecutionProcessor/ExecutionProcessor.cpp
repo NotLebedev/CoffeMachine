@@ -116,6 +116,7 @@ ERROR_TYPE ExecutionProcessor::add() {
 }
 
 ERROR_TYPE ExecutionProcessor::substract() {
+
     WORD *params = new WORD[2];
 
     for (int i = 0; i < 2; i++) {
@@ -135,6 +136,7 @@ ERROR_TYPE ExecutionProcessor::substract() {
 
 
 ERROR_TYPE ExecutionProcessor::multiply() {
+
     WORD *params = new WORD[2];
 
     for (int i = 0; i < 2; i++) {
@@ -153,6 +155,7 @@ ERROR_TYPE ExecutionProcessor::multiply() {
 }
 
 ERROR_TYPE ExecutionProcessor::divide() {
+
     WORD *params = new WORD[2];
 
     for (int i = 0; i < 2; i++) {
@@ -171,6 +174,7 @@ ERROR_TYPE ExecutionProcessor::divide() {
 }
 
 ERROR_TYPE ExecutionProcessor::module() {
+
     WORD *params = new WORD[2];
 
     for (int i = 0; i < 2; i++) {
@@ -189,6 +193,7 @@ ERROR_TYPE ExecutionProcessor::module() {
 }
 
 ERROR_TYPE ExecutionProcessor::negate() {
+
     WORD *param = new WORD;
 
     if(dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
@@ -202,4 +207,40 @@ ERROR_TYPE ExecutionProcessor::negate() {
     return 0;
 }
 //Math commands
+
+//Dictionary commands
+ERROR_TYPE ExecutionProcessor::fetch() {
+
+    WORD *param = new WORD;
+
+    if(dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
+        return 0;
+    }
+
+    WORD *data = new WORD;
+
+    dataProccesor->dictionaryFecth((size_t)*param, data);
+
+    dataProccesor->userStackPush(data);
+
+    return 0;
+}
+
+ERROR_TYPE ExecutionProcessor::store() {
+
+    WORD *params = new WORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if(dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    dataProccesor->dictionaryStore((size_t)params[0], &params[1]);
+
+    return 0;
+}
+//Dictionary commands
 

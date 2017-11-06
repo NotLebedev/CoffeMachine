@@ -204,6 +204,33 @@ DataProcessor/DataProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.s
 .PHONY : DataProcessor/DataProcessor.cpp.s
 
+DataProcessor/Dictionary.o: DataProcessor/Dictionary.cpp.o
+
+.PHONY : DataProcessor/Dictionary.o
+
+# target to build an object file
+DataProcessor/Dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o
+.PHONY : DataProcessor/Dictionary.cpp.o
+
+DataProcessor/Dictionary.i: DataProcessor/Dictionary.cpp.i
+
+.PHONY : DataProcessor/Dictionary.i
+
+# target to preprocess a source file
+DataProcessor/Dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.i
+.PHONY : DataProcessor/Dictionary.cpp.i
+
+DataProcessor/Dictionary.s: DataProcessor/Dictionary.cpp.s
+
+.PHONY : DataProcessor/Dictionary.s
+
+# target to generate assembly for a file
+DataProcessor/Dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.s
+.PHONY : DataProcessor/Dictionary.cpp.s
+
 DataProcessor/Stack.o: DataProcessor/Stack.cpp.o
 
 .PHONY : DataProcessor/Stack.o
@@ -330,6 +357,9 @@ help:
 	@echo "... DataProcessor/DataProcessor.o"
 	@echo "... DataProcessor/DataProcessor.i"
 	@echo "... DataProcessor/DataProcessor.s"
+	@echo "... DataProcessor/Dictionary.o"
+	@echo "... DataProcessor/Dictionary.i"
+	@echo "... DataProcessor/Dictionary.s"
 	@echo "... DataProcessor/Stack.o"
 	@echo "... DataProcessor/Stack.i"
 	@echo "... DataProcessor/Stack.s"

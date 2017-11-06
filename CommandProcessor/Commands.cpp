@@ -27,6 +27,9 @@ const char *DIVIDE = "/";
 const char *MODULE = "MOD";
 const char *NEGATE = "NEGATE";
 
+const char *FETCH = "@";
+const char *STORE = "!";
+
 const char *HALT = "HALT";
 
 std::unordered_map<std::string, size_t> commands = {
@@ -52,5 +55,8 @@ std::unordered_map<std::string, size_t> commands = {
         {MODULE, 12},
         {NEGATE, 13},
 
-        {HALT, 14}
+        {HALT, 14},
+
+        {FETCH, 18},
+        {STORE, 19}
 };

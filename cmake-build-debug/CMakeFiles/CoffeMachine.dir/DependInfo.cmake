@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o"
   "/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o"
   "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o"
   "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o"
   "/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o"
   "/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/Processor.cpp.o"

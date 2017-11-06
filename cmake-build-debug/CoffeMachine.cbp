@@ -98,6 +98,12 @@
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp">
+			<Option target="CoffeMachine"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>

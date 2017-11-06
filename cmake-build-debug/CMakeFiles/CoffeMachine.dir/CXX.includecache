@@ -15,9 +15,13 @@ iostream
 -
 algorithm
 -
+sstream
+-
 
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 cstdint
+-
+string
 -
 ../Types.h
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
@@ -49,6 +53,22 @@ DataProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 Stack.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
+Dictionary.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp
+Dictionary.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
+cstring
+-
+
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
+cstdint
+-
+cstddef
+-
+../Types.h
+/cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp
 Stack.h
@@ -79,6 +99,8 @@ cstdint
 /cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
+iostream
+-
 Processor.h
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.h
 

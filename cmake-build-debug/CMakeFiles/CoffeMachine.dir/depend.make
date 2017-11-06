@@ -5,6 +5,7 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandP
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../CommandProcessor/Commands.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../Types.h
@@ -13,14 +14,20 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o: ../CommandProcessor
 
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o: ../DataProcessor/DataProcessor.cpp
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o: ../Types.h
+
+CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o: ../DataProcessor/Dictionary.cpp
+CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o: ../DataProcessor/Dictionary.h
+CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o: ../Types.h
 
 CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o: ../DataProcessor/Stack.cpp
 CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o: ../Types.h
 
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.cpp
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
@@ -28,6 +35,7 @@ CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../Type
 
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.cpp
@@ -36,6 +44,7 @@ CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Types.h
 
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../Processor.h

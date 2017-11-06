@@ -6,6 +6,7 @@
 #define COFFEMACHINE_COMMANDPROCESSOR_H
 
 #include <cstdint>
+#include <string>
 #include "../Types.h"
 #include "../ExecutionProcessor/ExecutionProcessor.h"
 
@@ -14,7 +15,7 @@ class CommandProcessor {
 public:
     CommandProcessor(ExecutionProcessor *exec, bool *flags);
 
-    ERROR_TYPE nextCommand();
+    ERROR_TYPE nextCommand(std::string commands);
 
 private:
     ExecutionProcessor *executionProcessor;

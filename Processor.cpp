@@ -2,6 +2,7 @@
 // Created by Tema on 01.11.2017.
 //
 
+#include <iostream>
 #include "Processor.h"
 
 Processor::Processor() {
@@ -20,7 +21,13 @@ void Processor::run() {
 
     while (!*halt) {
 
-        commandProcessor->nextCommand();
+        printf("\n> ");
+
+        std::string line;
+
+        std::getline(std::cin, line);
+
+        commandProcessor->nextCommand(line);
 
     }
 

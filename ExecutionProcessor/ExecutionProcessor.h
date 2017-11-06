@@ -33,6 +33,9 @@ public:
     ERROR_TYPE divide();                // /
     ERROR_TYPE module();                //MOD
     ERROR_TYPE negate();                //NEGATE
+    //Dictionary commands
+    ERROR_TYPE fetch();                 // @
+    ERROR_TYPE store();                // !
 
 private:
     DataProcessor *dataProccesor;
