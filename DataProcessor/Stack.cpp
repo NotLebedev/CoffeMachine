@@ -5,21 +5,21 @@
 #include "Stack.h"
 #include <cstring>
 
-Stack::Stack(size_t stackSize) {
+Stack::Stack() {
 
-    data = new WORD[stackSize]{0};
-    size = stackSize;
+    data = new WORD[STACK_SIZE]{0};
+    size = STACK_SIZE;
     top = 0;
 
 }
 
 ERROR_TYPE Stack::push(WORD *data) {
 
-    if(top == size) {
+    if (top == size) {
         return STACK_OUT_OF_SIZE;
     }
 
-    memcpy(((void*)&this->data[top]), (void*)data, sizeof(WORD));
+    memcpy(((void *) &this->data[top]), (void *) data, sizeof(WORD));
 
     top++;
 
@@ -28,32 +28,32 @@ ERROR_TYPE Stack::push(WORD *data) {
 
 ERROR_TYPE Stack::pop(WORD *data) {
 
-    if(top == 0) {
+    if (top == 0) {
         return STACK_NO_ELEMENTS;
     }
 
     top--;
 
-    memcpy((void*)data, ((void*)&this->data[top]), sizeof(WORD));
+    memcpy((void *) data, ((void *) &this->data[top]), sizeof(WORD));
 
     return 0;
 }
 
 ERROR_TYPE Stack::pick(size_t idx) {
 
-    if(top == size) {
+    if (top == size) {
 
         return STACK_OUT_OF_SIZE;
 
     }
 
-    if(idx >= top) {
+    if (idx >= top) {
 
         return STACK_ELEMENT_NOT_CONTAINED;
 
     }
 
-    memcpy(((void*)&this->data[top]), ((void*)&this->data[top - 1 - idx]), sizeof(WORD));
+    memcpy(((void *) &this->data[top]), ((void *) &this->data[top - 1 - idx]), sizeof(WORD));
 
     top++;
 
@@ -62,20 +62,22 @@ ERROR_TYPE Stack::pick(size_t idx) {
 
 ERROR_TYPE Stack::roll(size_t idx) {
 
-    if(idx > top) {
+    if (idx > top) {
         return STACK_ELEMENT_NOT_CONTAINED;
     }
 
-    WORD *tmp = new WORD;
-    memcpy((void*)tmp, ((void*)&this->data[top - 1]), sizeof(WORD));
+    auto *tmp = new WORD;
+    memcpy((void *) tmp, ((void *) &this->data[top - 1]), sizeof(WORD));
 
-    for (int i = top - 1; i > top - 1 - idx; i--) {
+    for (size_t i = top - 1; i > top - 1 - idx; i--) {
 
-        memcpy(((void*)&this->data[i]), ((void*)&this->data[i-1]), sizeof(WORD));
+        memcpy(((void *) &this->data[i]), ((void *) &this->data[i - 1]), sizeof(WORD));
 
     }
 
-    memcpy(((void*)&this->data[top - 1 - idx]), (void*)tmp, sizeof(WORD));
+    memcpy(((void *) &this->data[top - 1 - idx]), (void *) tmp, sizeof(WORD));
+
+    delete tmp;
 
     return 0;
 }

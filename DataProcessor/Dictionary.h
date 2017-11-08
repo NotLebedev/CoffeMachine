@@ -8,13 +8,13 @@
 
 #include <cstdint>
 #include <cstddef>
-#include "../Types.h"
+#include "../Globals.h"
 
 #define MEMORY_SIZE 65536
 
-#define CONTEXT_ADR 0
-#define CURRENT_ADR 1
-#define STATE_ADR   2
+#define CONTEXT_ADR     0 // Top most word
+#define STATE_ADR       2 // State : Compile / Execute
+#define TOP_ADR         3 // First free block of dictionary
 
 class Dictionary {
 
@@ -22,6 +22,7 @@ public:
     Dictionary();
 
     ERROR_TYPE fetch(size_t idx, WORD *data);
+
     ERROR_TYPE store(size_t idx, WORD *data);
 
 private:

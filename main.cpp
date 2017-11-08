@@ -2,7 +2,7 @@
 
 int main() {
 
-    Processor *processor = new Processor();
+    auto *processor = new Processor();
 
     processor->run();
 

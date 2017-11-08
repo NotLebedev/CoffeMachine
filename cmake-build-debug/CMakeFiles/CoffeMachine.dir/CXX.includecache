@@ -23,8 +23,8 @@ cstdint
 -
 string
 -
-../Types.h
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 ../ExecutionProcessor/ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
@@ -49,8 +49,8 @@ DataProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
-../Types.h
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 Stack.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 Dictionary.h
@@ -67,8 +67,8 @@ cstdint
 -
 cstddef
 -
-../Types.h
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp
 Stack.h
@@ -81,8 +81,8 @@ cstddef
 -
 cstdint
 -
-../Types.h
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
 cstdio
@@ -95,8 +95,10 @@ cstdint
 -
 ../DataProcessor/DataProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
-../Types.h
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
+../Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
+
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
 iostream
@@ -111,8 +113,6 @@ CommandProcessor/CommandProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 ExecutionProcessor/ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
-
-/cygdrive/d/endearing/Work/CoffeMachine/Types.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/main.cpp
 Processor.h

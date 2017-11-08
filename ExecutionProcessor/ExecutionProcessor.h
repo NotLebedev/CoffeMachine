@@ -9,7 +9,7 @@
 #include <cstdint>
 
 #include "../DataProcessor/DataProcessor.h"
-#include "../Types.h"
+#include "../Globals.h"
 
 class ExecutionProcessor {
 
@@ -35,7 +35,10 @@ public:
     ERROR_TYPE negate();                //NEGATE
     //Dictionary commands
     ERROR_TYPE fetch();                 // @
-    ERROR_TYPE store();                // !
+    ERROR_TYPE store();                 // !
+
+    //Machine commands
+    ERROR_TYPE stackOut(WORD *data);
 
 private:
     DataProcessor *dataProccesor;

@@ -8,21 +8,21 @@
 #include <cstddef>
 #include <cstdint>
 
-#include "../Types.h"
+#define STACK_SIZE 128
 
-#define STACK_OUT_OF_SIZE           -1
-#define STACK_NO_ELEMENTS           -2
-#define STACK_ELEMENT_NOT_CONTAINED -3
+#include "../Globals.h"
 
 class Stack {
 
 public:
-    Stack(size_t stackSize);
+    Stack();
 
     ERROR_TYPE push(WORD *data);
+
     ERROR_TYPE pop(WORD *data);
 
     ERROR_TYPE pick(size_t idx);
+
     ERROR_TYPE roll(size_t idx);
 
 private:
