@@ -5,40 +5,36 @@
 #ifndef COFFEMACHINE_EXECUTIONPROCESSOR_H
 #define COFFEMACHINE_EXECUTIONPROCESSOR_H
 
-
-#include <cstdint>
-
 #include "../DataProcessor/DataProcessor.h"
 #include "../Globals.h"
 
 class ExecutionProcessor {
 
 public:
-    ExecutionProcessor(DataProcessor *data);
+    ExecutionProcessor();
+
+    virtual ~ExecutionProcessor();
 
     //Stack commands
-    ERROR_TYPE stackIN(WORD *data);     // Number
+    ERROR_TYPE stackIN(iWORD *data);     // Number
     ERROR_TYPE stackOut();              // .
-    ERROR_TYPE duplicate();             // DUP
-    ERROR_TYPE drop();                  // DROP
-    ERROR_TYPE over();                  // OVER
-    ERROR_TYPE rotate();                // ROT
-    ERROR_TYPE swap();                  // SWAP
     ERROR_TYPE pick();                  // PICK
     ERROR_TYPE roll();                  // ROLL
     //Math commands
     ERROR_TYPE add();                   // +
-    ERROR_TYPE substract();             // -
     ERROR_TYPE multiply();              // *
     ERROR_TYPE divide();                // /
-    ERROR_TYPE module();                //MOD
-    ERROR_TYPE negate();                //NEGATE
+    ERROR_TYPE xorr();                  // XOR
+    ERROR_TYPE andd();                  // AND
+    ERROR_TYPE rshift();                // RSHIFT
+    ERROR_TYPE lshift();                // LSHIFT
+    ERROR_TYPE eqaulsZero();            // =0
     //Dictionary commands
     ERROR_TYPE fetch();                 // @
     ERROR_TYPE store();                 // !
 
     //Machine commands
-    ERROR_TYPE stackOut(WORD *data);
+    ERROR_TYPE stackOut(iWORD *data);
 
 private:
     DataProcessor *dataProccesor;

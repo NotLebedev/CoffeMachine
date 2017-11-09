@@ -6,15 +6,15 @@
 #include "ExecutionProcessor.h"
 
 //Constructor
-ExecutionProcessor::ExecutionProcessor(DataProcessor *data) {
+ExecutionProcessor::ExecutionProcessor() {
 
-    dataProccesor = data;
+    dataProccesor = new DataProcessor();
 
 }
 //Constructor
 
 //Stack commands
-ERROR_TYPE ExecutionProcessor::stackIN(WORD *data) {
+ERROR_TYPE ExecutionProcessor::stackIN(iWORD *data) {
 
     dataProccesor->userStackPush(data);
 
@@ -23,50 +23,12 @@ ERROR_TYPE ExecutionProcessor::stackIN(WORD *data) {
 
 ERROR_TYPE ExecutionProcessor::stackOut() {
 
-    auto *data = new WORD;
+    auto *data = new iWORD;
     dataProccesor->userStackPop(data);
 
-    printf("%li ", *data);//TODO: add IO processor
+    printf("%i ", *data);//TODO: add IO processor
 
     delete data;
-
-    return 0;
-}
-
-ERROR_TYPE ExecutionProcessor::duplicate() {
-
-    dataProccesor->userStackPick(0);
-
-    return 0;
-}
-
-ERROR_TYPE ExecutionProcessor::drop() {
-
-    auto *data = new WORD;
-    dataProccesor->userStackPop(data);
-
-    delete data;
-
-    return 0;
-}
-
-ERROR_TYPE ExecutionProcessor::over() {
-
-    dataProccesor->userStackPick(1);
-
-    return 0;
-}
-
-ERROR_TYPE ExecutionProcessor::rotate() {
-
-    dataProccesor->userStackRoll(2);
-
-    return 0;
-}
-
-ERROR_TYPE ExecutionProcessor::swap() {
-
-    dataProccesor->userStackRoll(1);
 
     return 0;
 }
@@ -74,7 +36,7 @@ ERROR_TYPE ExecutionProcessor::swap() {
 
 ERROR_TYPE ExecutionProcessor::pick() {
 
-    auto *param = new WORD;
+    auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
         return 0;
@@ -89,7 +51,7 @@ ERROR_TYPE ExecutionProcessor::pick() {
 
 ERROR_TYPE ExecutionProcessor::roll() {
 
-    auto *param = new WORD;
+    auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
         return 0;
@@ -106,7 +68,7 @@ ERROR_TYPE ExecutionProcessor::roll() {
 //Math commands
 ERROR_TYPE ExecutionProcessor::add() {
 
-    auto *params = new WORD[2];
+    auto *params = new iWORD[2];
 
     for (int i = 0; i < 2; i++) {
 
@@ -125,31 +87,9 @@ ERROR_TYPE ExecutionProcessor::add() {
     return 0;
 }
 
-ERROR_TYPE ExecutionProcessor::substract() {
-
-    auto *params = new WORD[2];
-
-    for (int i = 0; i < 2; i++) {
-
-        if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
-        }
-
-    }
-
-    params[0] -= params[1];
-
-    dataProccesor->userStackPush(&params[0]);
-
-    delete params;
-
-    return 0;
-}
-
-
 ERROR_TYPE ExecutionProcessor::multiply() {
 
-    auto *params = new WORD[2];
+    auto *params = new iWORD[2];
 
     for (int i = 0; i < 2; i++) {
 
@@ -170,7 +110,7 @@ ERROR_TYPE ExecutionProcessor::multiply() {
 
 ERROR_TYPE ExecutionProcessor::divide() {
 
-    auto *params = new WORD[2];
+    auto *params = new iWORD[2];
 
     for (int i = 0; i < 2; i++) {
 
@@ -180,18 +120,18 @@ ERROR_TYPE ExecutionProcessor::divide() {
 
     }
 
-    params[0] /= params[1];
+    params[1] /= params[0];
 
-    dataProccesor->userStackPush(&params[0]);
+    dataProccesor->userStackPush(&params[1]);
 
     delete params;
 
     return 0;
 }
 
-ERROR_TYPE ExecutionProcessor::module() {
+ERROR_TYPE ExecutionProcessor::xorr() {
 
-    auto *params = new WORD[2];
+    auto *params = new iWORD[2];
 
     for (int i = 0; i < 2; i++) {
 
@@ -201,24 +141,96 @@ ERROR_TYPE ExecutionProcessor::module() {
 
     }
 
-    params[0] %= params[1];
+    params[1] ^= params[0];
 
-    dataProccesor->userStackPush(&params[0]);
+    dataProccesor->userStackPush(&params[1]);
 
     delete params;
 
     return 0;
 }
 
-ERROR_TYPE ExecutionProcessor::negate() {
+ERROR_TYPE ExecutionProcessor::andd() {
 
-    auto *param = new WORD;
+    auto *params = new iWORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[1] &= params[0];
+
+    dataProccesor->userStackPush(&params[1]);
+
+    delete params;
+
+    return 0;
+}
+
+ERROR_TYPE ExecutionProcessor::rshift() {
+
+    auto *params = new iWORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[1] = params[1] >> params[0];
+
+    dataProccesor->userStackPush(&params[1]);
+
+    delete params;
+
+    return 0;
+}
+
+
+ERROR_TYPE ExecutionProcessor::lshift() {
+
+    auto *params = new iWORD[2];
+
+    for (int i = 0; i < 2; i++) {
+
+        if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
+            return 0;
+        }
+
+    }
+
+    params[1] = params[1] << params[0];
+
+    dataProccesor->userStackPush(&params[1]);
+
+    delete params;
+
+    return 0;
+}
+
+ERROR_TYPE ExecutionProcessor::eqaulsZero() {
+
+    auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
         return 0;
     }
 
-    *param = -*param;
+    if (*param) {
+
+        *param = 0;
+
+    } else {
+
+        *param = -1;
+
+    }
 
     dataProccesor->userStackPush(param);
 
@@ -231,13 +243,13 @@ ERROR_TYPE ExecutionProcessor::negate() {
 //Dictionary commands
 ERROR_TYPE ExecutionProcessor::fetch() {
 
-    auto *param = new WORD;
+    auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
         return 0;
     }
 
-    auto *data = new WORD;
+    auto *data = new iWORD;
 
     dataProccesor->dictionaryFecth((size_t) *param, data);
 
@@ -250,7 +262,7 @@ ERROR_TYPE ExecutionProcessor::fetch() {
 
 ERROR_TYPE ExecutionProcessor::store() {
 
-    auto *params = new WORD[2];
+    auto *params = new iWORD[2];
 
     for (int i = 0; i < 2; i++) {
 
@@ -266,16 +278,20 @@ ERROR_TYPE ExecutionProcessor::store() {
 
     return 0;
 }
-
-
 //Dictionary commands
 
 //Machine commands
-ERROR_TYPE ExecutionProcessor::stackOut(WORD *data) {//TODO: register stack
+ERROR_TYPE ExecutionProcessor::stackOut(iWORD *data) {//TODO: register stack
 
     dataProccesor->userStackPop(data);
 
     return 0;
+}
+
+ExecutionProcessor::~ExecutionProcessor() {
+
+    delete dataProccesor;
+
 }
 //Machine commands
 

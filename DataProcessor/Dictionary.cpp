@@ -5,25 +5,33 @@
 #include "Dictionary.h"
 #include <cstring>
 
-ERROR_TYPE Dictionary::fetch(size_t idx, WORD *data) {
+ERROR_TYPE Dictionary::fetch(size_t idx, iWORD *data) {
 
-    memcpy(((void *) data), ((void *) &dictionary[idx]), sizeof(WORD));
+    if (idx >= MEMORY_SIZE) {
+        return 0;
+    }
+
+    memcpy(((void *) data), ((void *) &dictionary[idx]), sizeof(iWORD));
 
     return 0;
 }
 
-ERROR_TYPE Dictionary::store(size_t idx, WORD *data) {
+ERROR_TYPE Dictionary::store(size_t idx, iWORD *data) {
 
-    memcpy(((void *) &dictionary[idx]), ((void *) data), sizeof(WORD));
+    if (idx >= MEMORY_SIZE) {
+        return 0;
+    }
+
+    memcpy(((void *) &dictionary[idx]), ((void *) data), sizeof(iWORD));
 
     return 0;
 }
 
 Dictionary::Dictionary() {
 
-    dictionary = new WORD[MEMORY_SIZE]{0};
+    dictionary = new iWORD[MEMORY_SIZE]{0};
 
-    dictionary[TOP_ADR] = 60;
+    /*dictionary[TOP_ADR] = 60;
 
     //TEMPORARY TODO: remove
     dictionary[31] = 5;
@@ -44,7 +52,7 @@ Dictionary::Dictionary() {
     dictionary[45] = 1;
     dictionary[46] = 0;
     dictionary[47] = STATE_ADR;
-    dictionary[48] = 19;
+    dictionary[48] = 10;
     dictionary[49] = -1;
 
     dictionary[50] = 1;
@@ -55,10 +63,16 @@ Dictionary::Dictionary() {
     dictionary[55] = 0;
     dictionary[56] = 0;
     dictionary[57] = STATE_ADR;
-    dictionary[58] = 19;
+    dictionary[58] = 10;
     dictionary[59] = -1;
 
-    dictionary[CONTEXT_ADR] = 50;
+    dictionary[CONTEXT_ADR] = 50;*/
 
+
+}
+
+Dictionary::~Dictionary() {
+
+    delete dictionary;
 
 }

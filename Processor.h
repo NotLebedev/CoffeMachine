@@ -14,11 +14,14 @@ class Processor {
 public:
     Processor();
 
+    virtual ~Processor();
+
     void run();
+
+    void load(char *filename);
 
 private:
     CommandProcessor *commandProcessor;
-    DataProcessor *dataProccessor;
     ExecutionProcessor *executionProcessor;
 
     bool *halt;

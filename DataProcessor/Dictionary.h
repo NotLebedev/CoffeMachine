@@ -21,12 +21,14 @@ class Dictionary {
 public:
     Dictionary();
 
-    ERROR_TYPE fetch(size_t idx, WORD *data);
+    virtual ~Dictionary();
 
-    ERROR_TYPE store(size_t idx, WORD *data);
+    ERROR_TYPE fetch(size_t idx, iWORD *data);
+
+    ERROR_TYPE store(size_t idx, iWORD *data);
 
 private:
-    WORD *dictionary;
+    iWORD *dictionary;
 
 };
 

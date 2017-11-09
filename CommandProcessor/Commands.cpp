@@ -6,64 +6,50 @@
 #include <string>
 #include <unordered_map>
 
-//const char *DUPLICATE = "DUP";
-//const char *DROP = "DROP";
-//const char *OVER = "OVER";
-//const char *ROTATE = "ROT";
-//const char *SWAP = "SWAP";
+const char *LITERAL = "LITERAL";
+
 const char *PICK = "PICK";
 const char *ROLL = "ROLL";
 
 const char *OUT = ".";
 
-//const char *DECIMAL = "DECIMAL";
-//const char *HEXAL = "HEX";
-//const char *OCTAL = "OCTAL";
-
 const char *ADD = "+";
-const char *SUBSTRACT = "-";
 const char *MULTIPLY = "*";
 const char *DIVIDE = "/";
-//const char *MODULE = "MOD";
-//const char *NEGATE = "NEGATE";
+
+const char *XOR = "XOR";
+const char *AND = "AND";
+const char *RSHIFT = "RSHIFT";
+const char *LSHIFT = "LSHIFT";
+const char *EQUALS0 = "0=";
 
 const char *FETCH = "@";
 const char *STORE = "!";
 
-//const char *COLON = ":";
-
 const char *HALT = "HALT";
-
-const char *LITERAL = "LITERAL";
 
 std::unordered_map<std::string, size_t> commands = {
 
-        //{DUPLICATE, 0},
-        //{DROP, 1},
-        //{OVER, 2},
-        //{ROTATE, 3},
-        //{SWAP, 4},
-        {PICK,      5},
-        {ROLL,      6},
+        {LITERAL,  0},
 
-        {OUT,       7},
+        {PICK,     1},
+        {ROLL,     2},
 
-        //{DECIMAL, 15},
-        //{HEXAL, 16},
-        //{OCTAL, 17},
+        {OUT,      3},
 
-        {ADD,       8},
-        {SUBSTRACT, 9},
-        {MULTIPLY,  10},
-        {DIVIDE,    11},
-        //{MODULE, 12},
-        //{NEGATE, 13},
+        {ADD,      4},
+        {MULTIPLY, 6},
+        {DIVIDE,   7},
 
-        {HALT,      14},
+        {XOR,      5},
+        {AND,      13},
+        {RSHIFT,   11},
+        {LSHIFT,   12},
+        {EQUALS0,  14},
 
-        {FETCH,     18},
-        {STORE,     19},
-        //{COLON, 20}
+        {HALT,     8},
 
-        {LITERAL,   0}
+        {FETCH,    9},
+        {STORE,    10}
+
 };

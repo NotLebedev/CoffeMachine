@@ -6,7 +6,6 @@
 #define COFFEMACHINE_STACK_H
 
 #include <cstddef>
-#include <cstdint>
 
 #define STACK_SIZE 128
 
@@ -17,9 +16,11 @@ class Stack {
 public:
     Stack();
 
-    ERROR_TYPE push(WORD *data);
+    virtual ~Stack();
 
-    ERROR_TYPE pop(WORD *data);
+    ERROR_TYPE push(iWORD *data);
+
+    ERROR_TYPE pop(iWORD *data);
 
     ERROR_TYPE pick(size_t idx);
 
@@ -29,7 +30,7 @@ private:
 
     size_t top;
     size_t size;
-    WORD *data;
+    iWORD *data;
 
 };
 

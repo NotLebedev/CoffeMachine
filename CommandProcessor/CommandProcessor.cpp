@@ -10,7 +10,14 @@
 #include <sstream>
 
 bool isNumber(const std::string &s) {
-    return !s.empty() && std::find_if(s.begin(), s.end(), [](char c) { return !std::isdigit(c); }) == s.end();
+
+    if (s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
+
+    char *p;
+    strtol(s.c_str(), &p, 10);
+
+    return (*p == 0);
+
 }
 
 CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
@@ -27,7 +34,7 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
 
     if (!got._M_cur) {
 
-        auto ptr = new WORD;
+        auto ptr = new iWORD;
 
         if (findInDict(input, ptr) == SUCCES) {
 
@@ -36,7 +43,7 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
         } else if (isNumber(input)) {
 
 
-            WORD in = std::stol(input, nullptr, base);
+            iWORD in = std::stoi(input, nullptr, base);
 
             executionProcessor->stackIN(&in);
 
@@ -46,35 +53,47 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
 
         switch (got->second) {
 
-            case 5:
+            case 1:
                 executionProcessor->pick();
                 break;
-            case 6:
+            case 2:
                 executionProcessor->roll();
                 break;
-            case 7:
+            case 3:
                 executionProcessor->stackOut();
                 break;
-            case 8:
+            case 4:
                 executionProcessor->add();
                 break;
-            case 9:
-                executionProcessor->substract();
+            case 5:
+                executionProcessor->xorr();
                 break;
-            case 10:
+            case 6:
                 executionProcessor->multiply();
                 break;
-            case 11:
+            case 7:
                 executionProcessor->divide();
                 break;
-            case 14:
+            case 8:
                 flags[0] = true;
                 break;
-            case 18:
+            case 9:
                 executionProcessor->fetch();
                 break;
-            case 19:
+            case 10:
                 executionProcessor->store();
+                break;
+            case 11:
+                executionProcessor->rshift();
+                break;
+            case 12:
+                executionProcessor->lshift();
+                break;
+            case 13:
+                executionProcessor->andd();
+                break;
+            case 14:
+                executionProcessor->eqaulsZero();
                 break;
 
             default:
@@ -91,10 +110,10 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
 
     std::istringstream iss(input);
     std::string command;
-    auto *tmp = new WORD;
-    auto *top = new WORD;
-    auto *isImmidiate = new WORD;
-    auto *wordLength = new WORD;
+    auto *tmp = new iWORD;
+    auto *top = new iWORD;
+    auto *isImmidiate = new iWORD;
+    auto *wordLength = new iWORD;
 
     while (std::getline(iss, command, ' ')) {
 
@@ -109,10 +128,10 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
 
 
             fetch(TOP_ADR, top);
-            *tmp = command.size();
+            *tmp = (int32_t) (command.size());
             store((size_t) *top, tmp);
 
-            WORD newContext = *top;
+            iWORD newContext = *top;
 
             *top += 1;
 
@@ -171,7 +190,7 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
                 *tmp = 0;
                 store((size_t) *top - 1, tmp); // Storing literal (0) command
 
-                *tmp = std::stol(command, nullptr, base); // Storing number
+                *tmp = std::stoi(command, nullptr, base); // Storing number
                 *top += 1;
                 store((size_t) *top - 1, tmp);
 
@@ -187,7 +206,7 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
 
                 if (got._M_cur) {
 
-                    *tmp = got->second;
+                    *tmp = (int32_t) got->second;
                     store((size_t) *top - 1, tmp); // Adding command to word
 
                     *tmp = -1; // Moving exit (-1) one up
@@ -210,14 +229,18 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
     return 0;
 }
 
-ERROR_TYPE CommandProcessor::findInDict(std::string command, WORD *ptr) {
+ERROR_TYPE CommandProcessor::findInDict(std::string command, iWORD *ptr) {
 
-    auto *wordLength = new WORD;
-    auto *nextAdr = new WORD;
-    auto *character = new WORD;
+    auto *wordLength = new iWORD;
+    auto *nextAdr = new iWORD;
+    auto *character = new iWORD;
     std::string iCommand;
 
     fetch(CONTEXT_ADR, nextAdr); // Setting nextAdr to context
+
+    if (*nextAdr == 0) {
+        return WORD_NOT_FOUND;
+    }
 
     do {
 
@@ -267,13 +290,13 @@ ERROR_TYPE CommandProcessor::executeCommand(std::string input) {
 
 ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
-    auto *nameLength = new WORD;
+    auto *nameLength = new iWORD;
     fetch(dictionaryPtr, nameLength); // Fetching length of word name
 
     dictionaryPtr += *nameLength + 3; // Moving ptr to first command
     delete nameLength;
 
-    auto *command = new WORD;
+    auto *command = new iWORD;
 
     do {
 
@@ -289,35 +312,47 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     executeCommand(std::to_string(dictionaryPtr) + " @");
 
                     break;
-                case 5:
+                case 1:
                     executionProcessor->pick();
                     break;
-                case 6:
+                case 2:
                     executionProcessor->roll();
                     break;
-                case 7:
+                case 3:
                     executionProcessor->stackOut();
                     break;
-                case 8:
+                case 4:
                     executionProcessor->add();
                     break;
-                case 9:
-                    executionProcessor->substract();
+                case 5:
+                    executionProcessor->xorr();
                     break;
-                case 10:
+                case 6:
                     executionProcessor->multiply();
                     break;
-                case 11:
+                case 7:
                     executionProcessor->divide();
                     break;
-                case 14:
+                case 8:
                     flags[0] = true;
                     break;
-                case 18:
+                case 9:
                     executionProcessor->fetch();
                     break;
-                case 19:
+                case 10:
                     executionProcessor->store();
+                    break;
+                case 11:
+                    executionProcessor->rshift();
+                    break;
+                case 12:
+                    executionProcessor->lshift();
+                    break;
+                case 13:
+                    executionProcessor->andd();
+                    break;
+                case 14:
+                    executionProcessor->eqaulsZero();
                     break;
 
                 default:
@@ -343,10 +378,10 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
     return 0;
 }
 
-void CommandProcessor::fetch(size_t adr, WORD *data) {
+void CommandProcessor::fetch(size_t adr, iWORD *data) {
 
-    auto *tmp = new WORD;
-    *tmp = adr;
+    auto *tmp = new iWORD;
+    *tmp = (int32_t) adr;
     executionProcessor->stackIN(tmp);
     executionProcessor->fetch();
     executionProcessor->stackOut(data);
@@ -354,220 +389,14 @@ void CommandProcessor::fetch(size_t adr, WORD *data) {
 
 }
 
-void CommandProcessor::store(size_t adr, WORD *data) {
+void CommandProcessor::store(size_t adr, iWORD *data) {
 
-    auto *tmp = new WORD;
-    *tmp = adr;
+    auto *tmp = new iWORD;
+    *tmp = (int32_t) adr;
     executionProcessor->stackIN(data);
     executionProcessor->stackIN(tmp);
     executionProcessor->store();
     delete tmp;
 }
 
-/*bool isNumber(const std::string& s) {
-    return !s.empty() && std::find_if(s.begin(), s.end(), [](char c) { return !std::isdigit(c); }) == s.end();
-}
-
-CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
-
-    this->executionProcessor = exec;
-    this->flags = flags;
-    this->base = 10;
-
-}
-
-ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
-
-    std::istringstream iss(input);
-    std::string command;
-
-    while(std::getline(iss, command, ' ')) {
-
-        std::__detail::_Node_iterator<std::pair<const std::string, size_t>, false, true> got = commands.find(command);
-
-        WORD *tmp = new WORD;
-        fetchFromDict(STATE_ADR, tmp);
-
-        if (*tmp == 0){
-            if (!got._M_cur) {
-                if (isNumber(command)) {
-
-                    WORD in = std::stol(command, nullptr, base);
-
-                    executionProcessor->stackIN(&in);
-
-                }
-            } else {
-
-                switch (got->second) {
-
-                    case 0:
-                        executionProcessor->duplicate();
-                        break;
-                    case 1:
-                        executionProcessor->drop();
-                        break;
-                    case 2:
-                        executionProcessor->over();
-                        break;
-                    case 3:
-                        executionProcessor->rotate();
-                        break;
-                    case 4:
-                        executionProcessor->swap();
-                        break;
-                    case 5:
-                        executionProcessor->pick();
-                        break;
-                    case 6:
-                        executionProcessor->roll();
-                        break;
-                    case 7:
-                        executionProcessor->stackOut();
-                        break;
-                    case 8:
-                        executionProcessor->add();
-                        break;
-                    case 9:
-                        executionProcessor->substract();
-                        break;
-                    case 10:
-                        executionProcessor->multiply();
-                        break;
-                    case 11:
-                        executionProcessor->divide();
-                        break;
-                    case 12:
-                        executionProcessor->module();
-                        break;
-                    case 13:
-                        executionProcessor->negate();
-                        break;
-                    case 14:
-                        flags[0] = true;
-                        break;
-                    case 15:
-                        base = 10;
-                        break;
-                    case 16:
-                        base = 16;
-                        break;
-                    case 17:
-                        base = 8;
-                        break;
-                    case 18:
-                        executionProcessor->fetch();
-                        break;
-                    case 19:
-                        executionProcessor->store();
-                        break;
-
-                    default:
-                        break;
-                }
-
-            }
-
-        } else {
-
-            fetchFromDict(WORD_STEP_ADR, tmp);
-
-            if(*tmp == 0) { //Name of next word just entered
-
-                fetchFromDict(TOP_ADR, tmp);
-
-                WORD *comLength = new WORD;
-                *comLength = command.size();
-
-                storeToDict(*tmp, comLength);
-
-                delete comLength;
-
-                storeToDict(NEW_CONTEXT_ADR, tmp);
-
-                *tmp += 1;
-
-                WORD *letter = new WORD;
-
-                for (int i = 0; i < command.size(); i++) {
-
-                    *(char*)letter = command.at((size_t)i);
-
-                    storeToDict((size_t)*tmp, letter);
-
-                    *tmp += 1;
-
-                }
-
-                *letter = 0;    // In my realisation of forth Immidiate flag is a separate WORD
-                storeToDict((size_t)*tmp, letter);  // Here it is stae to non - immidiate
-                *tmp += 1;
-
-                fetchFromDict(CONTEXT_ADR, letter); // After name an addres of previous word should be stored
-                storeToDict((size_t)*tmp, letter);  // So called connection filed
-                *tmp += 1;
-
-                fetchFromDict(NEW_CONTEXT_ADR, letter); // Setting new context
-                storeToDict(CONTEXT_ADR, letter);
-
-                *letter = 1;
-                storeToDict(WORD_STEP_ADR, letter); // Switching to word step 1
-
-                storeToDict(TOP_ADR, tmp);  // Storing new top
-
-                delete letter;
-
-            } else {
-
-                *tmp = commandToInt(command);   //Storing next command
-
-                executionProcessor->stackIN(tmp);
-                fetchFromDict(TOP_ADR, tmp);
-                executionProcessor->stackIN(tmp);
-                executionProcessor->store();
-
-                *tmp += 1;  // Storing new top
-                storeToDict(TOP_ADR, tmp);
-
-            }
-
-        }
-
-        delete tmp;
-
-    }
-
-    return 0;
-}
-
-void CommandProcessor::fetchFromDict(size_t adr, WORD *data) {
-
-    *data = adr;
-    executionProcessor->stackIN(data);
-    executionProcessor->fetch();
-    executionProcessor->stackOut(data);
-
-}
-
-size_t CommandProcessor::commandToInt(std::string command) {
-
-
-
-    return 0;
-}
-
-void CommandProcessor::storeToDict(size_t adr, WORD *data) {
-
-    WORD *tmp = new WORD;
-    *tmp = adr;
-
-    executionProcessor->stackIN(data);
-    executionProcessor->stackIN(tmp);
-    executionProcessor->store();
-
-}
-
-size_t CommandProcessor::findCommand(std::string command) {
-    return 0;
-}
-*/
+CommandProcessor::~CommandProcessor() = default;

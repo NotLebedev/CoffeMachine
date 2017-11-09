@@ -79,8 +79,6 @@ cstring
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 cstddef
 -
-cstdint
--
 ../Globals.h
 /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
@@ -91,17 +89,21 @@ ExecutionProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
-cstdint
--
 ../DataProcessor/DataProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 ../Globals.h
 /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
+cstdint
+-
 
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
 iostream
+-
+windows.h
+-
+algorithm
 -
 Processor.h
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.h

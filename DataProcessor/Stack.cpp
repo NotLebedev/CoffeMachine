@@ -7,26 +7,26 @@
 
 Stack::Stack() {
 
-    data = new WORD[STACK_SIZE]{0};
+    data = new iWORD[STACK_SIZE]{0};
     size = STACK_SIZE;
     top = 0;
 
 }
 
-ERROR_TYPE Stack::push(WORD *data) {
+ERROR_TYPE Stack::push(iWORD *data) {
 
     if (top == size) {
         return STACK_OUT_OF_SIZE;
     }
 
-    memcpy(((void *) &this->data[top]), (void *) data, sizeof(WORD));
+    memcpy(((void *) &this->data[top]), (void *) data, sizeof(iWORD));
 
     top++;
 
     return 0;
 }
 
-ERROR_TYPE Stack::pop(WORD *data) {
+ERROR_TYPE Stack::pop(iWORD *data) {
 
     if (top == 0) {
         return STACK_NO_ELEMENTS;
@@ -34,7 +34,7 @@ ERROR_TYPE Stack::pop(WORD *data) {
 
     top--;
 
-    memcpy((void *) data, ((void *) &this->data[top]), sizeof(WORD));
+    memcpy((void *) data, ((void *) &this->data[top]), sizeof(iWORD));
 
     return 0;
 }
@@ -53,7 +53,7 @@ ERROR_TYPE Stack::pick(size_t idx) {
 
     }
 
-    memcpy(((void *) &this->data[top]), ((void *) &this->data[top - 1 - idx]), sizeof(WORD));
+    memcpy(((void *) &this->data[top]), ((void *) &this->data[top - 1 - idx]), sizeof(iWORD));
 
     top++;
 
@@ -66,18 +66,24 @@ ERROR_TYPE Stack::roll(size_t idx) {
         return STACK_ELEMENT_NOT_CONTAINED;
     }
 
-    auto *tmp = new WORD;
-    memcpy((void *) tmp, ((void *) &this->data[top - 1]), sizeof(WORD));
+    auto *tmp = new iWORD;
+    memcpy((void *) tmp, ((void *) &this->data[top - 1]), sizeof(iWORD));
 
     for (size_t i = top - 1; i > top - 1 - idx; i--) {
 
-        memcpy(((void *) &this->data[i]), ((void *) &this->data[i - 1]), sizeof(WORD));
+        memcpy(((void *) &this->data[i]), ((void *) &this->data[i - 1]), sizeof(iWORD));
 
     }
 
-    memcpy(((void *) &this->data[top - 1 - idx]), (void *) tmp, sizeof(WORD));
+    memcpy(((void *) &this->data[top - 1 - idx]), (void *) tmp, sizeof(iWORD));
 
     delete tmp;
 
     return 0;
+}
+
+Stack::~Stack() {
+
+    delete data;
+
 }

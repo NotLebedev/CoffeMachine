@@ -15,25 +15,27 @@ class DataProcessor {
 public:
     DataProcessor();
 
-    ERROR_TYPE userStackPush(WORD *data);
+    virtual ~DataProcessor();
 
-    ERROR_TYPE userStackPop(WORD *data);
+    ERROR_TYPE userStackPush(iWORD *data);
+
+    ERROR_TYPE userStackPop(iWORD *data);
 
     ERROR_TYPE userStackPick(size_t idx);
 
     ERROR_TYPE userStackRoll(size_t idx);
 
-    ERROR_TYPE returnStackPush(WORD *data);
+    ERROR_TYPE returnStackPush(iWORD *data);
 
-    ERROR_TYPE returnStackPop(WORD *data);
+    ERROR_TYPE returnStackPop(iWORD *data);
 
     ERROR_TYPE returnStackPick(size_t idx);
 
     ERROR_TYPE returnStackRoll(size_t idx);
 
-    ERROR_TYPE dictionaryFecth(size_t idx, WORD *data);
+    ERROR_TYPE dictionaryFecth(size_t idx, iWORD *data);
 
-    ERROR_TYPE dictionaryStore(size_t idx, WORD *data);
+    ERROR_TYPE dictionaryStore(size_t idx, iWORD *data);
 
 private:
     Stack *userStack;

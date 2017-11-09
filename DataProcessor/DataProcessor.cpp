@@ -12,13 +12,13 @@ DataProcessor::DataProcessor() {
 
 }
 
-ERROR_TYPE DataProcessor::userStackPush(WORD *data) {
+ERROR_TYPE DataProcessor::userStackPush(iWORD *data) {
 
     return userStack->push(data);
 
 }
 
-ERROR_TYPE DataProcessor::userStackPop(WORD *data) {
+ERROR_TYPE DataProcessor::userStackPop(iWORD *data) {
 
     return userStack->pop(data);
 
@@ -36,13 +36,13 @@ ERROR_TYPE DataProcessor::userStackRoll(size_t idx) {
 
 }
 
-ERROR_TYPE DataProcessor::returnStackPush(WORD *data) {
+ERROR_TYPE DataProcessor::returnStackPush(iWORD *data) {
 
     return returnStack->push(data);
 
 }
 
-ERROR_TYPE DataProcessor::returnStackPop(WORD *data) {
+ERROR_TYPE DataProcessor::returnStackPop(iWORD *data) {
 
     return returnStack->pop(data);
 
@@ -60,15 +60,23 @@ ERROR_TYPE DataProcessor::returnStackRoll(size_t idx) {
 
 }
 
-ERROR_TYPE DataProcessor::dictionaryStore(size_t idx, WORD *data) {
+ERROR_TYPE DataProcessor::dictionaryStore(size_t idx, iWORD *data) {
 
     return dictionary->store(idx, data);
 
 }
 
-ERROR_TYPE DataProcessor::dictionaryFecth(size_t idx, WORD *data) {
+ERROR_TYPE DataProcessor::dictionaryFecth(size_t idx, iWORD *data) {
 
     return dictionary->fetch(idx, data);
+
+}
+
+DataProcessor::~DataProcessor() {
+
+    delete userStack;
+    delete returnStack;
+    delete dictionary;
 
 }
 

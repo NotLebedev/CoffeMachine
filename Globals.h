@@ -5,8 +5,10 @@
 #ifndef COFFEMACHINE_TYPES_H
 #define COFFEMACHINE_TYPES_H
 
-#define ERROR_TYPE int8_t
-#define WORD long
+#include <cstdint>
+
+#define ERROR_TYPE std::int8_t
+#define iWORD std::int32_t
 
 #endif //COFFEMACHINE_TYPES_H
 

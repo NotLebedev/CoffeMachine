@@ -17,6 +17,8 @@ class CommandProcessor {
 public:
     CommandProcessor(ExecutionProcessor *exec, bool *flags);
 
+    virtual ~CommandProcessor();
+
     ERROR_TYPE nextCommand(std::string input);
 
     ERROR_TYPE executeWord(std::string input);
@@ -25,12 +27,12 @@ public:
 
     ERROR_TYPE executeCommand(std::string input);
 
-    ERROR_TYPE findInDict(std::string command, WORD *ptr);
+    ERROR_TYPE findInDict(std::string command, iWORD *ptr);
 
 private:
-    void fetch(size_t adr, WORD *data);
+    void fetch(size_t adr, iWORD *data);
 
-    void store(size_t adr, WORD *data);
+    void store(size_t adr, iWORD *data);
 
     ExecutionProcessor *executionProcessor;
     bool *flags; //Flag 0 - halt

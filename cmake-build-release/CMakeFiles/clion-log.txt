@@ -1,0 +1,4 @@
+C:\Users\Tema\.CLion2017.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /cygdrive/d/endearing/Work/CoffeMachine
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-release

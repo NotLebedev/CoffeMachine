@@ -1,0 +1,47 @@
+5 31 !
+70 32 !
+79 33 !
+82 34 !
+84 35 !
+72 36 !
+0 37 !
+-1 38 !
+-1 39 !
+1 40 !
+58 41 !
+1 42 !
+31 43 !
+0 44 !
+1 45 !
+0 46 !
+2 47 !
+10 48 !
+-1 49 !
+1 50 !
+59 51 !
+1 52 !
+40 53 !
+0 54 !
+0 55!
+0 56 !
+2 57 !
+10 58 !
+-1 59 !
+
+60 3 !
+50 0 !
+
+: DUP 0 PICK ;
+
+: OR 1 PICK 1 PICK XOR 2 ROLL AND XOR ;
+: NOT -1 XOR ;
+: <0 31 RSHIFT ;
+: >0 0 PICK <0 1 ROLL 0= OR NOT ;
+
+: NEGATE -1 XOR 1 + ;
+: - NEGATE + ;
+
+: ABS 0 PICK 31 RSHIFT 0 PICK 2 ROLL XOR 1 ROLL - ;
+
+: IMMIDIATE 0 @ DUP @ 1 + + 1 SWAP ! ;
+: MOD 1 PICK 1 PICK 3 ROLL 3 ROLL / * - ;
