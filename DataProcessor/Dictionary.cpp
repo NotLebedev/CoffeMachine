@@ -31,6 +31,8 @@ Dictionary::Dictionary() {
 
     dictionary = new iWORD[MEMORY_SIZE]{0};
 
+    dictionary[BASE_ADR] = 10;
+
     /*dictionary[TOP_ADR] = 60;
 
     //TEMPORARY TODO: remove

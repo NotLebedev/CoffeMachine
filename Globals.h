@@ -19,5 +19,6 @@
 #define STACK_OUT_OF_SIZE           (-1)
 #define STACK_NO_ELEMENTS           (-2)
 #define STACK_ELEMENT_NOT_CONTAINED (-3)
+#define WORD_NOT_FOUND (-13)
 
 #endif //COFFEMACHINE_ERROR_CODES_H

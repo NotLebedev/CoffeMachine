@@ -5,8 +5,6 @@
 #ifndef COFFEMACHINE_COMMANDPROCESSOR_H
 #define COFFEMACHINE_COMMANDPROCESSOR_H
 
-#define WORD_NOT_FOUND (-13)
-
 #include <cstdint>
 #include <string>
 #include "../Globals.h"
@@ -36,7 +34,6 @@ private:
 
     ExecutionProcessor *executionProcessor;
     bool *flags; //Flag 0 - halt
-    uint8_t base;
 
 };
 

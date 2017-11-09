@@ -24,7 +24,6 @@ CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
 
     this->executionProcessor = exec;
     this->flags = flags;
-    this->base = 10;
 
 }
 
@@ -32,24 +31,27 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
 
     auto got = commands.find(input);
 
-    if (!got._M_cur) {
+    auto ptr = new iWORD;
 
-        auto ptr = new iWORD;
+    if (findInDict(input, ptr) == SUCCES) {
 
-        if (findInDict(input, ptr) == SUCCES) {
+        executeWord((size_t) *ptr);
 
-            executeWord((size_t) *ptr);
+        return SUCCES;
 
-        } else if (isNumber(input)) {
+    } else if (isNumber(input)) {
 
+        fetch(BASE_ADR, ptr);
 
-            iWORD in = std::stoi(input, nullptr, base);
+        iWORD in = std::stoi(input, nullptr, *ptr);
 
-            executionProcessor->stackIN(&in);
+        executionProcessor->stackIN(&in);
 
-        }
+        return SUCCES;
 
-    } else {
+    }
+
+    if (got._M_cur) {
 
         switch (got->second) {
 
@@ -103,7 +105,7 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
 
     }
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
@@ -190,7 +192,9 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
                 *tmp = 0;
                 store((size_t) *top - 1, tmp); // Storing literal (0) command
 
-                *tmp = std::stoi(command, nullptr, base); // Storing number
+                fetch(BASE_ADR, tmp);
+
+                *tmp = std::stoi(command, nullptr, *tmp); // Storing number
                 *top += 1;
                 store((size_t) *top - 1, tmp);
 
@@ -297,6 +301,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
     delete nameLength;
 
     auto *command = new iWORD;
+    auto *tmp = new iWORD;
 
     do {
 
@@ -308,8 +313,10 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                 case 0:
 
-                    dictionaryPtr++;
-                    executeCommand(std::to_string(dictionaryPtr) + " @");
+                    dictionaryPtr++; // Literal command, places next number on top
+                    *tmp = (int32_t) dictionaryPtr;
+                    executionProcessor->stackIN(tmp);
+                    executionProcessor->fetch();
 
                     break;
                 case 1:
@@ -374,6 +381,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
     } while (true);
 
     delete command;
+    delete tmp;
 
     return 0;
 }

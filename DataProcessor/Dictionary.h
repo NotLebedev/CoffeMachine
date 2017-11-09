@@ -13,6 +13,7 @@
 #define MEMORY_SIZE 65536
 
 #define CONTEXT_ADR     0 // Top most word
+#define BASE_ADR        1 // Numerical base
 #define STATE_ADR       2 // State : Compile / Execute
 #define TOP_ADR         3 // First free block of dictionary
 
