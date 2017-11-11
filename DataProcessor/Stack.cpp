@@ -62,20 +62,20 @@ ERROR_TYPE Stack::pick(size_t idx) {
 
 ERROR_TYPE Stack::roll(size_t idx) {
 
-    if (idx > top) {
+    if (idx >= top) {
         return STACK_ELEMENT_NOT_CONTAINED;
     }
 
     auto *tmp = new iWORD;
-    memcpy((void *) tmp, ((void *) &this->data[top - 1]), sizeof(iWORD));
+    memcpy((void *) tmp, ((void *) &this->data[top - 1 - idx]), sizeof(iWORD));
 
-    for (size_t i = top - 1; i > top - 1 - idx; i--) {
+    for (size_t i = top - 1 - idx; i < top - 1; i++) {
 
-        memcpy(((void *) &this->data[i]), ((void *) &this->data[i - 1]), sizeof(iWORD));
+        memcpy(((void *) &this->data[i]), ((void *) &this->data[i + 1]), sizeof(iWORD));
 
     }
 
-    memcpy(((void *) &this->data[top - 1 - idx]), (void *) tmp, sizeof(iWORD));
+    memcpy(((void *) &this->data[top - 1]), (void *) tmp, sizeof(iWORD));
 
     delete tmp;
 

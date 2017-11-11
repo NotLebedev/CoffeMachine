@@ -82,6 +82,8 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
 
 
             fetch(TOP_ADR, top);
+            *top += 1;
+
             *tmp = (int32_t) (command.size());
             store((size_t) *top, tmp);
 
@@ -108,7 +110,6 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
             *tmp = -1;
             store((size_t) *top, tmp);
 
-            *top += 1; // Updating top
             store(TOP_ADR, top);
 
             store(CONTEXT_ADR, &newContext); // Updating context
@@ -131,29 +132,30 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
 
                 }
 
-                store((size_t) *top - 1, tmp); // Adding command to word
+                store((size_t) *top, tmp); // Adding command to word
+
+                *top += 1; // Updating top
 
                 *tmp = -1; // Moving exit (-1) one up
                 store((size_t) *top, tmp);
-
-                *top += 1; // Updating top
                 store(TOP_ADR, top);
 
             } else if (isNumber(command)) {
 
                 *tmp = 0;
-                store((size_t) *top - 1, tmp); // Storing literal (0) command
+                store((size_t) *top, tmp); // Storing literal (0) command
 
                 fetch(BASE_ADR, tmp);
 
                 *tmp = std::stoi(command, nullptr, *tmp); // Storing number
                 *top += 1;
-                store((size_t) *top - 1, tmp);
+                store((size_t) *top, tmp);
+
+                *top += 1; // Updating top
 
                 *tmp = -1; // Moving exit (-1) one up
                 store((size_t) *top, tmp);
 
-                *top += 1; // Updating top
                 store(TOP_ADR, top);
 
             } else {
@@ -163,12 +165,12 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
                 if (got._M_cur) {
 
                     *tmp = (int32_t) got->second;
-                    store((size_t) *top - 1, tmp); // Adding command to word
+                    store((size_t) *top, tmp); // Adding command to word
+
+                    *top += 1; // Updating top
 
                     *tmp = -1; // Moving exit (-1) one up
                     store((size_t) *top, tmp);
-
-                    *top += 1; // Updating top
                     store(TOP_ADR, top);
 
                 }
@@ -247,9 +249,9 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
         if (*command != -1) {
 
-            if(executeStandart((size_t)(*command)) == STANDART_COMMAND_NOT_FOUND) {
+            if (executeStandart((size_t) (*command)) == STANDART_COMMAND_NOT_FOUND) {
 
-                if(*command == 0) {
+                if (*command == 0) {
 
                     dictionaryPtr++; // Literal command, places next number on top
                     *tmp = (int32_t) dictionaryPtr;
@@ -260,36 +262,41 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                     dictionaryPtr++; // Branch command, move dictionaryPtr to adr stored next
                     fetch(dictionaryPtr, tmp);
-                    dictionaryPtr = (size_t)(*tmp);
+                    dictionaryPtr = (size_t) (*tmp -
+                                              1);   // Why *tmp - 1 ? Because if its neccecery to acces block N this command sets
+                                                    // to N - 1 and dicitonaryPtr++ in end of this loop to N finaly
 
                 } else if (*command == 16) {
 
-                    executionProcessor->stackOut(tmp); // ?Branch command, if top value is zero works as branch, else skips
+                    executionProcessor->stackOut(
+                            tmp); // ?Branch command, if top value is zero works as branch, else skips
 
-                    if(*tmp == 0) {
+                    if (*tmp == 0) {
 
                         dictionaryPtr++; // Branch command, move dictionaryPtr to adr stored next
                         fetch(dictionaryPtr, tmp);
-                        dictionaryPtr = (size_t)(*tmp);
+                        dictionaryPtr = (size_t) (*tmp -
+                                                  1);   // Why *tmp - 1 ? Because if its neccecery to acces block N this command sets
+                                                        // to N - 1 and dicitonaryPtr++ in end of this loop to N finaly
 
                     } else {
 
-                        dictionaryPtr ++;
+                        dictionaryPtr++;
 
                     }
 
                 } else if (*command == 17) {
 
-                    dictionaryPtr ++; // Compile command, add next command to top of vocabulary
+                    dictionaryPtr++; // Compile command, add next command to top of vocabulary
                     fetch(dictionaryPtr, command);
                     fetch(TOP_ADR, tmp);
 
-                    store((size_t)(*tmp - 1), command); // Storing command on top-1, to replace -1 ending of command
+                    store((size_t) (*tmp), command); // Storing command on top-1, to replace -1 ending of command
 
                     *tmp += 1;
                     *command = -1;
 
-                    store((size_t)(*tmp - 1), command); // Storing new -1 ending of command
+                    store((size_t) (*tmp), command); // Storing new -1 ending of command
 
                     store(TOP_ADR, tmp); // Moving top 1 up
 
