@@ -53,55 +53,7 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
 
     if (got._M_cur) {
 
-        switch (got->second) {
-
-            case 1:
-                executionProcessor->pick();
-                break;
-            case 2:
-                executionProcessor->roll();
-                break;
-            case 3:
-                executionProcessor->stackOut();
-                break;
-            case 4:
-                executionProcessor->add();
-                break;
-            case 5:
-                executionProcessor->xorr();
-                break;
-            case 6:
-                executionProcessor->multiply();
-                break;
-            case 7:
-                executionProcessor->divide();
-                break;
-            case 8:
-                flags[0] = true;
-                break;
-            case 9:
-                executionProcessor->fetch();
-                break;
-            case 10:
-                executionProcessor->store();
-                break;
-            case 11:
-                executionProcessor->rshift();
-                break;
-            case 12:
-                executionProcessor->lshift();
-                break;
-            case 13:
-                executionProcessor->andd();
-                break;
-            case 14:
-                executionProcessor->eqaulsZero();
-                break;
-
-            default:
-                break;
-
-        }
+        executeStandart(got->second);
 
     }
 
@@ -278,20 +230,6 @@ ERROR_TYPE CommandProcessor::findInDict(std::string command, iWORD *ptr) {
     return WORD_NOT_FOUND;
 }
 
-ERROR_TYPE CommandProcessor::executeCommand(std::string input) {
-
-    std::istringstream iss(input);
-    std::string command;
-
-    while (std::getline(iss, command, ' ')) {
-
-        executeWord(command);
-
-    }
-
-    return 0;
-}
-
 ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
     auto *nameLength = new iWORD;
@@ -309,64 +247,58 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
         if (*command != -1) {
 
-            switch (*command) {
+            if(executeStandart((size_t)(*command)) == STANDART_COMMAND_NOT_FOUND) {
 
-                case 0:
+                if(*command == 0) {
 
                     dictionaryPtr++; // Literal command, places next number on top
                     *tmp = (int32_t) dictionaryPtr;
                     executionProcessor->stackIN(tmp);
                     executionProcessor->fetch();
 
-                    break;
-                case 1:
-                    executionProcessor->pick();
-                    break;
-                case 2:
-                    executionProcessor->roll();
-                    break;
-                case 3:
-                    executionProcessor->stackOut();
-                    break;
-                case 4:
-                    executionProcessor->add();
-                    break;
-                case 5:
-                    executionProcessor->xorr();
-                    break;
-                case 6:
-                    executionProcessor->multiply();
-                    break;
-                case 7:
-                    executionProcessor->divide();
-                    break;
-                case 8:
-                    flags[0] = true;
-                    break;
-                case 9:
-                    executionProcessor->fetch();
-                    break;
-                case 10:
-                    executionProcessor->store();
-                    break;
-                case 11:
-                    executionProcessor->rshift();
-                    break;
-                case 12:
-                    executionProcessor->lshift();
-                    break;
-                case 13:
-                    executionProcessor->andd();
-                    break;
-                case 14:
-                    executionProcessor->eqaulsZero();
-                    break;
+                } else if (*command == 15) {
 
-                default:
+                    dictionaryPtr++; // Branch command, move dictionaryPtr to adr stored next
+                    fetch(dictionaryPtr, tmp);
+                    dictionaryPtr = (size_t)(*tmp);
+
+                } else if (*command == 16) {
+
+                    executionProcessor->stackOut(tmp); // ?Branch command, if top value is zero works as branch, else skips
+
+                    if(*tmp == 0) {
+
+                        dictionaryPtr++; // Branch command, move dictionaryPtr to adr stored next
+                        fetch(dictionaryPtr, tmp);
+                        dictionaryPtr = (size_t)(*tmp);
+
+                    } else {
+
+                        dictionaryPtr ++;
+
+                    }
+
+                } else if (*command == 17) {
+
+                    dictionaryPtr ++; // Compile command, add next command to top of vocabulary
+                    fetch(dictionaryPtr, command);
+                    fetch(TOP_ADR, tmp);
+
+                    store((size_t)(*tmp - 1), command); // Storing command on top-1, to replace -1 ending of command
+
+                    *tmp += 1;
+                    *command = -1;
+
+                    store((size_t)(*tmp - 1), command); // Storing new -1 ending of command
+
+                    store(TOP_ADR, tmp); // Moving top 1 up
+
+
+                } else {
 
                     executeWord((size_t) *command);
 
-                    break;
+                }
 
             }
 
@@ -405,6 +337,61 @@ void CommandProcessor::store(size_t adr, iWORD *data) {
     executionProcessor->stackIN(tmp);
     executionProcessor->store();
     delete tmp;
+}
+
+ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
+
+    switch (cmd) {
+
+        case 1:
+            executionProcessor->pick();
+            break;
+        case 2:
+            executionProcessor->roll();
+            break;
+        case 3:
+            executionProcessor->stackOut();
+            break;
+        case 4:
+            executionProcessor->add();
+            break;
+        case 5:
+            executionProcessor->xorr();
+            break;
+        case 6:
+            executionProcessor->multiply();
+            break;
+        case 7:
+            executionProcessor->divide();
+            break;
+        case 8:
+            flags[0] = true;
+            break;
+        case 9:
+            executionProcessor->fetch();
+            break;
+        case 10:
+            executionProcessor->store();
+            break;
+        case 11:
+            executionProcessor->rshift();
+            break;
+        case 12:
+            executionProcessor->lshift();
+            break;
+        case 13:
+            executionProcessor->andd();
+            break;
+        case 14:
+            executionProcessor->eqaulsZero();
+            break;
+
+        default:
+            return STANDART_COMMAND_NOT_FOUND;
+
+    }
+
+    return SUCCES;
 }
 
 CommandProcessor::~CommandProcessor() = default;

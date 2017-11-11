@@ -26,6 +26,10 @@ const char *EQUALS0 = "0=";
 const char *FETCH = "@";
 const char *STORE = "!";
 
+const char *BRANCH = "BRANCH";
+const char *QBRANCH = "?BRANCH";
+const char *COMPILE = "COMPILE";
+
 const char *HALT = "HALT";
 
 std::unordered_map<std::string, size_t> commands = {
@@ -50,6 +54,10 @@ std::unordered_map<std::string, size_t> commands = {
         {HALT,     8},
 
         {FETCH,    9},
-        {STORE,    10}
+        {STORE,    10},
+
+        {BRANCH,   15},
+        {QBRANCH,  16},
+        {COMPILE,  17}
 
 };

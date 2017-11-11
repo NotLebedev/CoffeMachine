@@ -23,7 +23,7 @@ public:
 
     ERROR_TYPE executeWord(size_t dictionaryPtr);
 
-    ERROR_TYPE executeCommand(std::string input);
+    ERROR_TYPE executeStandart(size_t cmd);
 
     ERROR_TYPE findInDict(std::string command, iWORD *ptr);
 
