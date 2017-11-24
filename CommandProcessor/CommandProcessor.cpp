@@ -80,45 +80,6 @@ ERROR_TYPE CommandProcessor::nextCommand() {
 
         } else if (*tmp == 1) {
 
-
-            fetch(TOP_ADR, top);
-            *top += 1;
-
-            *tmp = (int32_t) (command.size());
-            store((size_t) *top, tmp);
-
-            iWORD newContext = *top;
-
-            *top += 1;
-
-            for (char i : command) {
-
-                *((char *) tmp) = i; // Store ith char of name
-                store((size_t) *top, tmp);
-                *top += 1;
-
-            }
-
-            *tmp = 0; // Making word non-immidiate
-            store((size_t) *top, tmp);
-            *top += 1;
-
-            fetch(CONTEXT_ADR, tmp); // Linking to prev
-            store((size_t) *top, tmp);
-
-            *top += 1; // Putting exit (-1) command
-            *tmp = -1;
-            store((size_t) *top, tmp);
-
-            store(TOP_ADR, top);
-
-            store(CONTEXT_ADR, &newContext); // Updating context
-
-            *tmp = 2;
-            store(STATE_ADR, tmp);
-
-        } else {
-
             fetch(TOP_ADR, top); // Fetching current top
 
             if (findInDict(command, tmp) == SUCCES) {
@@ -136,8 +97,6 @@ ERROR_TYPE CommandProcessor::nextCommand() {
 
                 *top += 1; // Updating top
 
-                *tmp = -1; // Moving exit (-1) one up
-                store((size_t) *top, tmp);
                 store(TOP_ADR, top);
 
             } else if (isNumber(command)) {
@@ -153,9 +112,6 @@ ERROR_TYPE CommandProcessor::nextCommand() {
 
                 *top += 1; // Updating top
 
-                *tmp = -1; // Moving exit (-1) one up
-                store((size_t) *top, tmp);
-
                 store(TOP_ADR, top);
 
             } else {
@@ -169,8 +125,6 @@ ERROR_TYPE CommandProcessor::nextCommand() {
 
                     *top += 1; // Updating top
 
-                    *tmp = -1; // Moving exit (-1) one up
-                    store((size_t) *top, tmp);
                     store(TOP_ADR, top);
 
                 }
@@ -295,9 +249,6 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     store((size_t) (*tmp), command); // Storing command on top-1, to replace -1 ending of command
 
                     *tmp += 1;
-                    *command = -1;
-
-                    store((size_t) (*tmp), command); // Storing new -1 ending of command
 
                     store(TOP_ADR, tmp); // Moving top 1 up
 
@@ -337,9 +288,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     fetch(CONTEXT_ADR, tmp); // Linking to prev
                     store((size_t) *top, tmp);
 
-                    *top += 1; // Putting exit (-1) command
-                    *tmp = -1;
-                    store((size_t) *top, tmp);
+                    *top += 1;
 
                     store(TOP_ADR, top);
 
