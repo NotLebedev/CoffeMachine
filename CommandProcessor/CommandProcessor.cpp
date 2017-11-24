@@ -264,7 +264,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     }
 
                     fetch(TOP_ADR, top);
-                    *top += 1;
+                    //*top += 1;
 
                     *tmp = (int32_t) (sCommand.size());
                     store((size_t) *top, tmp);
