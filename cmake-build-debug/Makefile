@@ -285,6 +285,33 @@ ExecutionProcessor/ExecutionProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.s
 .PHONY : ExecutionProcessor/ExecutionProcessor.cpp.s
 
+InputProcessor.o: InputProcessor.cpp.o
+
+.PHONY : InputProcessor.o
+
+# target to build an object file
+InputProcessor.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o
+.PHONY : InputProcessor.cpp.o
+
+InputProcessor.i: InputProcessor.cpp.i
+
+.PHONY : InputProcessor.i
+
+# target to preprocess a source file
+InputProcessor.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.i
+.PHONY : InputProcessor.cpp.i
+
+InputProcessor.s: InputProcessor.cpp.s
+
+.PHONY : InputProcessor.s
+
+# target to generate assembly for a file
+InputProcessor.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.s
+.PHONY : InputProcessor.cpp.s
+
 Processor.o: Processor.cpp.o
 
 .PHONY : Processor.o
@@ -366,6 +393,9 @@ help:
 	@echo "... ExecutionProcessor/ExecutionProcessor.o"
 	@echo "... ExecutionProcessor/ExecutionProcessor.i"
 	@echo "... ExecutionProcessor/ExecutionProcessor.s"
+	@echo "... InputProcessor.o"
+	@echo "... InputProcessor.i"
+	@echo "... InputProcessor.s"
 	@echo "... Processor.o"
 	@echo "... Processor.i"
 	@echo "... Processor.s"

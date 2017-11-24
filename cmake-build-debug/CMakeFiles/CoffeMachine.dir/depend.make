@@ -9,6 +9,7 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProc
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o: ../InputProcessor.h
 
 CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o: ../CommandProcessor/Commands.cpp
 
@@ -33,12 +34,17 @@ CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../Exec
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o: ../Globals.h
 
+CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.cpp
+CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.h
+
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/DataProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../InputProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.cpp
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.h
 
@@ -48,6 +54,7 @@ CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/Dictionary.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/Stack.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/main.cpp.o: ../InputProcessor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../Processor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../main.cpp
 

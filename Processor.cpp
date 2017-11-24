@@ -10,11 +10,12 @@
 Processor::Processor() {
 
     executionProcessor = new ExecutionProcessor();
+    inputProcessor = new InputProcessor();
 
     halt = new bool;
     *halt = false;
 
-    commandProcessor = new CommandProcessor(executionProcessor, halt);
+    commandProcessor = new CommandProcessor(executionProcessor, inputProcessor, halt);
 
 }
 
@@ -28,7 +29,9 @@ void Processor::run() {
 
         std::getline(std::cin, line);
 
-        commandProcessor->nextCommand(line);
+        inputProcessor->push(line);
+
+        commandProcessor->nextCommand();
 
     }
 
@@ -81,7 +84,7 @@ void Processor::load(char *filename) {
 
     std::string dataPtr = (char *) MapViewOfFile(hMapping, FILE_MAP_READ, 0, 0, dwFileSize);
 
-    if (dataPtr == "") {
+    if (dataPtr.empty()) {
 
         printf("Fatal error - MapViewOfFile failed, file name : %s\n", filename);
 
@@ -95,6 +98,8 @@ void Processor::load(char *filename) {
     std::replace(dataPtr.begin(), dataPtr.end(), '\n', ' ');
     std::replace(dataPtr.begin(), dataPtr.end(), '\r', ' ');
 
-    commandProcessor->nextCommand(dataPtr);
+    inputProcessor->push(dataPtr);
+
+    commandProcessor->nextCommand();
 
 }

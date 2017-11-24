@@ -18,7 +18,7 @@ ERROR_TYPE ExecutionProcessor::stackIN(iWORD *data) {
 
     dataProccesor->userStackPush(data);
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::stackOut() {
@@ -30,7 +30,7 @@ ERROR_TYPE ExecutionProcessor::stackOut() {
 
     delete data;
 
-    return 0;
+    return SUCCES;
 }
 
 
@@ -39,14 +39,14 @@ ERROR_TYPE ExecutionProcessor::pick() {
     auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
-        return 0;
+        return SUCCES;
     }
 
     dataProccesor->userStackPick((size_t) (*param));
 
     delete param;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::roll() {
@@ -54,14 +54,14 @@ ERROR_TYPE ExecutionProcessor::roll() {
     auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
-        return 0;
+        return SUCCES;
     }
 
     dataProccesor->userStackRoll((size_t) (*param));
 
     delete param;
 
-    return 0;
+    return SUCCES;
 }
 //Stack commands
 
@@ -73,7 +73,7 @@ ERROR_TYPE ExecutionProcessor::add() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -84,7 +84,7 @@ ERROR_TYPE ExecutionProcessor::add() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::multiply() {
@@ -94,7 +94,7 @@ ERROR_TYPE ExecutionProcessor::multiply() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -105,7 +105,7 @@ ERROR_TYPE ExecutionProcessor::multiply() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::divide() {
@@ -115,7 +115,7 @@ ERROR_TYPE ExecutionProcessor::divide() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -126,7 +126,7 @@ ERROR_TYPE ExecutionProcessor::divide() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::xorr() {
@@ -136,7 +136,7 @@ ERROR_TYPE ExecutionProcessor::xorr() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -147,7 +147,7 @@ ERROR_TYPE ExecutionProcessor::xorr() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::andd() {
@@ -157,7 +157,7 @@ ERROR_TYPE ExecutionProcessor::andd() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -168,7 +168,7 @@ ERROR_TYPE ExecutionProcessor::andd() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::rshift() {
@@ -178,7 +178,7 @@ ERROR_TYPE ExecutionProcessor::rshift() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -189,7 +189,7 @@ ERROR_TYPE ExecutionProcessor::rshift() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 
@@ -200,7 +200,7 @@ ERROR_TYPE ExecutionProcessor::lshift() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -211,7 +211,7 @@ ERROR_TYPE ExecutionProcessor::lshift() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::eqaulsZero() {
@@ -219,7 +219,7 @@ ERROR_TYPE ExecutionProcessor::eqaulsZero() {
     auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
-        return 0;
+        return SUCCES;
     }
 
     if (*param) {
@@ -236,7 +236,7 @@ ERROR_TYPE ExecutionProcessor::eqaulsZero() {
 
     delete param;
 
-    return 0;
+    return SUCCES;
 }
 //Math commands
 
@@ -246,7 +246,7 @@ ERROR_TYPE ExecutionProcessor::fetch() {
     auto *param = new iWORD;
 
     if (dataProccesor->userStackPop(param) == STACK_NO_ELEMENTS) {
-        return 0;
+        return SUCCES;
     }
 
     auto *data = new iWORD;
@@ -257,7 +257,7 @@ ERROR_TYPE ExecutionProcessor::fetch() {
 
     delete param;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::store() {
@@ -267,7 +267,7 @@ ERROR_TYPE ExecutionProcessor::store() {
     for (int i = 0; i < 2; i++) {
 
         if (dataProccesor->userStackPop(&params[i]) == STACK_NO_ELEMENTS) {
-            return 0;
+            return SUCCES;
         }
 
     }
@@ -276,7 +276,7 @@ ERROR_TYPE ExecutionProcessor::store() {
 
     delete params;
 
-    return 0;
+    return SUCCES;
 }
 //Dictionary commands
 
@@ -285,7 +285,7 @@ ERROR_TYPE ExecutionProcessor::stackOut(iWORD *data) {//TODO: register stack
 
     dataProccesor->userStackPop(data);
 
-    return 0;
+    return SUCCES;
 }
 
 ExecutionProcessor::~ExecutionProcessor() {

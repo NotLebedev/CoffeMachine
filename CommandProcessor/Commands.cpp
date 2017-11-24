@@ -6,31 +6,34 @@
 #include <string>
 #include <unordered_map>
 
-const char *LITERAL = "LITERAL";
+const char *LITERAL =   "LIT";
 
-const char *PICK = "PICK";
-const char *ROLL = "ROLL";
+const char *PICK =      "PICK";
+const char *ROLL =      "ROLL";
 
-const char *OUT = ".";
+const char *OUT =       ".";
 
-const char *ADD = "+";
-const char *MULTIPLY = "*";
-const char *DIVIDE = "/";
+const char *ADD =       "+";
+const char *MULTIPLY =  "*";
+const char *DIVIDE =    "/";
 
-const char *XOR = "XOR";
-const char *AND = "AND";
-const char *RSHIFT = "RSHIFT";
-const char *LSHIFT = "LSHIFT";
-const char *EQUALS0 = "0=";
+const char *XOR =       "XOR";
+const char *AND =       "AND";
+const char *RSHIFT =    "RSHIFT";
+const char *LSHIFT =    "LSHIFT";
+const char *EQUALS0 =   "0=";
 
-const char *FETCH = "@";
-const char *STORE = "!";
+const char *FETCH =     "@";
+const char *STORE =     "!";
 
-const char *BRANCH = "BRANCH";
-const char *QBRANCH = "?BRANCH";
-const char *COMPILE = "COMPILE";
+const char *BRANCH =    "BRANCH";
+const char *QBRANCH =   "?BRANCH";
+const char *COMPILE =   "COMPILE";
 
-const char *HALT = "HALT";
+const char *CREATE =    "CREATE";
+const char *DOES =      "DOES>";
+
+const char *HALT =      "HALT";
 
 std::unordered_map<std::string, size_t> commands = {
 
@@ -58,6 +61,9 @@ std::unordered_map<std::string, size_t> commands = {
 
         {BRANCH,   15},
         {QBRANCH,  16},
-        {COMPILE,  17}
+        {COMPILE,  17},
+
+        {CREATE,   18},
+        {DOES,     19}
 
 };

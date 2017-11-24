@@ -119,6 +119,12 @@
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/Globals.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp">
+			<Option target="CoffeMachine"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>

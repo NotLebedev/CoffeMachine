@@ -8,6 +8,7 @@
 #include "DataProcessor/DataProcessor.h"
 #include "CommandProcessor/CommandProcessor.h"
 #include "ExecutionProcessor/ExecutionProcessor.h"
+#include "InputProcessor.h"
 
 class Processor {
 
@@ -23,6 +24,7 @@ public:
 private:
     CommandProcessor *commandProcessor;
     ExecutionProcessor *executionProcessor;
+    InputProcessor *inputProcessor;
 
     bool *halt;
 

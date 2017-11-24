@@ -9,15 +9,16 @@
 #include <string>
 #include "../Globals.h"
 #include "../ExecutionProcessor/ExecutionProcessor.h"
+#include "../InputProcessor.h"
 
 class CommandProcessor {
 
 public:
-    CommandProcessor(ExecutionProcessor *exec, bool *flags);
+    CommandProcessor(ExecutionProcessor *exec, InputProcessor *inputProcessor, bool *flags);
 
     virtual ~CommandProcessor();
 
-    ERROR_TYPE nextCommand(std::string input);
+    ERROR_TYPE nextCommand();
 
     ERROR_TYPE executeWord(std::string input);
 
@@ -33,6 +34,7 @@ private:
     void store(size_t adr, iWORD *data);
 
     ExecutionProcessor *executionProcessor;
+    InputProcessor *inputProcessor;
     bool *flags; //Flag 0 - halt
 
 };

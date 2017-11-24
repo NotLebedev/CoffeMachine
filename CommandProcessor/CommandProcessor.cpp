@@ -20,10 +20,11 @@ bool isNumber(const std::string &s) {
 
 }
 
-CommandProcessor::CommandProcessor(ExecutionProcessor *exec, bool *flags) {
+CommandProcessor::CommandProcessor(ExecutionProcessor *exec, InputProcessor *inputProcessor, bool *flags) {
 
     this->executionProcessor = exec;
     this->flags = flags;
+    this->inputProcessor = inputProcessor;
 
 }
 
@@ -60,16 +61,15 @@ ERROR_TYPE CommandProcessor::executeWord(std::string input) {
     return SUCCES;
 }
 
-ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
+ERROR_TYPE CommandProcessor::nextCommand() {
 
-    std::istringstream iss(input);
     std::string command;
     auto *tmp = new iWORD;
     auto *top = new iWORD;
     auto *isImmidiate = new iWORD;
     auto *wordLength = new iWORD;
 
-    while (std::getline(iss, command, ' ')) {
+    while (inputProcessor->pop(command) == SUCCES) {
 
 
         fetch(STATE_ADR, tmp); // Fetching current interpreter state
@@ -184,7 +184,7 @@ ERROR_TYPE CommandProcessor::nextCommand(std::string input) {
     delete tmp;
     delete top;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE CommandProcessor::findInDict(std::string command, iWORD *ptr) {
@@ -242,6 +242,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
     auto *command = new iWORD;
     auto *tmp = new iWORD;
+    auto *top = new iWORD;
 
     do {
 
@@ -301,6 +302,58 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     store(TOP_ADR, tmp); // Moving top 1 up
 
 
+                } else if(*command == 18) {
+
+                    std::string sCommand;
+
+                    inputProcessor->pop(sCommand);
+
+                    if(sCommand.empty()) {
+                        continue;
+                    }
+
+                    fetch(TOP_ADR, top);
+                    *top += 1;
+
+                    *tmp = (int32_t) (sCommand.size());
+                    store((size_t) *top, tmp);
+
+                    iWORD newContext = *top;
+
+                    *top += 1;
+
+                    for (char i : sCommand) {
+
+                        *((char *) tmp) = i; // Store ith char of name
+                        store((size_t) *top, tmp);
+                        *top += 1;
+
+                    }
+
+                    *tmp = 0; // Making word non-immidiate
+                    store((size_t) *top, tmp);
+                    *top += 1;
+
+                    fetch(CONTEXT_ADR, tmp); // Linking to prev
+                    store((size_t) *top, tmp);
+
+                    *top += 1; // Putting exit (-1) command
+                    *tmp = -1;
+                    store((size_t) *top, tmp);
+
+                    store(TOP_ADR, top);
+
+                    store(CONTEXT_ADR, &newContext); // Updating context
+
+                    *tmp = 0;
+                    store(STATE_ADR, tmp);
+
+                    store(10, top);
+
+                } else if(*command == 19) {
+
+
+
                 } else {
 
                     executeWord((size_t) *command);
@@ -322,7 +375,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
     delete command;
     delete tmp;
 
-    return 0;
+    return SUCCES;
 }
 
 void CommandProcessor::fetch(size_t adr, iWORD *data) {

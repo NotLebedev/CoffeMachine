@@ -21,5 +21,6 @@
 #define STACK_ELEMENT_NOT_CONTAINED (-3)
 #define WORD_NOT_FOUND              (-10)
 #define STANDART_COMMAND_NOT_FOUND  (-11)
+#define END_OF_INPUT                (-21)
 
 #endif //COFFEMACHINE_ERROR_CODES_H

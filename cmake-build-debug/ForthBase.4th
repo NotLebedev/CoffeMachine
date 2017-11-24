@@ -7,29 +7,32 @@
 0 37 !
 -1 38 !
 -1 39 !
+
 1 40 !
 58 41 !
 1 42 !
 31 43 !
-0 44 !
-1 45 !
-0 46 !
-2 47 !
-10 48 !
--1 49 !
-1 50 !
-59 51 !
-1 52 !
-40 53 !
-0 54 !
-0 55!
-0 56 !
-2 57 !
-10 58 !
--1 59 !
+18 44 !
+0 45 !
+2 46 !
+0 47 !
+2 48 !
+10 49 !
+-1 50 !
 
-60 3 !
-50 0 !
+1 51 !
+59 52 !
+1 53 !
+40 54 !
+0 55 !
+0 56!
+0 57 !
+2 58 !
+10 59 !
+-1 60 !
+
+61 3 !
+51 0 !
 
 : CONTEXT 0 ;
 : BASE 1 ;
@@ -65,7 +68,11 @@
 
 : ALLOT HERE + 3 ! ;
 
+: , HERE 1 ALLOT ! ;
+
 : IF COMPILE ?BRANCH HERE 1 ALLOT ; IMMIDIATE
 : THEN HERE SWAP ! ; IMMIDIATE
 : ELSE COMPILE BRANCH HERE 1 ALLOT HERE ROT ! ; IMMIDIATE
+
+: LITERAL STATE @ IF COMPILE LIT , THEN ; IMMIDIATE
 
