@@ -246,7 +246,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
                     fetch(dictionaryPtr, command);
                     fetch(TOP_ADR, tmp);
 
-                    store((size_t) (*tmp), command); // Storing command on top-1, to replace -1 ending of command
+                    store((size_t) (*tmp), command);
 
                     *tmp += 1;
 
@@ -265,6 +265,8 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                     fetch(TOP_ADR, top);
                     //*top += 1;
+
+                    store(PREV_TOP_ADR, top); // Storing current top for DOES>
 
                     *tmp = (int32_t) (sCommand.size());
                     store((size_t) *top, tmp);
@@ -299,9 +301,29 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                     store(10, top);
 
-                } else if(*command == 19) {
+                } else if (*command == 19) {
 
+                    fetch(TOP_ADR, top);
 
+                    *tmp = 0;
+                    store((size_t) *top, tmp); // COMPILE LIT
+                    *top += 1;
+
+                    fetch(PREV_TOP_ADR, tmp);
+                    store((size_t) *top, tmp); // COMPILE PREV_TOP_ADR
+                    *top += 1;
+
+                    do {
+
+                        dictionaryPtr++;
+                        fetch(dictionaryPtr, command);
+
+                        store((size_t) *top, command); // COMPILE PREV_TOP_ADR
+                        *top += 1;
+
+                    } while (*command != -1);
+
+                    break;
 
                 } else {
 

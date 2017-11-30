@@ -16,6 +16,7 @@
 #define BASE_ADR        1 // Numerical base
 #define STATE_ADR       2 // State : Compile / Execute
 #define TOP_ADR         3 // First free block of dictionary
+#define PREV_TOP_ADR    4 // Previous top adr for CREATE DOES>
 
 class Dictionary {
 
