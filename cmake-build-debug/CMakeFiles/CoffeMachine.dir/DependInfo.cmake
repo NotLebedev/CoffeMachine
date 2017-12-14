@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/User/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/DataProcessor/Stack.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/InputProcessor.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/Processor.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/Processor.cpp.obj"
-  "C:/Users/User/Documents/GitHub/CoffeMachine/main.cpp" "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/main.cpp.obj"
+  "/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Dictionary.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/Processor.cpp.o"
+  "/cygdrive/d/endearing/Work/CoffeMachine/main.cpp" "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

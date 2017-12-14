@@ -1,6 +1,6 @@
-The system is: Windows - 6.1.7601 - AMD64
+The system is: CYGWIN - 2.9.0(0.318/5/3) - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files/MinGW/bin/gcc.exe 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Program Files/MinGW/bin/g++.exe 
+Compiler: /usr/bin/c++.exe 
 Build flags: 
 Id flags:  
 
@@ -23,170 +23,163 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_81460/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_81460.dir\build.make CMakeFiles/cmTC_81460.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_81460.dir/testCCompiler.c.obj
-C:\PROGRA~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_81460.dir\testCCompiler.c.obj   -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_81460.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_81460.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_81460.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_81460.dir/objects.a @CMakeFiles\cmTC_81460.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_81460.dir/objects.a -Wl,--no-whole-archive  -o cmTC_81460.exe -Wl,--out-implib,libcmTC_81460.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_81460.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_84b05/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84b05.dir/build.make CMakeFiles/cmTC_84b05.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84b05.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_84b05.dir/testCCompiler.c.o   -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_84b05.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_84b05.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_84b05.dir/testCCompiler.c.o  -o cmTC_84b05.exe -Wl,--out-implib,libcmTC_84b05.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_0a569/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0a569.dir\build.make CMakeFiles/cmTC_0a569.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0a569.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_0a569.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_0a569.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0a569.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0a569.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0a569.dir/objects.a @CMakeFiles\cmTC_0a569.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_0a569.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0a569.exe -Wl,--out-implib,libcmTC_0a569.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-Using built-in specs.
-COLLECT_GCC=C:\PROGRA~1\MinGW\bin\gcc.exe
-COLLECT_LTO_WRAPPER=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe
-Target: x86_64-w64-mingw32
-Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell
-Thread model: win32
-gcc version 6.3.0 (GCC) 
-COMPILER_PATH=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/;c:/progra~1/mingw/bin/../libexec/gcc/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/
-LIBRARY_PATH=c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/;c:/progra~1/mingw/bin/../lib/gcc/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a569.exe' '-mtune=haswell' '-march=x86-64'
- c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccOXbhT7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_0a569.exe c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -Lc:/progra~1/mingw/bin/../lib/gcc -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_0a569.dir/objects.a --no-whole-archive --out-implib libcmTC_0a569.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a569.exe' '-mtune=haswell' '-march=x86-64'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_e4116/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4116.dir/build.make CMakeFiles/cmTC_e4116.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.4/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_e4116.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_e4116.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import -v CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o  -o cmTC_e4116.exe -Wl,--out-implib,libcmTC_e4116.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe
+Target: x86_64-pc-cygwin
+Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --enable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible
+Thread model: posix
+gcc version 6.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4116.exe' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccag4UND.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_e4116.exe /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_e4116.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4116.exe' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_0a569/fast"]
-  ignore line: [C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0a569.dir\build.make CMakeFiles/cmTC_0a569.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_0a569.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_0a569.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_0a569.exe]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0a569.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0a569.dir/objects.a]
-  ignore line: [C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0a569.dir/objects.a @CMakeFiles\cmTC_0a569.dir\objects1.rsp]
-  ignore line: [C:\PROGRA~1\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_0a569.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0a569.exe -Wl,--out-implib,libcmTC_0a569.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Run Build Command:"/usr/bin/make.exe" "cmTC_e4116/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e4116.dir/build.make CMakeFiles/cmTC_e4116.dir/build]
+  ignore line: [make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.4/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_e4116.exe]
+  ignore line: [/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_e4116.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc    -Wl,--enable-auto-import -v CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o  -o cmTC_e4116.exe -Wl,--out-implib,libcmTC_e4116.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\PROGRA~1\MinGW\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe]
-  ignore line: [Target: x86_64-w64-mingw32]
-  ignore line: [Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell]
-  ignore line: [Thread model: win32]
-  ignore line: [gcc version 6.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/]
-  ignore line: [c:/progra~1/mingw/bin/../libexec/gcc/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a569.exe' '-mtune=haswell' '-march=x86-64']
-  link line: [ c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccOXbhT7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_0a569.exe c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -Lc:/progra~1/mingw/bin/../lib/gcc -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_0a569.dir/objects.a --no-whole-archive --out-implib libcmTC_0a569.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
-    arg [c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe] ==> ignore
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-pc-cygwin]
+  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --enable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4116.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccag4UND.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_e4116.exe /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_e4116.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccOXbhT7.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccag4UND.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lcygwin] ==> ignore
     arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
     arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
     arg [-plugin-opt=-pass-through=-luser32] ==> ignore
     arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/temp/gcc/dest] ==> ignore
+    arg [--build-id] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znwm] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znam] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnwmRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnamRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPvRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPvRKSt9nothrow_t] ==> ignore
     arg [-Bdynamic] ==> ignore
+    arg [--dll-search-prefix=cyg] ==> ignore
+    arg [--tsaware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0a569.exe] ==> ignore
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o] ==> ignore
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc] ==> dir [c:/progra~1/mingw/bin/../lib/gcc]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_0a569.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
+    arg [cmTC_e4116.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..]
+    arg [--enable-auto-import] ==> ignore
+    arg [CMakeFiles/cmTC_e4116.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_0a569.dll.a] ==> ignore
+    arg [libcmTC_e4116.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
     arg [0] ==> ignore
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lcygwin] ==> lib [cygwin]
     arg [-ladvapi32] ==> lib [advapi32]
     arg [-lshell32] ==> lib [shell32]
     arg [-luser32] ==> lib [user32]
     arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o] ==> ignore
-  remove lib [msvcrt]
-  remove lib [msvcrt]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> [C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/6.3.0]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc] ==> [C:/Program Files/MinGW/lib/gcc]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Program Files/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib] ==> [C:/Program Files/MinGW/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Program Files/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> [C:/Program Files/MinGW/lib]
-  implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
-  implicit dirs: [C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/6.3.0;C:/Program Files/MinGW/lib/gcc;C:/Program Files/MinGW/x86_64-w64-mingw32/lib;C:/Program Files/MinGW/lib]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..] ==> [/usr/lib]
+  implicit libs: [gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_fe65b/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_fe65b.dir\build.make CMakeFiles/cmTC_fe65b.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fe65b.dir/feature_tests.c.obj
-C:\PROGRA~1\MinGW\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_fe65b.dir\feature_tests.c.obj   -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_fe65b.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fe65b.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_fe65b.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_fe65b.dir/objects.a @CMakeFiles\cmTC_fe65b.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_fe65b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fe65b.exe -Wl,--out-implib,libcmTC_fe65b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fe65b.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_4e809/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e809.dir/build.make CMakeFiles/cmTC_4e809.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e809.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_4e809.dir/feature_tests.c.o   -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4e809.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_4e809.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_4e809.dir/feature_tests.c.o  -o cmTC_4e809.exe -Wl,--out-implib,libcmTC_4e809.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -196,19 +189,17 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_80e34/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_80e34.dir\build.make CMakeFiles/cmTC_80e34.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_80e34.dir/feature_tests.c.obj
-C:\PROGRA~1\MinGW\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_80e34.dir\feature_tests.c.obj   -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_80e34.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_80e34.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_80e34.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_80e34.dir/objects.a @CMakeFiles\cmTC_80e34.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_80e34.dir/objects.a -Wl,--no-whole-archive  -o cmTC_80e34.exe -Wl,--out-implib,libcmTC_80e34.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_80e34.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_e72b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e72b7.dir/build.make CMakeFiles/cmTC_e72b7.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e72b7.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e72b7.dir/feature_tests.c.o   -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e72b7.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_e72b7.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_e72b7.dir/feature_tests.c.o  -o cmTC_e72b7.exe -Wl,--out-implib,libcmTC_e72b7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -218,19 +209,17 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_6e335/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_6e335.dir\build.make CMakeFiles/cmTC_6e335.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6e335.dir/feature_tests.c.obj
-C:\PROGRA~1\MinGW\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_6e335.dir\feature_tests.c.obj   -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_6e335.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6e335.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6e335.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_6e335.dir/objects.a @CMakeFiles\cmTC_6e335.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_6e335.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6e335.exe -Wl,--out-implib,libcmTC_6e335.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6e335.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_0021c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0021c.dir/build.make CMakeFiles/cmTC_0021c.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0021c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_0021c.dir/feature_tests.c.o   -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0021c.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_0021c.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_0021c.dir/feature_tests.c.o  -o cmTC_0021c.exe -Wl,--out-implib,libcmTC_0021c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -238,168 +227,161 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_7a80b/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7a80b.dir\build.make CMakeFiles/cmTC_7a80b.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7a80b.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTC_7a80b.dir\testCXXCompiler.cxx.obj -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_7a80b.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7a80b.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7a80b.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_7a80b.dir/objects.a @CMakeFiles\cmTC_7a80b.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE      -Wl,--whole-archive CMakeFiles\cmTC_7a80b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7a80b.exe -Wl,--out-implib,libcmTC_7a80b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7a80b.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_d5afe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5afe.dir/build.make CMakeFiles/cmTC_d5afe.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d5afe.dir/testCXXCompiler.cxx.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_d5afe.dir/testCXXCompiler.cxx.o -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d5afe.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_d5afe.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_d5afe.dir/testCXXCompiler.cxx.o  -o cmTC_d5afe.exe -Wl,--out-implib,libcmTC_d5afe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_0261a/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0261a.dir\build.make CMakeFiles/cmTC_0261a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0261a.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTC_0261a.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTC_0261a.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0261a.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0261a.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0261a.dir/objects.a @CMakeFiles\cmTC_0261a.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE     -v -Wl,--whole-archive CMakeFiles\cmTC_0261a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0261a.exe -Wl,--out-implib,libcmTC_0261a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-Using built-in specs.
-COLLECT_GCC=C:\PROGRA~1\MinGW\bin\G__~1.EXE
-COLLECT_LTO_WRAPPER=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe
-Target: x86_64-w64-mingw32
-Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell
-Thread model: win32
-gcc version 6.3.0 (GCC) 
-COMPILER_PATH=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/;c:/progra~1/mingw/bin/../libexec/gcc/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/
-LIBRARY_PATH=c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/;c:/progra~1/mingw/bin/../lib/gcc/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/;c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0261a.exe' '-mtune=haswell' '-march=x86-64'
- c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccFBKTUK.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_0261a.exe c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -Lc:/progra~1/mingw/bin/../lib/gcc -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_0261a.dir/objects.a --no-whole-archive --out-implib libcmTC_0261a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0261a.exe' '-mtune=haswell' '-march=x86-64'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_91a2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91a2f.dir/build.make CMakeFiles/cmTC_91a2f.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.4/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_91a2f.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_91a2f.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_91a2f.exe -Wl,--out-implib,libcmTC_91a2f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe
+Target: x86_64-pc-cygwin
+Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --enable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible
+Thread model: posix
+gcc version 6.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91a2f.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccyX3Ofz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_91a2f.exe /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_91a2f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91a2f.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_0261a/fast"]
-  ignore line: [C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0261a.dir\build.make CMakeFiles/cmTC_0261a.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_0261a.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTC_0261a.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTC_0261a.exe]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0261a.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0261a.dir/objects.a]
-  ignore line: [C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0261a.dir/objects.a @CMakeFiles\cmTC_0261a.dir\objects1.rsp]
-  ignore line: [C:\PROGRA~1\MinGW\bin\G__~1.EXE     -v -Wl,--whole-archive CMakeFiles\cmTC_0261a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0261a.exe -Wl,--out-implib,libcmTC_0261a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Run Build Command:"/usr/bin/make.exe" "cmTC_91a2f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_91a2f.dir/build.make CMakeFiles/cmTC_91a2f.dir/build]
+  ignore line: [make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++.exe     -o CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.4/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_91a2f.exe]
+  ignore line: [/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_91a2f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_91a2f.exe -Wl,--out-implib,libcmTC_91a2f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\PROGRA~1\MinGW\bin\G__~1.EXE]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe]
-  ignore line: [Target: x86_64-w64-mingw32]
-  ignore line: [Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell]
-  ignore line: [Thread model: win32]
-  ignore line: [gcc version 6.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/]
-  ignore line: [c:/progra~1/mingw/bin/../libexec/gcc/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0261a.exe' '-mtune=haswell' '-march=x86-64']
-  link line: [ c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccFBKTUK.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_0261a.exe c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -Lc:/progra~1/mingw/bin/../lib/gcc -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_0261a.dir/objects.a --no-whole-archive --out-implib libcmTC_0261a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
-    arg [c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe] ==> ignore
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-pc-cygwin]
+  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-6.4.0-3.x86_64/src/gcc-6.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --enable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91a2f.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccyX3Ofz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_91a2f.exe /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_91a2f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=c:/progra~1/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\User\AppData\Local\Temp\ccFBKTUK.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/cyglto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccyX3Ofz.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lcygwin] ==> ignore
     arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
     arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
     arg [-plugin-opt=-pass-through=-luser32] ==> ignore
     arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/temp/gcc/dest] ==> ignore
+    arg [--build-id] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znwm] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znam] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnwmRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnamRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPvRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPvRKSt9nothrow_t] ==> ignore
     arg [-Bdynamic] ==> ignore
+    arg [--dll-search-prefix=cyg] ==> ignore
+    arg [--tsaware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0261a.exe] ==> ignore
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o] ==> ignore
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc] ==> dir [c:/progra~1/mingw/bin/../lib/gcc]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib]
-    arg [-Lc:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_0261a.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
+    arg [cmTC_91a2f.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..]
+    arg [--enable-auto-import] ==> ignore
+    arg [CMakeFiles/cmTC_91a2f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_0261a.dll.a] ==> ignore
+    arg [libcmTC_91a2f.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
     arg [0] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lcygwin] ==> lib [cygwin]
     arg [-ladvapi32] ==> lib [advapi32]
     arg [-lshell32] ==> lib [shell32]
     arg [-luser32] ==> lib [user32]
     arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o] ==> ignore
-  remove lib [msvcrt]
-  remove lib [msvcrt]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> [C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/6.3.0]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc] ==> [C:/Program Files/MinGW/lib/gcc]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Program Files/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib] ==> [C:/Program Files/MinGW/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Program Files/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/progra~1/mingw/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> [C:/Program Files/MinGW/lib]
-  implicit libs: [stdc++;mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
-  implicit dirs: [C:/Program Files/MinGW/lib/gcc/x86_64-w64-mingw32/6.3.0;C:/Program Files/MinGW/lib/gcc;C:/Program Files/MinGW/x86_64-w64-mingw32/lib;C:/Program Files/MinGW/lib]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/6.4.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_32b00/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_32b00.dir\build.make CMakeFiles/cmTC_32b00.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_32b00.dir/feature_tests.cxx.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE    -std=c++1z -o CMakeFiles\cmTC_32b00.dir\feature_tests.cxx.obj -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_32b00.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_32b00.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_32b00.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_32b00.dir/objects.a @CMakeFiles\cmTC_32b00.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE      -Wl,--whole-archive CMakeFiles\cmTC_32b00.dir/objects.a -Wl,--no-whole-archive  -o cmTC_32b00.exe -Wl,--out-implib,libcmTC_32b00.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_32b00.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_3a924/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a924.dir/build.make CMakeFiles/cmTC_3a924.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a924.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++1z -o CMakeFiles/cmTC_3a924.dir/feature_tests.cxx.o -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3a924.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_3a924.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_3a924.dir/feature_tests.cxx.o  -o cmTC_3a924.exe -Wl,--out-implib,libcmTC_3a924.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -462,19 +444,17 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_1899c/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1899c.dir\build.make CMakeFiles/cmTC_1899c.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1899c.dir/feature_tests.cxx.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE    -std=c++14 -o CMakeFiles\cmTC_1899c.dir\feature_tests.cxx.obj -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_1899c.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1899c.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_1899c.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_1899c.dir/objects.a @CMakeFiles\cmTC_1899c.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE      -Wl,--whole-archive CMakeFiles\cmTC_1899c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1899c.exe -Wl,--out-implib,libcmTC_1899c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1899c.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_5e502/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e502.dir/build.make CMakeFiles/cmTC_5e502.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e502.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++14 -o CMakeFiles/cmTC_5e502.dir/feature_tests.cxx.o -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5e502.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_5e502.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_5e502.dir/feature_tests.cxx.o  -o cmTC_5e502.exe -Wl,--out-implib,libcmTC_5e502.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -537,19 +517,17 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_53900/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_53900.dir\build.make CMakeFiles/cmTC_53900.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_53900.dir/feature_tests.cxx.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE    -std=c++11 -o CMakeFiles\cmTC_53900.dir\feature_tests.cxx.obj -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_53900.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_53900.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_53900.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_53900.dir/objects.a @CMakeFiles\cmTC_53900.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE      -Wl,--whole-archive CMakeFiles\cmTC_53900.dir/objects.a -Wl,--no-whole-archive  -o cmTC_53900.exe -Wl,--out-implib,libcmTC_53900.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_53900.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_1395f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1395f.dir/build.make CMakeFiles/cmTC_1395f.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1395f.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++11 -o CMakeFiles/cmTC_1395f.dir/feature_tests.cxx.o -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1395f.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_1395f.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_1395f.dir/feature_tests.cxx.o  -o cmTC_1395f.exe -Wl,--out-implib,libcmTC_1395f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -612,19 +590,17 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMach
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~1/MinGW/bin/mingw32-make.exe" "cmTC_ca56d/fast"
-C:/PROGRA~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ca56d.dir\build.make CMakeFiles/cmTC_ca56d.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ca56d.dir/feature_tests.cxx.obj
-C:\PROGRA~1\MinGW\bin\G__~1.EXE    -std=c++98 -o CMakeFiles\cmTC_ca56d.dir\feature_tests.cxx.obj -c C:\Users\User\Documents\GitHub\CoffeMachine\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_ca56d.exe
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ca56d.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ca56d.dir/objects.a
-C:\PROGRA~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_ca56d.dir/objects.a @CMakeFiles\cmTC_ca56d.dir\objects1.rsp
-C:\PROGRA~1\MinGW\bin\G__~1.EXE      -Wl,--whole-archive CMakeFiles\cmTC_ca56d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ca56d.exe -Wl,--out-implib,libcmTC_ca56d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ca56d.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/User/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_078a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_078a2.dir/build.make CMakeFiles/cmTC_078a2.dir/build
+make[1]: Entering directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_078a2.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++98 -o CMakeFiles/cmTC_078a2.dir/feature_tests.cxx.o -c /cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_078a2.exe
+/cygdrive/c/Users/Tema/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_078a2.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_078a2.dir/feature_tests.cxx.o  -o cmTC_078a2.exe -Wl,--out-implib,libcmTC_078a2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
