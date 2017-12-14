@@ -424,6 +424,9 @@ ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
             i = c;
             executionProcessor->stackIN((&i));
             break;
+        case 21:
+            executionProcessor->emit();
+            break;
 
         default:
             return STANDART_COMMAND_NOT_FOUND;

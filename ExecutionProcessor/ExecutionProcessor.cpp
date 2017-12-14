@@ -33,6 +33,15 @@ ERROR_TYPE ExecutionProcessor::stackOut() {
     return SUCCES;
 }
 
+ERROR_TYPE ExecutionProcessor::emit() {
+
+    auto *data = new iWORD;
+    dataProccesor->userStackPop(data);
+
+    printf("%c ", *data);//TODO: add IO processor
+
+    return 0;
+}
 
 ERROR_TYPE ExecutionProcessor::pick() {
 

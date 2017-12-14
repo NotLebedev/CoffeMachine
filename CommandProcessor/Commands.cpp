@@ -34,6 +34,7 @@ const char *CREATE =    "CREATE";
 const char *DOES =      "DOES>";
 
 const char *KEY =       "KEY";
+const char *EMIT =      "EMIT";
 
 const char *HALT =      "HALT";
 
@@ -67,6 +68,7 @@ std::unordered_map<std::string, size_t> commands = {
 
         {CREATE,   18},
         {DOES,     19},
-        {KEY,      20}
+        {KEY,      20},
+        {EMIT,     21}
 
 };
