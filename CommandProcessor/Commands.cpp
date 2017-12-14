@@ -33,6 +33,8 @@ const char *COMPILE =   "COMPILE";
 const char *CREATE =    "CREATE";
 const char *DOES =      "DOES>";
 
+const char *KEY =       "KEY";
+
 const char *HALT =      "HALT";
 
 std::unordered_map<std::string, size_t> commands = {
@@ -64,6 +66,7 @@ std::unordered_map<std::string, size_t> commands = {
         {COMPILE,  17},
 
         {CREATE,   18},
-        {DOES,     19}
+        {DOES,     19},
+        {KEY,      20}
 
 };

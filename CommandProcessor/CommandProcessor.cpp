@@ -372,6 +372,9 @@ void CommandProcessor::store(size_t adr, iWORD *data) {
 
 ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
 
+    char c = ' ';
+    iWORD i = 0;
+
     switch (cmd) {
 
         case 1:
@@ -416,7 +419,11 @@ ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
         case 14:
             executionProcessor->eqaulsZero();
             break;
-
+        case 20:
+            inputProcessor->pop(c);
+            i = c;
+            executionProcessor->stackIN((&i));
+            break;
 
         default:
             return STANDART_COMMAND_NOT_FOUND;
