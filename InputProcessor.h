@@ -21,8 +21,10 @@ public:
 
     ERROR_TYPE pop(std::string &word);
 
+    ERROR_TYPE pop(char &letter);
+
 private:
-    std::queue<std::string> *inputQueue;
+    std::queue<char> *inputQueue;
 
 };
 

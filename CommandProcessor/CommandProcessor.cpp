@@ -417,6 +417,7 @@ ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
             executionProcessor->eqaulsZero();
             break;
 
+
         default:
             return STANDART_COMMAND_NOT_FOUND;
 

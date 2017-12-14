@@ -7,7 +7,7 @@
 
 InputProcessor::InputProcessor() {
 
-    inputQueue = new std::queue<std::string>();
+    inputQueue = new std::queue<char>();
 
 }
 
@@ -19,12 +19,9 @@ InputProcessor::~InputProcessor() {
 
 ERROR_TYPE InputProcessor::push(std::string input) {
 
-    std::istringstream iss(input);
-    std::string command;
+    for(char& c : input) {
 
-    while (std::getline(iss, command, ' ')) {
-
-        inputQueue->push(command);
+        inputQueue->push(c);
 
     }
 
@@ -39,8 +36,36 @@ ERROR_TYPE InputProcessor::pop(std::string &word) {
 
     }
 
-    word = inputQueue->front();
+    word = "";
+
+    while (inputQueue->front() != ' ' && !inputQueue->empty()) {
+
+        word.append(1, inputQueue->front());
+        inputQueue->pop();
+
+    }
+
+    if(!inputQueue->empty()) {
+
+        inputQueue->pop();
+
+    }
+
+    return SUCCES;
+}
+
+ERROR_TYPE InputProcessor::pop(char &letter) {
+
+    if(inputQueue->empty()) {
+
+        return END_OF_INPUT;
+
+    }
+
+    letter = inputQueue->front();
     inputQueue->pop();
 
     return SUCCES;
 }
+
+
