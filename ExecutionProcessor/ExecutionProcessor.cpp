@@ -38,7 +38,7 @@ ERROR_TYPE ExecutionProcessor::emit() {
     auto *data = new iWORD;
     dataProccesor->userStackPop(data);
 
-    printf("%c ", *data);//TODO: add IO processor
+    printf("%c", *data);//TODO: add IO processor
 
     return 0;
 }
