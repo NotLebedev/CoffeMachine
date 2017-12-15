@@ -25,6 +25,8 @@ ERROR_TYPE InputProcessor::push(std::string input) {
 
     }
 
+    inputQueue->push('\n');
+
     return SUCCES;
 }
 
@@ -38,7 +40,7 @@ ERROR_TYPE InputProcessor::pop(std::string &word) {
 
     word = "";
 
-    while (inputQueue->front() != ' ' && !inputQueue->empty()) {
+    while (inputQueue->front() != ' ' && inputQueue->front() != '\n' && !inputQueue->empty()) {
 
         word.append(1, inputQueue->front());
         inputQueue->pop();

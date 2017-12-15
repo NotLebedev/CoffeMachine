@@ -112,7 +112,38 @@
 : DO COMPILE ?BRANCH >MARK ; IMMIDIATE
 : LOOP COMPILE BRANCH SWAP <RESOLVE >RESOLVE ; IMMIDIATE
 
-: CR 10 ;
-: WORD HERE 1 ALLOT SWAP BEGIN KEY DUP 2 PICK <> IF , 0 ELSE DROP 1 THEN UNTIL DROP DUP DUP HERE 1 - SWAP - SWAP ! ;
+10 CONSTANT CR
+32 CONSTANT BL
+KEY " CONSTANT QUOTE
 
-: ( 41 WORD DROP ; ( THIS IS A COMMENT AS YOU CAN SEE )
+: WORD  HERE 1 ALLOT SWAP
+        BEGIN
+            KEY
+            DUP
+            2 PICK
+            <> IF
+                , 0
+            ELSE
+                DROP 1
+            THEN
+        UNTIL
+        DROP DUP DUP HERE 1 - SWAP - SWAP ! ;
+
+: TYPE  DUP IF
+            DUP @
+            OVER + SWAP
+            BEGIN
+
+                1 +
+                DUP @ EMIT
+
+                OVER OVER =
+
+            UNTIL
+        THEN
+        DROP DROP ;
+
+: ( 41 WORD DROP ; IMMIDIATE ( THIS IS A COMMENT AS YOU CAN SEE )
+
+: " QUOTE WORD ; IMMIDIATE
+: ." QUOTE WORD TYPE ;
