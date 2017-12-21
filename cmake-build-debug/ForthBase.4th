@@ -108,6 +108,12 @@
 : CONSTANT CREATE COMPILE LIT , -1 , ;
 : VARIABLE HERE 1 ALLOT CREATE COMPILE LIT , -1 , ;
 
+VARIABLE I
+0 I !
+
+: ++! DUP @ 1 + SWAP ! ;
+: --! DUP @ 1 - SWAP ! ;
+
 : FOR <MARK ; IMMIDIATE
 : DO COMPILE ?BRANCH >MARK ; IMMIDIATE
 : LOOP COMPILE BRANCH SWAP <RESOLVE >RESOLVE ; IMMIDIATE
@@ -130,19 +136,38 @@ KEY " CONSTANT QUOTE
         DROP DUP DUP HERE 1 - SWAP - SWAP ! ;
 
 : TYPE  DUP IF
-        DUP @
-        OVER + SWAP
-        BEGIN
+            DUP @
+            OVER + SWAP
+            BEGIN
 
-            1 +
-            DUP @ EMIT
+                1 +
+                DUP @ EMIT
 
-            OVER OVER =
+                OVER OVER =
 
-        UNTIL
-        THEN DROP DROP ;
+            UNTIL
+        THEN
+        DROP DROP ;
 
 : ( 41 WORD DROP ; IMMIDIATE ( THIS IS A COMMENT AS YOU CAN SEE )
 
 : " QUOTE WORD ; IMMIDIATE
 : ." QUOTE WORD TYPE ;
+
+: SIGN 0< IF 45 EMIT THEN ;
+: DIGIT 10 MOD  48 + ;
+: . DUP SIGN ABS
+        0 I !
+        BEGIN
+            DUP
+            DIGIT
+            SWAP 10 /
+            I ++!
+            DUP 0=
+        UNTIL
+        DROP
+        FOR I @ 0<> DO
+            EMIT
+            I --!
+        LOOP
+        BL EMIT ;

@@ -17,7 +17,6 @@ public:
 
     //Stack commands
     ERROR_TYPE stackIN(iWORD *data);     // Number
-    ERROR_TYPE stackOut();              // .
     ERROR_TYPE emit();                  // EMIT
     ERROR_TYPE pick();                  // PICK
     ERROR_TYPE roll();                  // ROLL

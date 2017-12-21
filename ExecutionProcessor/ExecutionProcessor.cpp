@@ -21,18 +21,6 @@ ERROR_TYPE ExecutionProcessor::stackIN(iWORD *data) {
     return SUCCES;
 }
 
-ERROR_TYPE ExecutionProcessor::stackOut() {
-
-    auto *data = new iWORD;
-    dataProccesor->userStackPop(data);
-
-    printf("%i ", *data);//TODO: add IO processor
-
-    delete data;
-
-    return SUCCES;
-}
-
 ERROR_TYPE ExecutionProcessor::emit() {
 
     auto *data = new iWORD;

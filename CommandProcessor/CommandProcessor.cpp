@@ -383,9 +383,6 @@ ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
         case 2:
             executionProcessor->roll();
             break;
-        case 3:
-            executionProcessor->stackOut();
-            break;
         case 4:
             executionProcessor->add();
             break;

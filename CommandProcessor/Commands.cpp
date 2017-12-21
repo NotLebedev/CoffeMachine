@@ -11,8 +11,6 @@ const char *LITERAL =   "LIT";
 const char *PICK =      "PICK";
 const char *ROLL =      "ROLL";
 
-const char *OUT =       ".";
-
 const char *ADD =       "+";
 const char *MULTIPLY =  "*";
 const char *DIVIDE =    "/";
@@ -44,8 +42,6 @@ std::unordered_map<std::string, size_t> commands = {
 
         {PICK,     1},
         {ROLL,     2},
-
-        {OUT,      3},
 
         {ADD,      4},
         {MULTIPLY, 6},
