@@ -171,3 +171,66 @@ KEY " CONSTANT QUOTE
             I --!
         LOOP
         BL EMIT ;
+
+: STR=  OVER OVER @ SWAP @
+        = IF
+
+            DUP @ I !
+
+            BEGIN
+
+                1 +
+                SWAP
+                1 +
+                I --!
+
+                OVER OVER @ SWAP @ =
+                I @ 0<>
+                AND NOT
+
+            UNTIL
+
+            I @ 0= IF
+
+                -1
+
+            ELSE
+
+                0
+
+            THEN
+
+        ELSE
+
+        0
+
+        THEN
+        SWAP DROP SWAP DROP ;
+
+: FIND  BL WORD
+        CONTEXT @
+        BEGIN
+
+            OVER OVER
+            STR= IF
+
+                SWAP DROP -1
+
+            ELSE
+
+                DUP @ + 2 +
+
+                @ DUP
+                -1 = IF
+
+                    SWAP DROP -1
+
+                ELSE
+
+                    0
+
+                THEN
+
+            THEN
+
+        UNTIL ;
