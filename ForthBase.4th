@@ -255,3 +255,9 @@ VARIABLE DUMPCOUNTER
             DUMPCOUNTER ++!
 
         LOOP ;
+
+: FORGET    FIND
+            DUP @ + 2 +
+            @
+            CONTEXT ! ;
+

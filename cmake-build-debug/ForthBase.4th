@@ -255,3 +255,13 @@ VARIABLE DUMPCOUNTER
             DUMPCOUNTER ++!
 
         LOOP ;
+
+: FORGET    FIND
+            DUP @ + 2 +
+            @
+            CONTEXT ! ;
+
+: FENCE [ CONTEXT ] LITERAL ;
+
+: TEST1 1 . ;
+: TEST2 2 . ;
