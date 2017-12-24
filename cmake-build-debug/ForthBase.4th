@@ -108,9 +108,6 @@
 : CONSTANT CREATE COMPILE LIT , -1 , ;
 : VARIABLE HERE 1 ALLOT CREATE COMPILE LIT , -1 , ;
 
-VARIABLE I
-0 I !
-
 : ++! DUP @ 1 + SWAP ! ;
 : --! DUP @ 1 - SWAP ! ;
 
@@ -122,18 +119,23 @@ VARIABLE I
 32 CONSTANT BL
 KEY " CONSTANT QUOTE
 
-: WORD  HERE 1 ALLOT SWAP
+: WORD  HERE DUP 1 + ROT
         BEGIN
+
             KEY
             DUP
             2 PICK
+
             <> IF
-                , 0
+                2 PICK !
+                SWAP 1 + SWAP
+                0
             ELSE
                 DROP 1
             THEN
         UNTIL
-        DROP DUP DUP HERE 1 - SWAP - SWAP ! ;
+        DROP OVER - 1 - OVER ! ;
+
 
 : TYPE  DUP IF
             DUP @
