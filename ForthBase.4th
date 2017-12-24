@@ -149,30 +149,34 @@ KEY " CONSTANT QUOTE
         THEN
         DROP DROP ;
 
-: ( 41 WORD DROP ; IMMIDIATE ( THIS IS A COMMENT AS YOU CAN SEE )
+: ( 41 WORD DROP ; IMMIDIATE
 
 : " QUOTE WORD ; IMMIDIATE
 : ." QUOTE WORD TYPE ;
 
 : SIGN 0< IF 45 EMIT THEN ;
 : DIGIT 10 MOD  48 + ;
+
+VARIABLE DOTCOUNTER
+
 : . DUP SIGN ABS
-        0 I !
+        0 DOTCOUNTER !
         BEGIN
             DUP
             DIGIT
             SWAP 10 /
-            I ++!
+            DOTCOUNTER ++!
             DUP 0=
         UNTIL
         DROP
-        FOR I @ 0<> DO
+        FOR DOTCOUNTER @ 0<> DO
             EMIT
-            I --!
+            DOTCOUNTER --!
         LOOP
         BL EMIT ;
 
-: STR=  OVER OVER @ SWAP @
+: STR=
+        OVER OVER @ SWAP @
         = IF
 
             DUP @ I !
@@ -234,3 +238,14 @@ KEY " CONSTANT QUOTE
             THEN
 
         UNTIL ;
+
+: DUMP  0 I !
+        FOR DUP I @ > DO
+
+            OVER I @ +
+
+            @ .
+
+            I ++!
+
+        LOOP ;
