@@ -175,26 +175,28 @@ VARIABLE DOTCOUNTER
         LOOP
         BL EMIT ;
 
+VARIABLE STRCOUNTER
+
 : STR=
         OVER OVER @ SWAP @
         = IF
 
-            DUP @ I !
+            DUP @ STRCOUNTER !
 
             BEGIN
 
                 1 +
                 SWAP
                 1 +
-                I --!
+                STRCOUNTER --!
 
                 OVER OVER @ SWAP @ =
-                I @ 0<>
+                STRCOUNTER @ 0<>
                 AND NOT
 
             UNTIL
 
-            I @ 0= IF
+            STRCOUNTER @ 0= IF
 
                 -1
 
@@ -239,13 +241,15 @@ VARIABLE DOTCOUNTER
 
         UNTIL ;
 
-: DUMP  0 I !
-        FOR DUP I @ > DO
+VARIABLE DUMPCOUNTER
 
-            OVER I @ +
+: DUMP  0 DUMPCOUNTER !
+        FOR DUP DUMPCOUNTER @ > DO
+
+            OVER DUMPCOUNTER @ +
 
             @ .
 
-            I ++!
+            DUMPCOUNTER ++!
 
         LOOP ;
