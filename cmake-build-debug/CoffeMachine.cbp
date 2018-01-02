@@ -146,6 +146,9 @@
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ForthLibs/ForthBase.4th">
 			<Option virtualFolder="CMake Files\ForthLibs\"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ForthLibs/Examples.4th">
+			<Option virtualFolder="CMake Files\ForthLibs\"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ForthLibs/libs.xml">
 			<Option virtualFolder="CMake Files\ForthLibs\"/>
 		</Unit>

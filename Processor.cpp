@@ -111,7 +111,7 @@ void Processor::initLibs() {
 
     if(doc.LoadFile("ForthLibs/libs.xml")) {
 
-        printf("Fatal error - LoadFile failed, can not read libs xml config");
+        printf("Fatal error - LoadFile failed, can not read libs xml config\n");
         return;
 
     }
@@ -122,7 +122,10 @@ void Processor::initLibs() {
 
         if(strcmp(child->Value(), "lib") == 0) {
 
-            load(child->GetText());
+            std::string path = "ForthLibs/";
+            path.append(child->GetText());
+
+            load(path.c_str());
 
         }
 
