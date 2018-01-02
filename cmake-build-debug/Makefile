@@ -312,6 +312,33 @@ InputProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.s
 .PHONY : InputProcessor.cpp.s
 
+ModuleSupport/ModulesInterface.o: ModuleSupport/ModulesInterface.cpp.o
+
+.PHONY : ModuleSupport/ModulesInterface.o
+
+# target to build an object file
+ModuleSupport/ModulesInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o
+.PHONY : ModuleSupport/ModulesInterface.cpp.o
+
+ModuleSupport/ModulesInterface.i: ModuleSupport/ModulesInterface.cpp.i
+
+.PHONY : ModuleSupport/ModulesInterface.i
+
+# target to preprocess a source file
+ModuleSupport/ModulesInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.i
+.PHONY : ModuleSupport/ModulesInterface.cpp.i
+
+ModuleSupport/ModulesInterface.s: ModuleSupport/ModulesInterface.cpp.s
+
+.PHONY : ModuleSupport/ModulesInterface.s
+
+# target to generate assembly for a file
+ModuleSupport/ModulesInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.s
+.PHONY : ModuleSupport/ModulesInterface.cpp.s
+
 Processor.o: Processor.cpp.o
 
 .PHONY : Processor.o
@@ -423,6 +450,9 @@ help:
 	@echo "... InputProcessor.o"
 	@echo "... InputProcessor.i"
 	@echo "... InputProcessor.s"
+	@echo "... ModuleSupport/ModulesInterface.o"
+	@echo "... ModuleSupport/ModulesInterface.i"
+	@echo "... ModuleSupport/ModulesInterface.s"
 	@echo "... Processor.o"
 	@echo "... Processor.i"
 	@echo "... Processor.s"

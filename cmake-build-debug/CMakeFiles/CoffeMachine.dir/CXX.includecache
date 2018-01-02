@@ -114,6 +114,12 @@ string
 Globals.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
 
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp
+ModulesInterface.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp
 iostream
 -

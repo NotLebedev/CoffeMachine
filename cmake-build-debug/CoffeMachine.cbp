@@ -125,6 +125,12 @@
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp">
+			<Option target="CoffeMachine"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>

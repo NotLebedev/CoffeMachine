@@ -38,6 +38,9 @@ CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../Globals.h
 CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.cpp
 CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.h
 
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.cpp
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.h
+
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/DataProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/Dictionary.h
