@@ -72,7 +72,9 @@
 : = - 0= ;
 : <> - 0<> ;
 : < - 0< ;
+: <= - 0> NOT ;
 : > - 0> ;
+: >= - 0< NOT ;
 
 : ABS DUP 31 RSHIFT DUP ROT ROT XOR SWAP - ;
 

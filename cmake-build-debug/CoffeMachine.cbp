@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CoffeMachine">
-				<Option output="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CoffeMachine.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CoffeMachine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 CoffeMachine"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 CoffeMachine"/>
+					<CompileFile command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CoffeMachine/fast">
-				<Option output="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/CoffeMachine.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CoffeMachine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,71 +73,71 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 CoffeMachine/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/endearing/Work/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 CoffeMachine/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j2 -f &quot;/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/Globals.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/Processor.h">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/main.cpp">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/main.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ForthBase.4th">
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ForthBase.4th">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
