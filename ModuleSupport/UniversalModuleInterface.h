@@ -19,7 +19,7 @@ public:
 
     virtual ~UniversalModuleInterface();
 
-    ERROR_TYPE executeCommand(std::string command);
+    ERROR_TYPE executeCommand(std::string& command);
 
     ERROR_TYPE getStack(iWORD *data);
 

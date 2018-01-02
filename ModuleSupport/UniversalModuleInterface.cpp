@@ -16,7 +16,14 @@ UniversalModuleInterface::~UniversalModuleInterface() {
 
 }
 
-ERROR_TYPE UniversalModuleInterface::executeCommand(std::string command) {
+ERROR_TYPE UniversalModuleInterface::executeCommand(std::string& command) {
+
+    inputProcessor->stash();
+
+    inputProcessor->push(command);
+    commandProcessor->nextCommand();
+    inputProcessor->unstash();
+
     return 0;
 }
 
