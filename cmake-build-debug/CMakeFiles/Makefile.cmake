@@ -29,7 +29,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/cygdrive/c/Users/leog/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.6/Modules/Platform/UnixPaths.cmake"
   "/cygdrive/c/Users/leog/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.6/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
-  "../ForthBase.4th"
+  "../ForthLibs/ForthBase.4th"
+  "../ForthLibs/libs.xml"
   "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeRCCompiler.cmake"
@@ -44,7 +45,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "ForthBase.4th"
+  "ForthLibs/ForthBase.4th"
+  "ForthLibs/libs.xml"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -1,0 +1,6 @@
+<libraries>
+
+    <lib>ForthBase.4th</lib>
+    <lib>AnotherLib.4th</lib>
+
+</libraries>
