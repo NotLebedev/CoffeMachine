@@ -117,8 +117,30 @@ Globals.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp
 ModulesInterface.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+UniversalModuleInterface.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+string
+-
+../Globals.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
+UniversalModuleInterface.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+string
+-
+../Globals.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+../ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+../InputProcessor.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+../CommandProcessor/CommandProcessor.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp
 iostream
@@ -187,6 +209,8 @@ assert.h
 -
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/main.cpp
+iostream
+-
 Processor.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h
 

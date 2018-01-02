@@ -38,8 +38,26 @@ CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../Globals.h
 CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.cpp
 CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o: ../InputProcessor.h
 
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../CommandProcessor/CommandProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../DataProcessor/Dictionary.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../DataProcessor/Stack.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../InputProcessor.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.cpp
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/UniversalModuleInterface.h
+
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../CommandProcessor/CommandProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../DataProcessor/DataProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../DataProcessor/Dictionary.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../DataProcessor/Stack.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../Globals.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../InputProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../ModuleSupport/UniversalModuleInterface.cpp
+CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o: ../ModuleSupport/UniversalModuleInterface.h
 
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../DataProcessor/DataProcessor.h

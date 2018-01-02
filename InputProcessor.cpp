@@ -70,4 +70,20 @@ ERROR_TYPE InputProcessor::pop(char &letter) {
     return SUCCES;
 }
 
+ERROR_TYPE InputProcessor::stash() {
+
+    store = inputQueue;
+    inputQueue = new std::queue<char>();
+
+    return 0;
+}
+
+ERROR_TYPE InputProcessor::unstash() {
+
+    delete inputQueue;
+    inputQueue = store;
+
+    return 0;
+}
+
 

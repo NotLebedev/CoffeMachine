@@ -23,8 +23,12 @@ public:
 
     ERROR_TYPE pop(char &letter);
 
+    ERROR_TYPE stash();
+    ERROR_TYPE unstash();
+
 private:
     std::queue<char> *inputQueue;
+    std::queue<char> *store;
 
 };
 
