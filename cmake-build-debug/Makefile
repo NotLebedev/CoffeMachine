@@ -339,6 +339,33 @@ ModuleSupport/ModulesInterface.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.s
 .PHONY : ModuleSupport/ModulesInterface.cpp.s
 
+ModuleSupport/UniversalModuleInterface.o: ModuleSupport/UniversalModuleInterface.cpp.o
+
+.PHONY : ModuleSupport/UniversalModuleInterface.o
+
+# target to build an object file
+ModuleSupport/UniversalModuleInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o
+.PHONY : ModuleSupport/UniversalModuleInterface.cpp.o
+
+ModuleSupport/UniversalModuleInterface.i: ModuleSupport/UniversalModuleInterface.cpp.i
+
+.PHONY : ModuleSupport/UniversalModuleInterface.i
+
+# target to preprocess a source file
+ModuleSupport/UniversalModuleInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.i
+.PHONY : ModuleSupport/UniversalModuleInterface.cpp.i
+
+ModuleSupport/UniversalModuleInterface.s: ModuleSupport/UniversalModuleInterface.cpp.s
+
+.PHONY : ModuleSupport/UniversalModuleInterface.s
+
+# target to generate assembly for a file
+ModuleSupport/UniversalModuleInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.s
+.PHONY : ModuleSupport/UniversalModuleInterface.cpp.s
+
 Processor.o: Processor.cpp.o
 
 .PHONY : Processor.o
@@ -453,6 +480,9 @@ help:
 	@echo "... ModuleSupport/ModulesInterface.o"
 	@echo "... ModuleSupport/ModulesInterface.i"
 	@echo "... ModuleSupport/ModulesInterface.s"
+	@echo "... ModuleSupport/UniversalModuleInterface.o"
+	@echo "... ModuleSupport/UniversalModuleInterface.i"
+	@echo "... ModuleSupport/UniversalModuleInterface.s"
 	@echo "... Processor.o"
 	@echo "... Processor.i"
 	@echo "... Processor.s"

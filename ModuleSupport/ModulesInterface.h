@@ -16,6 +16,8 @@ public:
 
     virtual ~ModulesInterface();
 
+    ERROR_TYPE initModules();
+
     ERROR_TYPE findWord(std::string input);
 
     ERROR_TYPE executeWord(std::string input);

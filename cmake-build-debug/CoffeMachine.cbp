@@ -131,6 +131,12 @@
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp">
+			<Option target="CoffeMachine"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>
