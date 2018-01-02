@@ -4,7 +4,13 @@
 
 #include "UniversalModuleInterface.h"
 
-UniversalModuleInterface::UniversalModuleInterface() {}
+UniversalModuleInterface::UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
+
+    executionProcessor = exec;
+    inputProcessor = inpu;
+    commandProcessor = comm;
+
+}
 
 UniversalModuleInterface::~UniversalModuleInterface() {
 

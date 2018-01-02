@@ -8,11 +8,14 @@
 
 #include <string>
 #include "../Globals.h"
+#include "../ExecutionProcessor/ExecutionProcessor.h"
+#include "../InputProcessor.h"
+#include "../CommandProcessor/CommandProcessor.h"
 
 class UniversalModuleInterface {
 
 public:
-    UniversalModuleInterface();
+    UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 
     virtual ~UniversalModuleInterface();
 
@@ -21,6 +24,11 @@ public:
     ERROR_TYPE getStack(iWORD *data);
 
     ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t endAdr);
+
+private:
+    ExecutionProcessor *executionProcessor;
+    InputProcessor *inputProcessor;
+    CommandProcessor *commandProcessor;
 
 };
 
