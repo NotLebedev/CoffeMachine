@@ -17,9 +17,11 @@ public:
 
     virtual ~Processor();
 
+    void initLibs();
+
     void run();
 
-    void load(char *filename);
+    void load(const char *filename);
 
 private:
     CommandProcessor *commandProcessor;

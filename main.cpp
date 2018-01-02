@@ -7,13 +7,7 @@ int main(int argc, char *argv[]) {
 
     auto *processor = new Processor();
 
-    if (argc == 2) {
-
-        printf("Executing file : %s\n", argv[1]);
-
-        processor->load(argv[1]);
-
-    }
+    processor->initLibs();
 
     processor->run();
 

@@ -6,6 +6,7 @@
 #include <windows.h>
 #include <algorithm>
 #include "Processor.h"
+#include "TinyXML2/tinyxml2.h"
 
 Processor::Processor() {
 
@@ -45,7 +46,7 @@ Processor::~Processor() {
 
 }
 
-void Processor::load(char *filename) {
+void Processor::load(const char *filename) {
 
     HANDLE hFile = CreateFile(filename, GENERIC_READ, 0, nullptr, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
 
@@ -101,5 +102,30 @@ void Processor::load(char *filename) {
     inputProcessor->push(dataPtr);
 
     commandProcessor->nextCommand();
+
+}
+
+void Processor::initLibs() {
+
+    tinyxml2::XMLDocument doc;
+
+    if(doc.LoadFile("ForthLibs/libs.xml")) {
+
+        printf("Fatal error - LoadFile failed, can not read libs xml config");
+        return;
+
+    }
+
+    tinyxml2::XMLElement *element = doc.FirstChildElement("libraries");
+
+    for (tinyxml2::XMLElement* child = element->FirstChildElement(); child != nullptr; child = child->NextSiblingElement()) {
+
+        if(strcmp(child->Value(), "lib") == 0) {
+
+            load(child->GetText());
+
+        }
+
+    }
 
 }

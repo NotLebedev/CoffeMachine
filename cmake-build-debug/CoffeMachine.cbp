@@ -131,6 +131,12 @@
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h">
 			<Option target="CoffeMachine"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.cpp">
+			<Option target="CoffeMachine"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.h">
+			<Option target="CoffeMachine"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/main.cpp">
 			<Option target="CoffeMachine"/>
 		</Unit>

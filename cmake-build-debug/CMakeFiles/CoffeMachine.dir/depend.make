@@ -47,6 +47,10 @@ CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Globals.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../InputProcessor.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.cpp
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../Processor.h
+CMakeFiles/CoffeMachine.dir/Processor.cpp.o: ../TinyXML2/tinyxml2.h
+
+CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.o: ../TinyXML2/tinyxml2.cpp
+CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.o: ../TinyXML2/tinyxml2.h
 
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../CommandProcessor/CommandProcessor.h
 CMakeFiles/CoffeMachine.dir/main.cpp.o: ../DataProcessor/DataProcessor.h

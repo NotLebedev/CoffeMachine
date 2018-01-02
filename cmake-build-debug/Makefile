@@ -339,6 +339,33 @@ Processor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/Processor.cpp.s
 .PHONY : Processor.cpp.s
 
+TinyXML2/tinyxml2.o: TinyXML2/tinyxml2.cpp.o
+
+.PHONY : TinyXML2/tinyxml2.o
+
+# target to build an object file
+TinyXML2/tinyxml2.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.o
+.PHONY : TinyXML2/tinyxml2.cpp.o
+
+TinyXML2/tinyxml2.i: TinyXML2/tinyxml2.cpp.i
+
+.PHONY : TinyXML2/tinyxml2.i
+
+# target to preprocess a source file
+TinyXML2/tinyxml2.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.i
+.PHONY : TinyXML2/tinyxml2.cpp.i
+
+TinyXML2/tinyxml2.s: TinyXML2/tinyxml2.cpp.s
+
+.PHONY : TinyXML2/tinyxml2.s
+
+# target to generate assembly for a file
+TinyXML2/tinyxml2.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.s
+.PHONY : TinyXML2/tinyxml2.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -399,6 +426,9 @@ help:
 	@echo "... Processor.o"
 	@echo "... Processor.i"
 	@echo "... Processor.s"
+	@echo "... TinyXML2/tinyxml2.o"
+	@echo "... TinyXML2/tinyxml2.i"
+	@echo "... TinyXML2/tinyxml2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
