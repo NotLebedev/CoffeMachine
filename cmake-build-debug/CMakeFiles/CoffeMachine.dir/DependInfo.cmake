@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/DataProcessor/Stack.cpp.o"
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ExecutionProcessor/ExecutionProcessor.cpp.o"
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o"
+  "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModuleContainer.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ModuleSupport/ModuleContainer.cpp.o"
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o"
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o"
   "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp" "/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug/CMakeFiles/CoffeMachine.dir/Processor.cpp.o"

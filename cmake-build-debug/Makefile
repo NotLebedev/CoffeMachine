@@ -312,6 +312,33 @@ InputProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.s
 .PHONY : InputProcessor.cpp.s
 
+ModuleSupport/ModuleContainer.o: ModuleSupport/ModuleContainer.cpp.o
+
+.PHONY : ModuleSupport/ModuleContainer.o
+
+# target to build an object file
+ModuleSupport/ModuleContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModuleContainer.cpp.o
+.PHONY : ModuleSupport/ModuleContainer.cpp.o
+
+ModuleSupport/ModuleContainer.i: ModuleSupport/ModuleContainer.cpp.i
+
+.PHONY : ModuleSupport/ModuleContainer.i
+
+# target to preprocess a source file
+ModuleSupport/ModuleContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModuleContainer.cpp.i
+.PHONY : ModuleSupport/ModuleContainer.cpp.i
+
+ModuleSupport/ModuleContainer.s: ModuleSupport/ModuleContainer.cpp.s
+
+.PHONY : ModuleSupport/ModuleContainer.s
+
+# target to generate assembly for a file
+ModuleSupport/ModuleContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/CoffeMachine.dir/build.make CMakeFiles/CoffeMachine.dir/ModuleSupport/ModuleContainer.cpp.s
+.PHONY : ModuleSupport/ModuleContainer.cpp.s
+
 ModuleSupport/ModulesInterface.o: ModuleSupport/ModulesInterface.cpp.o
 
 .PHONY : ModuleSupport/ModulesInterface.o
@@ -477,6 +504,9 @@ help:
 	@echo "... InputProcessor.o"
 	@echo "... InputProcessor.i"
 	@echo "... InputProcessor.s"
+	@echo "... ModuleSupport/ModuleContainer.o"
+	@echo "... ModuleSupport/ModuleContainer.i"
+	@echo "... ModuleSupport/ModuleContainer.s"
 	@echo "... ModuleSupport/ModulesInterface.o"
 	@echo "... ModuleSupport/ModulesInterface.i"
 	@echo "... ModuleSupport/ModulesInterface.s"

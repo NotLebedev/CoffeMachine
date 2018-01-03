@@ -86,4 +86,4 @@ VARIABLE C
             THEN ;
 
 
-: TEST 1 . ;
+: TEST 13 . ;

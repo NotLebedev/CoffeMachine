@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CoffeMachine.dir/TinyXML2/tinyxml2.cpp.o"
   "CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o"
   "CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o"
+  "CMakeFiles/CoffeMachine.dir/ModuleSupport/ModuleContainer.cpp.o"
   "CoffeMachine.pdb"
   "CoffeMachine.exe"
   "libCoffeMachine.dll.a"

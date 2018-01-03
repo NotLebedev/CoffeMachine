@@ -7,7 +7,9 @@
 
 
 #include <string>
+#include <unordered_map>
 #include "../Globals.h"
+#include "ModuleContainer.h"
 
 class ModulesInterface {
 
@@ -21,6 +23,10 @@ public:
     ERROR_TYPE findWord(std::string input);
 
     ERROR_TYPE executeWord(std::string input);
+
+private:
+    std::unordered_map<std::string, size_t> *commands;
+    ModuleContainer *modules;
 
 };
 
