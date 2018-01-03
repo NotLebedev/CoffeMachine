@@ -14,7 +14,7 @@
 class ModulesInterface {
 
 public:
-    ModulesInterface();
+    ModulesInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 
     virtual ~ModulesInterface();
 
@@ -27,6 +27,10 @@ public:
 private:
     std::unordered_map<std::string, size_t> *commands;
     ModuleContainer *modules;
+
+    ExecutionProcessor *executionProcessor;
+    InputProcessor *inputProcessor;
+    CommandProcessor *commandProcessor;
 
     ERROR_TYPE getModulePath(std::string *paths, size_t *size);
     UniversalModuleInterface* constructUniversalModulesInterface();

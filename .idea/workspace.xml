@@ -27,8 +27,8 @@
       <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="73" column="15" lean-forward="true" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+            <state relative-caret-position="697">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="96" selection-end-column="13" />
               <folding>
                 <element signature="e#41#70#0" expanded="true" />
               </folding>
@@ -39,8 +39,8 @@
       <file leaf-file-name="ModulesInterface.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="544">
+              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding>
                 <element signature="e#123#140#0" expanded="true" />
               </folding>
@@ -73,8 +73,8 @@
       <file leaf-file-name="UniversalModuleInterface.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="510">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="e#139#156#0" expanded="true" />
               </folding>
@@ -85,8 +85,8 @@
       <file leaf-file-name="UniversalModuleInterface.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -364,12 +364,12 @@
       <workItem from="1514889122062" duration="9767000" />
       <workItem from="1514900712043" duration="1507000" />
       <workItem from="1514906793120" duration="8227000" />
-      <workItem from="1514969026029" duration="5786000" />
+      <workItem from="1514969026029" duration="6043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192826000" />
+    <option name="totallyTimeSpent" value="193083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1040" extended-state="6" />
@@ -733,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CommandProcessor/Commands.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -773,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#139#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModuleContainer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -793,20 +775,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="e#139#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="544">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
             <element signature="e#123#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="73" column="15" lean-forward="true" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        <state relative-caret-position="697">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="96" selection-end-column="13" />
           <folding>
             <element signature="e#41#70#0" expanded="true" />
           </folding>

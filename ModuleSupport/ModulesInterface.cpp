@@ -7,9 +7,13 @@
 #include "ModulesInterface.h"
 #include "UniversalModuleInterface.h"
 
-ModulesInterface::ModulesInterface() {
+ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
 
     commands = new std::unordered_map<std::string, size_t>();
+
+    executionProcessor = exec;
+    inputProcessor = inpu;
+    commandProcessor = comm;
 
 }
 
@@ -94,6 +98,7 @@ ERROR_TYPE ModulesInterface::getModulePath(std::string *paths, size_t *size) {
 }
 
 UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {
-    return nullptr;
+
+    return new UniversalModuleInterface(executionProcessor, inputProcessor, commandProcessor);
 }
 
