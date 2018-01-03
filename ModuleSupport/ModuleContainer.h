@@ -8,9 +8,9 @@
 #include <string>
 #include "UniversalModuleInterface.h"
 
-typedef std::string* (__stdcall *f_init)     (UniversalModuleInterface *universalModuleInterface);
-typedef void         (__stdcall *f_delete)   ();
-typedef void         (__stdcall *f_execWord) (std::string word);
+typedef std::vector<std::string> (__stdcall *f_init)     (UniversalModuleInterface *universalModuleInterface);
+typedef void                     (__stdcall *f_delete)   ();
+typedef void                     (__stdcall *f_execWord) (std::string word);
 
 struct ModuleContainer {
 
