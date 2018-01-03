@@ -28,6 +28,8 @@ private:
     std::unordered_map<std::string, size_t> *commands;
     ModuleContainer *modules;
 
+    ERROR_TYPE getModulePath(std::string *paths, size_t *size);
+
 };
 
 
