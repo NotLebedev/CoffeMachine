@@ -3,6 +3,7 @@
 //
 
 #include <windows.h>
+#include <dirent.h>
 #include "ModulesInterface.h"
 
 ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
@@ -21,31 +22,30 @@ ModulesInterface::~ModulesInterface() {
 
 ERROR_TYPE ModulesInterface::initModules() {
 
-    std::string *path = nullptr;
-    size_t *size = nullptr;
+    auto *path = new std::vector<std::string>();
 
-    if(getModulePath(path, size) != SUCCES) {
+    if(getModulePath(path) != SUCCES) {
 
         return ERROR_LOADING_MODULES;
 
     }
 
-    if(size == nullptr || *size == 0) {
+    if(path->empty()) {
 
         return NO_MODULES_LOADED;
 
     }
 
-    modules = new ModuleContainer[*size];
+    modules = new ModuleContainer[path->size()];
 
     HINSTANCE hGetProcIDDLL;
     f_init initFunction;
     f_delete deleteFunction;
     f_execWord execWordFunction;
 
-    for (int i = 0; i < *size; ++i) {
+    for (int i = 0; i < path->size(); ++i) {
 
-        hGetProcIDDLL = LoadLibrary(path[i].c_str());
+        hGetProcIDDLL = LoadLibrary(path->at((unsigned long)i).c_str());
 
         if (!hGetProcIDDLL) { //TODO: function must skip unloadable libraries and not crash
 
@@ -90,9 +90,42 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
     return 0;
 }
 
-ERROR_TYPE ModulesInterface::getModulePath(std::string *paths, size_t *size) {
+ERROR_TYPE ModulesInterface::getModulePath(std::vector<std::string> *paths) {
+
+    const char* directory = "Modules";
+
+    DIR *dir = opendir(directory);
+
+    struct dirent *entry = readdir(dir);
+
+    while (entry != nullptr) {
+
+        if (entry->d_type == DT_DIR) {
+
+            if(strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0) {
+
+                std::string path = "Modules";
+
+                path.append("\\");
+                path.append(entry->d_name);
+                path.append("\\");
+                path.append(entry->d_name);
+                path.append(".dll");
+
+                paths->push_back(path);
+
+            }
+
+        }
+
+        entry = readdir(dir);
+    }
+
+    closedir(dir);
+
 
     return 0;
+
 }
 
 UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {

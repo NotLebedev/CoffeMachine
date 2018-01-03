@@ -32,7 +32,7 @@ private:
     InputProcessor *inputProcessor;
     CommandProcessor *commandProcessor;
 
-    ERROR_TYPE getModulePath(std::string *paths, size_t *size);
+    ERROR_TYPE getModulePath(std::vector<std::string> *paths);
     UniversalModuleInterface* constructUniversalModulesInterface();
 
 };
