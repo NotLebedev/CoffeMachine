@@ -45,6 +45,7 @@ CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../DataProcess
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ExecutionProcessor/ExecutionProcessor.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../Globals.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../InputProcessor.h
+CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModuleContainer.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.cpp
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/ModulesInterface.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o: ../ModuleSupport/UniversalModuleInterface.h

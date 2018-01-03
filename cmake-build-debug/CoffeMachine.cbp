@@ -5,7 +5,7 @@
 		<Option title="CoffeMachine"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ForthLibs\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ForthLibs\;CMake Files\Modules\;CMake Files\Modules\FMPML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/cmake-build-debug"/>
@@ -166,6 +166,9 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ForthLibs/libs.xml">
 			<Option virtualFolder="CMake Files\ForthLibs\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Modules/FMPML/FMPML.dll">
+			<Option virtualFolder="CMake Files\Modules\FMPML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

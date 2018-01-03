@@ -114,17 +114,27 @@ string
 Globals.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp
-ModulesInterface.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModuleContainer.h
+string
+-
 UniversalModuleInterface.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp
+windows.h
+-
+ModulesInterface.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
 string
 -
+unordered_map
+-
 ../Globals.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+ModuleContainer.h
+/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModuleContainer.h
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
 UniversalModuleInterface.h
@@ -209,6 +219,8 @@ assert.h
 -
 
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/main.cpp
+dirent.h
+-
 Processor.h
 /cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h
 

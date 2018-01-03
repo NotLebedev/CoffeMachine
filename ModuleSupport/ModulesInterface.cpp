@@ -2,10 +2,8 @@
 // Created by leog on 02.01.2018.
 //
 
-#include <w32api/fibersapi.h>
-#include <w32api/winbase.h>
+#include <windows.h>
 #include "ModulesInterface.h"
-#include "UniversalModuleInterface.h"
 
 ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
 
@@ -55,9 +53,9 @@ ERROR_TYPE ModulesInterface::initModules() {
 
         }
 
-        initFunction = (f_init) GetProcAddress(hGetProcIDDLL, ""); //TODO: add proper function descriptor
-        deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "");
-        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "");
+        initFunction = (f_init) GetProcAddress(hGetProcIDDLL, "_Z6f_initP24UniversalModuleInterface");
+        deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "_Z8f_deletev");
+        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "_Z10f_execWordSs");
 
         if (!initFunction || !deleteFunction || !execWordFunction) {
 
