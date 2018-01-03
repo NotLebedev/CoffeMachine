@@ -29,6 +29,7 @@ private:
     ModuleContainer *modules;
 
     ERROR_TYPE getModulePath(std::string *paths, size_t *size);
+    UniversalModuleInterface* constructUniversalModulesInterface();
 
 };
 

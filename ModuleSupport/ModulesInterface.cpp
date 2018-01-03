@@ -45,17 +45,17 @@ ERROR_TYPE ModulesInterface::initModules() {
 
         hGetProcIDDLL = LoadLibrary(path[i].c_str());
 
-        if(!hGetProcIDDLL) { //TODO: function must skip unloadable libraries and not crash
+        if (!hGetProcIDDLL) { //TODO: function must skip unloadable libraries and not crash
 
             return ERROR_LOADING_MODULES;
 
         }
 
-        initFunction = (f_init)GetProcAddress(hGetProcIDDLL, ""); //TODO: add proper function descriptor
-        deleteFunction = (f_delete)GetProcAddress(hGetProcIDDLL, "");
-        execWordFunction = (f_execWord)GetProcAddress(hGetProcIDDLL, "");
+        initFunction = (f_init) GetProcAddress(hGetProcIDDLL, ""); //TODO: add proper function descriptor
+        deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "");
+        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "");
 
-        if(!initFunction || !deleteFunction || !execWordFunction) {
+        if (!initFunction || !deleteFunction || !execWordFunction) {
 
             return ERROR_LOADING_MODULES;
 
@@ -64,6 +64,16 @@ ERROR_TYPE ModulesInterface::initModules() {
         modules[i].initFunction = initFunction;
         modules[i].deleteFunction = deleteFunction;
         modules[i].execWordFunction = execWordFunction;
+
+        std::vector<std::string> words = modules[i].initFunction(constructUniversalModulesInterface());
+
+        for (auto &word : words) {
+
+            std::pair<std::string, size_t> pair(word, i);
+
+            commands->insert(pair);
+
+        }
 
     }
 
@@ -81,5 +91,9 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
 ERROR_TYPE ModulesInterface::getModulePath(std::string *paths, size_t *size) {
 
     return 0;
+}
+
+UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {
+    return nullptr;
 }
 
