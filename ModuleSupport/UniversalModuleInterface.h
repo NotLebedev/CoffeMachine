@@ -15,15 +15,16 @@
 class UniversalModuleInterface {
 
 public:
+
+    virtual ERROR_TYPE executeCommand(std::string& command);
+
+    virtual ERROR_TYPE getStack(iWORD *data);
+
+    virtual ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t endAdr);
+
     UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 
     virtual ~UniversalModuleInterface();
-
-    ERROR_TYPE executeCommand(std::string& command);
-
-    ERROR_TYPE getStack(iWORD *data);
-
-    ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t endAdr);
 
 private:
     ExecutionProcessor *executionProcessor;

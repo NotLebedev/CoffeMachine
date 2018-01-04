@@ -12,9 +12,7 @@ UniversalModuleInterface::UniversalModuleInterface(ExecutionProcessor *exec, Inp
 
 }
 
-UniversalModuleInterface::~UniversalModuleInterface() {
-
-}
+UniversalModuleInterface::~UniversalModuleInterface() = default;
 
 ERROR_TYPE UniversalModuleInterface::executeCommand(std::string& command) {
 
