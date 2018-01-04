@@ -18,6 +18,8 @@ Processor::Processor() {
 
     commandProcessor = new CommandProcessor(executionProcessor, inputProcessor, halt);
 
+    modulesInterface = new ModulesInterface(executionProcessor, inputProcessor, commandProcessor);
+
 }
 
 void Processor::run() {
@@ -130,5 +132,11 @@ void Processor::initLibs() {
         }
 
     }
+
+}
+
+void Processor::initModules() {
+
+    modulesInterface->initModules();
 
 }

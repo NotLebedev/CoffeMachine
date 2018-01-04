@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.cpp
 CommandProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 Commands.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
 iostream
 -
 algorithm
@@ -18,19 +18,19 @@ algorithm
 sstream
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 cstdint
 -
 string
 -
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 ../ExecutionProcessor/ExecutionProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 ../InputProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
 cstddef
 -
 string
@@ -38,7 +38,7 @@ string
 unordered_map
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/Commands.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.h
 cstddef
 -
 string
@@ -46,115 +46,115 @@ string
 unordered_map
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.cpp
 DataProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 Stack.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 Dictionary.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.cpp
 Dictionary.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
 cstring
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Dictionary.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
 cstdint
 -
 cstddef
 -
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.cpp
 Stack.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 cstring
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/Stack.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
 cstddef
 -
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.cpp
 cstdio
 -
 ExecutionProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 ../DataProcessor/DataProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 cstdint
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp
 sstream
 -
 InputProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 queue
 -
 string
 -
 Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModuleContainer.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
 string
 -
 UniversalModuleInterface.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.cpp
 windows.h
 -
 dirent.h
 -
 ModulesInterface.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModulesInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
 string
 -
 unordered_map
 -
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 ModuleContainer.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/ModuleContainer.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
 UniversalModuleInterface.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 string
 -
 ../Globals.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Globals.h
+/cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 ../ExecutionProcessor/ExecutionProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 ../InputProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 ../CommandProcessor/CommandProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
 iostream
 -
 windows.h
@@ -162,23 +162,25 @@ windows.h
 algorithm
 -
 Processor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
 TinyXML2/tinyxml2.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.h
+/cygdrive/d/endearing/Work/CoffeMachine/TinyXML2/tinyxml2.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
 DataProcessor/DataProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/DataProcessor/DataProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
 CommandProcessor/CommandProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 ExecutionProcessor/ExecutionProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 InputProcessor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/InputProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
+ModuleSupport/ModulesInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.cpp
+/cygdrive/d/endearing/Work/CoffeMachine/TinyXML2/tinyxml2.cpp
 tinyxml2.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.h
+/cygdrive/d/endearing/Work/CoffeMachine/TinyXML2/tinyxml2.h
 new
 -
 stddef.h
@@ -190,7 +192,7 @@ cstddef
 cstdarg
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/TinyXML2/tinyxml2.h
+/cygdrive/d/endearing/Work/CoffeMachine/TinyXML2/tinyxml2.h
 ctype.h
 -
 limits.h
@@ -220,11 +222,7 @@ android/log.h
 assert.h
 -
 
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/main.cpp
-dirent.h
--
-cstring
--
+/cygdrive/d/endearing/Work/CoffeMachine/main.cpp
 Processor.h
-/cygdrive/c/Users/leog/Documents/GitHub/CoffeMachine/Processor.h
+/cygdrive/d/endearing/Work/CoffeMachine/Processor.h
 

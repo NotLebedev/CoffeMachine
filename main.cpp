@@ -9,6 +9,8 @@ int main(int argc, char *argv[]) {
 
     processor->initLibs();
 
+    processor->initModules();
+
     processor->run();
 
     delete processor;

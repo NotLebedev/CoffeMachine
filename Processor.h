@@ -9,6 +9,7 @@
 #include "CommandProcessor/CommandProcessor.h"
 #include "ExecutionProcessor/ExecutionProcessor.h"
 #include "InputProcessor.h"
+#include "ModuleSupport/ModulesInterface.h"
 
 class Processor {
 
@@ -19,6 +20,8 @@ public:
 
     void initLibs();
 
+    void initModules();
+
     void run();
 
     void load(const char *filename);
@@ -27,6 +30,7 @@ private:
     CommandProcessor *commandProcessor;
     ExecutionProcessor *executionProcessor;
     InputProcessor *inputProcessor;
+    ModulesInterface *modulesInterface;
 
     bool *halt;
 
