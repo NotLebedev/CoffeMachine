@@ -10,6 +10,7 @@
 #include <unordered_map>
 #include "../Globals.h"
 #include "ModuleContainer.h"
+#include "../CommandProcessor/CommandProcessor.h"
 
 class CommandProcessor;
 
@@ -36,6 +37,7 @@ private:
 
     ERROR_TYPE getModulePath(std::vector<std::string> *paths);
     UniversalModuleInterface* constructUniversalModulesInterface();
+    ERROR_TYPE executeCommand(std::string& command);
 
 };
 

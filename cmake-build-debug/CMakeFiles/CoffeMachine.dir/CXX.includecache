@@ -139,6 +139,8 @@ unordered_map
 /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
 ModuleContainer.h
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
+../CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
 UniversalModuleInterface.h

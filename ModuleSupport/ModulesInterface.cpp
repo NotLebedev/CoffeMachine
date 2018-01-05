@@ -71,9 +71,13 @@ ERROR_TYPE ModulesInterface::initModules() {
 
         for (auto &word : words) {
 
-            std::pair<std::string, size_t> pair(word, i);
+            std::pair<std::string, size_t> pair(word, (const size_t &)(i));
 
             commands->insert(pair);
+
+            std::string command = "ADDMODULE ";
+            command.append(word);
+            executeCommand(command);
 
         }
 
@@ -87,6 +91,15 @@ ERROR_TYPE ModulesInterface::findWord(std::string input) {
 }
 
 ERROR_TYPE ModulesInterface::executeWord(std::string input) {
+
+    auto got = commands->find(input);
+
+    if(got._M_cur) {
+
+        modules[got->second].execWordFunction(input);
+
+    }
+
     return 0;
 }
 
@@ -131,5 +144,16 @@ ERROR_TYPE ModulesInterface::getModulePath(std::vector<std::string> *paths) {
 UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {
 
     return new UniversalModuleInterface(executionProcessor, inputProcessor, commandProcessor);
+}
+
+ERROR_TYPE ModulesInterface::executeCommand(std::string& command) {
+
+    inputProcessor->stash();
+
+    inputProcessor->push(command);
+    commandProcessor->nextCommand();
+    inputProcessor->unstash();
+
+    return 0;
 }
 

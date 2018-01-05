@@ -12,6 +12,8 @@
 #include "../InputProcessor.h"
 #include "../ModuleSupport/ModulesInterface.h"
 
+class ModulesInterface;
+
 class CommandProcessor {
 
 public:

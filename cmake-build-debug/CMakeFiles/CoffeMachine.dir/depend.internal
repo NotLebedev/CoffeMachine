@@ -42,6 +42,7 @@ CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o
+ /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
