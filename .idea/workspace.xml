@@ -12,18 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b69feb-2d79-4eca-92c1-1c692dff75d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CommandProcessor/CommandProcessor.cpp" afterPath="$PROJECT_DIR$/CommandProcessor/CommandProcessor.cpp" />
-      <change beforePath="$PROJECT_DIR$/CommandProcessor/CommandProcessor.h" afterPath="$PROJECT_DIR$/CommandProcessor/CommandProcessor.h" />
       <change beforePath="$PROJECT_DIR$/ForthLibs/Examples.4th" afterPath="$PROJECT_DIR$/ForthLibs/Examples.4th" />
+      <change beforePath="$PROJECT_DIR$/ForthLibs/ForthBase.4th" afterPath="$PROJECT_DIR$/ForthLibs/ForthBase.4th" />
       <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" afterPath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" />
-      <change beforePath="$PROJECT_DIR$/Processor.cpp" afterPath="$PROJECT_DIR$/Processor.cpp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoffeMachine.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -62,11 +53,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForthBase.4th" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ForthLibs/ForthBase.4th">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="282" column="23" lean-forward="true" selection-start-line="282" selection-start-column="23" selection-end-line="282" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Examples.4th" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ForthLibs/Examples.4th">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="90" column="47" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -131,7 +142,6 @@
         <option value="$PROJECT_DIR$/DataProcessor/Dictionary.cpp" />
         <option value="$PROJECT_DIR$/ForthBase.4th" />
         <option value="$PROJECT_DIR$/cmake-build-debug/ForthLibs/libs.xml" />
-        <option value="$PROJECT_DIR$/ForthLibs/ForthBase.4th" />
         <option value="$PROJECT_DIR$/InputProcessor.h" />
         <option value="$PROJECT_DIR$/InputProcessor.cpp" />
         <option value="$PROJECT_DIR$/Resources/ForthLibs/Examples.4th" />
@@ -151,6 +161,7 @@
         <option value="$PROJECT_DIR$/Processor.cpp" />
         <option value="$PROJECT_DIR$/CommandProcessor/CommandProcessor.cpp" />
         <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
+        <option value="$PROJECT_DIR$/ForthLibs/ForthBase.4th" />
       </list>
     </option>
   </component>
@@ -378,15 +389,16 @@
       <workItem from="1514969026029" duration="9998000" />
       <workItem from="1515055585379" duration="5716000" />
       <workItem from="1515077606973" duration="596000" />
-      <workItem from="1515083213450" duration="3753000" />
+      <workItem from="1515083213450" duration="4120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207103000" />
+    <option name="totallyTimeSpent" value="207470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20125" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -398,7 +410,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39849624" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39849624" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -713,22 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ForthLibs/ForthBase.4th">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ForthLibs/Examples.4th">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModuleContainer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -798,8 +794,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ForthLibs/Examples.4th">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="90" column="47" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ForthLibs/ForthBase.4th">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="282" column="23" lean-forward="true" selection-start-line="282" selection-start-column="23" selection-end-line="282" selection-end-column="23" />
           <folding />
         </state>
       </provider>
