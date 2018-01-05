@@ -119,6 +119,8 @@ Globals.h
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
 string
 -
+w32api/fibersapi.h
+-
 UniversalModuleInterface.h
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 

@@ -46,6 +46,8 @@ Processor::~Processor() {
 
     delete executionProcessor;
     delete commandProcessor;
+    delete inputProcessor;
+    delete modulesInterface;
     delete halt;
 
 }

@@ -18,6 +18,16 @@ ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inp
 
 ModulesInterface::~ModulesInterface() {
 
+    for (int i = 0; i < modulesSize; i++) {
+
+        modules[i].deleteFunction();
+        FreeLibrary(modules[i].hProcIDDLL);
+
+    }
+
+    delete commands;
+    delete modules;
+
 }
 
 ERROR_TYPE ModulesInterface::initModules() {
@@ -36,14 +46,15 @@ ERROR_TYPE ModulesInterface::initModules() {
 
     }
 
-    modules = new ModuleContainer[path->size()];
+    modulesSize = path->size();
+    modules = new ModuleContainer[modulesSize];
 
     HINSTANCE hGetProcIDDLL;
     f_init initFunction;
     f_delete deleteFunction;
     f_execWord execWordFunction;
 
-    for (int i = 0; i < path->size(); ++i) {
+    for (int i = 0; i < modulesSize; ++i) {
 
         hGetProcIDDLL = LoadLibrary(path->at((unsigned long)i).c_str());
 
@@ -62,6 +73,8 @@ ERROR_TYPE ModulesInterface::initModules() {
             return ERROR_LOADING_MODULES;
 
         }
+
+        modules[i].hProcIDDLL = hGetProcIDDLL;
 
         modules[i].initFunction = initFunction;
         modules[i].deleteFunction = deleteFunction;
@@ -82,6 +95,8 @@ ERROR_TYPE ModulesInterface::initModules() {
         }
 
     }
+
+    delete path;
 
     return SUCCES;
 }

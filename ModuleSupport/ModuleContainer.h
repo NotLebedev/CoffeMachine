@@ -6,6 +6,7 @@
 #define COFFEMACHINE_MODULECONTAINER_H
 
 #include <string>
+#include <w32api/fibersapi.h>
 #include "UniversalModuleInterface.h"
 
 typedef std::vector<std::string> (__stdcall *f_init)     (UniversalModuleInterface *universalModuleInterface);
@@ -14,10 +15,11 @@ typedef void                     (__stdcall *f_execWord) (std::string word);
 
 struct ModuleContainer {
 
+    HINSTANCE hProcIDDLL;
+
     f_init initFunction;
     f_delete deleteFunction;
     f_execWord execWordFunction;
-
 
 };
 

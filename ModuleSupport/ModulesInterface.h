@@ -30,6 +30,7 @@ public:
 private:
     std::unordered_map<std::string, size_t> *commands;
     ModuleContainer *modules;
+    size_t modulesSize;
 
     ExecutionProcessor *executionProcessor;
     InputProcessor *inputProcessor;
