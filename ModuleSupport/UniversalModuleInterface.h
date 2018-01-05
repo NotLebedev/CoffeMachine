@@ -17,7 +17,7 @@ class UniversalModuleInterface {
 
 public:
 
-    virtual ERROR_TYPE executeCommand(std::string& command);
+    virtual ERROR_TYPE executeCommand(std::string command);
 
     virtual ERROR_TYPE getStack(iWORD *data);
 
@@ -26,6 +26,10 @@ public:
     virtual ERROR_TYPE setStack(iWORD *data);
 
     virtual ERROR_TYPE setDictionary(iWORD *data, size_t startAdr, size_t size);
+
+    virtual ERROR_TYPE getInput(std::string *word);
+
+    virtual ERROR_TYPE getInput(char *letter);
 
     UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 

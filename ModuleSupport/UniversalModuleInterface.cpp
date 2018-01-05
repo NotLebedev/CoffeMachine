@@ -15,7 +15,7 @@ UniversalModuleInterface::UniversalModuleInterface(ExecutionProcessor *exec, Inp
 
 UniversalModuleInterface::~UniversalModuleInterface() = default;
 
-ERROR_TYPE UniversalModuleInterface::executeCommand(std::string& command) {
+ERROR_TYPE UniversalModuleInterface::executeCommand(std::string command) {
 
     inputProcessor->stash();
 
@@ -68,6 +68,20 @@ ERROR_TYPE UniversalModuleInterface::setDictionary(iWORD *data, size_t startAdr,
         executionProcessor->store();
 
     }
+
+    return 0;
+}
+
+ERROR_TYPE UniversalModuleInterface::getInput(std::string *word) {
+
+    inputProcessor->pop(*word);
+
+    return 0;
+}
+
+ERROR_TYPE UniversalModuleInterface::getInput(char *letter) {
+
+    inputProcessor->pop(*letter);
 
     return 0;
 }
