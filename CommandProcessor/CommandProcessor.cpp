@@ -325,6 +325,24 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                     break;
 
+                } else if (*command == 22) {
+
+                    dictionaryPtr++; // MODULE command
+                    fetch(dictionaryPtr, tmp); // Get modue name which adr is stored next
+
+                    fetch((size_t)*tmp, top);
+
+                    *tmp += 1;
+
+                    std::string str;
+
+                    for(int i = 0; i < *top; ++i) {
+
+                        fetch((size_t)(*tmp + i), command);
+                        str.push_back(*((char*)(command)));
+
+                    }
+
                 } else {
 
                     executeWord((size_t) *command);
@@ -345,6 +363,7 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
     delete command;
     delete tmp;
+    delete top;
 
     return SUCCES;
 }

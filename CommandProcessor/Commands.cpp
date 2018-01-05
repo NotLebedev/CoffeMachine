@@ -34,6 +34,8 @@ const char *DOES =      "DOES>";
 const char *KEY =       "KEY";
 const char *EMIT =      "EMIT";
 
+const char *MODULE =    "MODULE";
+
 const char *HALT =      "HALT";
 
 std::unordered_map<std::string, size_t> commands = {
@@ -65,6 +67,8 @@ std::unordered_map<std::string, size_t> commands = {
         {CREATE,   18},
         {DOES,     19},
         {KEY,      20},
-        {EMIT,     21}
+        {EMIT,     21},
+
+        {MODULE,   22}
 
 };
