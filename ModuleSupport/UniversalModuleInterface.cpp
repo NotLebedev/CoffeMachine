@@ -33,15 +33,39 @@ ERROR_TYPE UniversalModuleInterface::getStack(iWORD *data) {
     return 0;
 }
 
-ERROR_TYPE UniversalModuleInterface::getDictionary(iWORD *data, size_t startAdr, size_t endAdr) {
+ERROR_TYPE UniversalModuleInterface::getDictionary(iWORD *data, size_t startAdr, size_t size) {
 
-    data = new iWORD[endAdr - startAdr + 1];
+    data = new iWORD[size];
 
-    for (int i = (int)(startAdr); i < endAdr + 1; ++i) {
+    for (int i = 0; i < size; ++i) {
 
-        executionProcessor->stackIN(&i);
+        auto t = iWORD(startAdr + i);
+
+        executionProcessor->stackIN(&t);
         executionProcessor->fetch();
         executionProcessor->stackOut(&data[i - startAdr]);
+
+    }
+
+    return 0;
+}
+
+ERROR_TYPE UniversalModuleInterface::setStack(iWORD *data) {
+
+    executionProcessor->stackIN(data);
+
+    return 0;
+}
+
+ERROR_TYPE UniversalModuleInterface::setDictionary(iWORD *data, size_t startAdr, size_t size) {
+
+    for (int i = 0; i < size; ++i) {
+
+        auto t = iWORD(startAdr + i);
+
+        executionProcessor->stackIN(&data[i]);
+        executionProcessor->stackIN(&t);
+        executionProcessor->store();
 
     }
 

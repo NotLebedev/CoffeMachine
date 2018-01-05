@@ -21,7 +21,11 @@ public:
 
     virtual ERROR_TYPE getStack(iWORD *data);
 
-    virtual ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t endAdr);
+    virtual ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t size);
+
+    virtual ERROR_TYPE setStack(iWORD *data);
+
+    virtual ERROR_TYPE setDictionary(iWORD *data, size_t startAdr, size_t size);
 
     UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 

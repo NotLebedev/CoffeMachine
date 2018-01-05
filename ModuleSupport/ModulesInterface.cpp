@@ -101,10 +101,6 @@ ERROR_TYPE ModulesInterface::initModules() {
     return SUCCES;
 }
 
-ERROR_TYPE ModulesInterface::findWord(std::string input) {
-    return 0;
-}
-
 ERROR_TYPE ModulesInterface::executeWord(std::string input) {
 
     auto got = commands->find(input);
