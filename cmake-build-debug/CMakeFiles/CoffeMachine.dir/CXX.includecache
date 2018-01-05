@@ -29,6 +29,8 @@ string
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 ../InputProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
+../ModuleSupport/ModulesInterface.h
+/cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
 cstddef
@@ -141,6 +143,8 @@ ModuleContainer.h
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
 UniversalModuleInterface.h
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
+../CommandProcessor/CommandProcessor.h
+/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 string
@@ -151,8 +155,6 @@ string
 /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
 ../InputProcessor.h
 /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
-../CommandProcessor/CommandProcessor.h
-/cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
 
 /cygdrive/d/endearing/Work/CoffeMachine/Processor.cpp
 iostream

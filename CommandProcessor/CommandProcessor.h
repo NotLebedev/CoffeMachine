@@ -10,6 +10,7 @@
 #include "../Globals.h"
 #include "../ExecutionProcessor/ExecutionProcessor.h"
 #include "../InputProcessor.h"
+#include "../ModuleSupport/ModulesInterface.h"
 
 class CommandProcessor {
 
@@ -17,6 +18,8 @@ public:
     CommandProcessor(ExecutionProcessor *exec, InputProcessor *inputProcessor, bool *flags);
 
     virtual ~CommandProcessor();
+
+    void setModulesInterface(ModulesInterface *modulesInterface);
 
     ERROR_TYPE nextCommand();
 
@@ -35,6 +38,7 @@ private:
 
     ExecutionProcessor *executionProcessor;
     InputProcessor *inputProcessor;
+    ModulesInterface *modulesInterface;
     bool *flags; //Flag 0 - halt
 
 };

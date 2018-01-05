@@ -343,6 +343,8 @@ ERROR_TYPE CommandProcessor::executeWord(size_t dictionaryPtr) {
 
                     }
 
+                    modulesInterface->executeWord(str);
+
                 } else {
 
                     executeWord((size_t) *command);
@@ -450,6 +452,10 @@ ERROR_TYPE CommandProcessor::executeStandart(size_t cmd) {
     }
 
     return SUCCES;
+}
+
+void CommandProcessor::setModulesInterface(ModulesInterface *modulesInterface) {
+    this->modulesInterface = modulesInterface;
 }
 
 CommandProcessor::~CommandProcessor() = default;

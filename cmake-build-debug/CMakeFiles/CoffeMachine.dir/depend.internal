@@ -11,6 +11,9 @@ CMakeFiles/CoffeMachine.dir/CommandProcessor/CommandProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 CMakeFiles/CoffeMachine.dir/CommandProcessor/Commands.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/Commands.cpp
 CMakeFiles/CoffeMachine.dir/DataProcessor/DataProcessor.cpp.o
@@ -39,7 +42,6 @@ CMakeFiles/CoffeMachine.dir/InputProcessor.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
 CMakeFiles/CoffeMachine.dir/ModuleSupport/ModulesInterface.cpp.o
- /cygdrive/d/endearing/Work/CoffeMachine/CommandProcessor/CommandProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/DataProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Dictionary.h
  /cygdrive/d/endearing/Work/CoffeMachine/DataProcessor/Stack.h
@@ -58,6 +60,8 @@ CMakeFiles/CoffeMachine.dir/ModuleSupport/UniversalModuleInterface.cpp.o
  /cygdrive/d/endearing/Work/CoffeMachine/ExecutionProcessor/ExecutionProcessor.h
  /cygdrive/d/endearing/Work/CoffeMachine/Globals.h
  /cygdrive/d/endearing/Work/CoffeMachine/InputProcessor.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModuleContainer.h
+ /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/ModulesInterface.h
  /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.cpp
  /cygdrive/d/endearing/Work/CoffeMachine/ModuleSupport/UniversalModuleInterface.h
 CMakeFiles/CoffeMachine.dir/Processor.cpp.o

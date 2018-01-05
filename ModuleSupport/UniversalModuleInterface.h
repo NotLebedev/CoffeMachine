@@ -10,7 +10,8 @@
 #include "../Globals.h"
 #include "../ExecutionProcessor/ExecutionProcessor.h"
 #include "../InputProcessor.h"
-#include "../CommandProcessor/CommandProcessor.h"
+
+class CommandProcessor;
 
 class UniversalModuleInterface {
 

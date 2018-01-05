@@ -20,6 +20,8 @@ Processor::Processor() {
 
     modulesInterface = new ModulesInterface(executionProcessor, inputProcessor, commandProcessor);
 
+    commandProcessor->setModulesInterface(modulesInterface);
+
 }
 
 void Processor::run() {

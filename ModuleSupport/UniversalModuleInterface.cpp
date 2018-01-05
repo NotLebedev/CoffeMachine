@@ -3,6 +3,7 @@
 //
 
 #include "UniversalModuleInterface.h"
+#include "../CommandProcessor/CommandProcessor.h"
 
 UniversalModuleInterface::UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
 

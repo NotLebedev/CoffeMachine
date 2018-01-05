@@ -11,6 +11,8 @@
 #include "../Globals.h"
 #include "ModuleContainer.h"
 
+class CommandProcessor;
+
 class ModulesInterface {
 
 public:
