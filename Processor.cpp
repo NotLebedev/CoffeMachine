@@ -111,7 +111,7 @@ void Processor::load(const char *filename) {
 
 }
 
-void Processor::initLibs() {
+void Processor::initModules() {
 
     tinyxml2::XMLDocument doc;
 

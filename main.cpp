@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 
     auto *processor = new Processor();
 
-    processor->initLibs();
+    processor->initModules();
 
     processor->run();
 

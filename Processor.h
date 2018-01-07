@@ -18,7 +18,7 @@ public:
 
     virtual ~Processor();
 
-    void initLibs();
+    void initModules();
 
     void run();
 
