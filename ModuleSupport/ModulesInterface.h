@@ -29,8 +29,7 @@ public:
 
 private:
     std::unordered_map<std::string, size_t> *commands;
-    ModuleContainer *modules;
-    size_t modulesSize;
+    std::vector<ModuleContainer> *modules;
 
     ExecutionProcessor *executionProcessor;
     InputProcessor *inputProcessor;

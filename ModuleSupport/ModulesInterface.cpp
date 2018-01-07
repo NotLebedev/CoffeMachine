@@ -18,10 +18,10 @@ ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inp
 
 ModulesInterface::~ModulesInterface() {
 
-    for (int i = 0; i < modulesSize; i++) {
+    for (int i = 0; i < modules->size(); i++) {
 
-        modules[i].deleteFunction();
-        FreeLibrary(modules[i].hProcIDDLL);
+        modules->at(i).deleteFunction();
+        FreeLibrary(modules->at(i).hProcIDDLL);
 
     }
 
@@ -46,10 +46,9 @@ ERROR_TYPE ModulesInterface::initModules() {
 
     }
 
-    modulesSize = path->size();
-    modules = new ModuleContainer[modulesSize];
+    modules = new std::vector<ModuleContainer>;
 
-    for (int i = 0; i < modulesSize; ++i) {
+    for (int i = 0; i < path->size(); ++i) {
 
         initModule(path->at(i), i);
 
@@ -85,13 +84,17 @@ ERROR_TYPE ModulesInterface::initModule(std::string path, size_t idx) {
 
     }
 
-    modules[idx].hProcIDDLL = hGetProcIDDLL;
+    ModuleContainer module{};
 
-    modules[idx].initFunction = initFunction;
-    modules[idx].deleteFunction = deleteFunction;
-    modules[idx].execWordFunction = execWordFunction;
+    module.hProcIDDLL = hGetProcIDDLL;
 
-    std::vector<std::string> words = modules[idx].initFunction(constructUniversalModulesInterface());
+    module.initFunction = initFunction;
+    module.deleteFunction = deleteFunction;
+    module.execWordFunction = execWordFunction;
+
+    std::vector<std::string> words = module.initFunction(constructUniversalModulesInterface());
+
+    modules->push_back(module);
 
     for (auto &word : words) {
 
@@ -113,7 +116,7 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
 
     if(got._M_cur) {
 
-        modules[got->second].execWordFunction(const_cast<char *>(input.c_str()));
+        modules->at(got->second).execWordFunction(const_cast<char *>(input.c_str()));
 
     }
 
