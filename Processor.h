@@ -20,8 +20,6 @@ public:
 
     void initLibs();
 
-    void initModules();
-
     void run();
 
     void load(const char *filename);

@@ -21,8 +21,6 @@ public:
 
     virtual ~ModulesInterface();
 
-    ERROR_TYPE initModules();
-
     ERROR_TYPE initModule(std::string path);
 
     ERROR_TYPE executeWord(std::string input);
@@ -35,7 +33,6 @@ private:
     InputProcessor *inputProcessor;
     CommandProcessor *commandProcessor;
 
-    ERROR_TYPE getModulePath(std::vector<std::string> *paths);
     UniversalModuleInterface* constructUniversalModulesInterface();
     ERROR_TYPE executeCommand(std::string& command);
 

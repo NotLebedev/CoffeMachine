@@ -31,35 +31,6 @@ ModulesInterface::~ModulesInterface() {
 
 }
 
-ERROR_TYPE ModulesInterface::initModules() {
-
-    auto *path = new std::vector<std::string>();
-
-    if(getModulePath(path) != SUCCES) {
-
-        return ERROR_LOADING_MODULES;
-
-    }
-
-    if(path->empty()) {
-
-        return NO_MODULES_LOADED;
-
-    }
-
-    modules = new std::vector<ModuleContainer>;
-
-    for (const auto &s : *path) {
-
-        initModule(s);
-
-    }
-
-    delete path;
-
-    return SUCCES;
-}
-
 ERROR_TYPE ModulesInterface::initModule(std::string path) {
 
     HINSTANCE hGetProcIDDLL;
@@ -122,44 +93,6 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
     }
 
     return 0;
-}
-
-ERROR_TYPE ModulesInterface::getModulePath(std::vector<std::string> *paths) {
-
-    const char* directory = "Modules";
-
-    DIR *dir = opendir(directory);
-
-    struct dirent *entry = readdir(dir);
-
-    while (entry != nullptr) {
-
-        if (entry->d_type == DT_DIR) {
-
-            if(strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0) {
-
-                std::string path = "Modules";
-
-                path.append("\\");
-                path.append(entry->d_name);
-                path.append("\\");
-                path.append(entry->d_name);
-                path.append(".dll");
-
-                paths->push_back(path);
-
-            }
-
-        }
-
-        entry = readdir(dir);
-    }
-
-    closedir(dir);
-
-
-    return 0;
-
 }
 
 UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {

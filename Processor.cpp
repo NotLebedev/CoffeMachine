@@ -146,8 +146,3 @@ void Processor::initLibs() {
 
 }
 
-void Processor::initModules() {
-
-    //modulesInterface->initModules();
-
-}
