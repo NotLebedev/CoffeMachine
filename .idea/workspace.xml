@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b69feb-2d79-4eca-92c1-1c692dff75d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -391,12 +389,12 @@
       <workItem from="1515236804890" duration="43000" />
       <workItem from="1515237271274" duration="105000" />
       <workItem from="1515237589450" duration="439000" />
-      <workItem from="1515322541969" duration="2015000" />
+      <workItem from="1515322541969" duration="2080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223680000" />
+    <option name="totallyTimeSpent" value="223745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
@@ -794,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

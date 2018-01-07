@@ -18,10 +18,10 @@ ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inp
 
 ModulesInterface::~ModulesInterface() {
 
-    for (int i = 0; i < modules->size(); i++) {
+    for (auto &module : *modules) {
 
-        modules->at(i).deleteFunction();
-        FreeLibrary(modules->at(i).hProcIDDLL);
+        module.deleteFunction();
+        FreeLibrary(module.hProcIDDLL);
 
     }
 
