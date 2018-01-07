@@ -23,7 +23,7 @@ public:
 
     ERROR_TYPE initModules();
 
-    ERROR_TYPE initModule(std::string path, size_t idx);
+    ERROR_TYPE initModule(std::string path);
 
     ERROR_TYPE executeWord(std::string input);
 

@@ -48,9 +48,9 @@ ERROR_TYPE ModulesInterface::initModules() {
 
     modules = new std::vector<ModuleContainer>;
 
-    for (int i = 0; i < path->size(); ++i) {
+    for (const auto &s : *path) {
 
-        initModule(path->at(i), i);
+        initModule(s);
 
     }
 
@@ -59,7 +59,7 @@ ERROR_TYPE ModulesInterface::initModules() {
     return SUCCES;
 }
 
-ERROR_TYPE ModulesInterface::initModule(std::string path, size_t idx) {
+ERROR_TYPE ModulesInterface::initModule(std::string path) {
 
     HINSTANCE hGetProcIDDLL;
     f_init initFunction;
@@ -98,7 +98,7 @@ ERROR_TYPE ModulesInterface::initModule(std::string path, size_t idx) {
 
     for (auto &word : words) {
 
-        std::pair<std::string, size_t> pair(word, (const size_t &)(idx));
+        std::pair<std::string, size_t> pair(word, (const size_t &)(modules->size() - 1));
 
         commands->insert(pair);
 
