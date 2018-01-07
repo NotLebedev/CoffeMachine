@@ -92,7 +92,7 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
 
     }
 
-    return 0;
+    return SUCCES;
 }
 
 UniversalModuleInterface *ModulesInterface::constructUniversalModulesInterface() {
@@ -108,6 +108,6 @@ ERROR_TYPE ModulesInterface::executeCommand(std::string& command) {
     commandProcessor->nextCommand();
     inputProcessor->unstash();
 
-    return 0;
+    return SUCCES;
 }
 

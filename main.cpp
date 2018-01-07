@@ -13,5 +13,5 @@ int main(int argc, char *argv[]) {
 
     delete processor;
 
-    return 0;
+    return SUCCES;
 }

@@ -8,23 +8,23 @@
 ERROR_TYPE Dictionary::fetch(size_t idx, iWORD *data) {
 
     if (idx >= MEMORY_SIZE) {
-        return 0;
+        return SUCCES;
     }
 
     memcpy(((void *) data), ((void *) &dictionary[idx]), sizeof(iWORD));
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE Dictionary::store(size_t idx, iWORD *data) {
 
     if (idx >= MEMORY_SIZE) {
-        return 0;
+        return SUCCES;
     }
 
     memcpy(((void *) &dictionary[idx]), ((void *) data), sizeof(iWORD));
 
-    return 0;
+    return SUCCES;
 }
 
 Dictionary::Dictionary() {

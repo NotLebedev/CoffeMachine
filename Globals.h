@@ -23,6 +23,5 @@
 #define STANDART_COMMAND_NOT_FOUND  (-11)
 #define END_OF_INPUT                (-21)
 #define ERROR_LOADING_MODULES       (-31)
-#define NO_MODULES_LOADED           (-32)
 
 #endif //COFFEMACHINE_ERROR_CODES_H

@@ -28,7 +28,7 @@ ERROR_TYPE ExecutionProcessor::emit() {
 
     printf("%c", *data);//TODO: add IO processor
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE ExecutionProcessor::pick() {

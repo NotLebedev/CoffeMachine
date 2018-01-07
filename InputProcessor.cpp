@@ -75,7 +75,7 @@ ERROR_TYPE InputProcessor::stash() {
     store = inputQueue;
     inputQueue = new std::queue<char>();
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE InputProcessor::unstash() {
@@ -83,7 +83,7 @@ ERROR_TYPE InputProcessor::unstash() {
     delete inputQueue;
     inputQueue = store;
 
-    return 0;
+    return SUCCES;
 }
 
 

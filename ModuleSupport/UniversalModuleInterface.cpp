@@ -23,7 +23,7 @@ ERROR_TYPE UniversalModuleInterface::executeCommand(char *command) {
     commandProcessor->nextCommand();
     inputProcessor->unstash();
 
-    return 0;
+    return SUCCES;
 }
 
 iWORD * UniversalModuleInterface::getStack() {

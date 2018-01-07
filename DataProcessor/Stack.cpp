@@ -23,7 +23,7 @@ ERROR_TYPE Stack::push(iWORD *data) {
 
     top++;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE Stack::pop(iWORD *data) {
@@ -36,7 +36,7 @@ ERROR_TYPE Stack::pop(iWORD *data) {
 
     memcpy((void *) data, ((void *) &this->data[top]), sizeof(iWORD));
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE Stack::pick(size_t idx) {
@@ -57,7 +57,7 @@ ERROR_TYPE Stack::pick(size_t idx) {
 
     top++;
 
-    return 0;
+    return SUCCES;
 }
 
 ERROR_TYPE Stack::roll(size_t idx) {
@@ -79,7 +79,7 @@ ERROR_TYPE Stack::roll(size_t idx) {
 
     delete tmp;
 
-    return 0;
+    return SUCCES;
 }
 
 Stack::~Stack() {
