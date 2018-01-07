@@ -12,7 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b69feb-2d79-4eca-92c1-1c692dff75d5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ForthLibs/libs.xml" afterPath="$PROJECT_DIR$/ForthLibs/libs.xml" />
       <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
+      <change beforePath="$PROJECT_DIR$/Processor.cpp" afterPath="$PROJECT_DIR$/Processor.cpp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CoffeMachine.exe.stackdump" afterPath="$PROJECT_DIR$/cmake-build-debug/CoffeMachine.exe.stackdump" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Modules/libs.xml" afterPath="$PROJECT_DIR$/cmake-build-debug/Modules/libs.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -29,8 +34,8 @@
       <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -49,8 +54,8 @@
       <file leaf-file-name="libs.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ForthLibs/libs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="51">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -69,8 +74,8 @@
       <file leaf-file-name="Processor.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Processor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="126" column="35" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+            <state relative-caret-position="376">
+              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,10 +146,10 @@
         <option value="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" />
         <option value="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Processor.cpp" />
-        <option value="$PROJECT_DIR$/ForthLibs/libs.xml" />
         <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
+        <option value="$PROJECT_DIR$/ForthLibs/libs.xml" />
         <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
+        <option value="$PROJECT_DIR$/Processor.cpp" />
       </list>
     </option>
   </component>
@@ -389,12 +394,12 @@
       <workItem from="1515236804890" duration="43000" />
       <workItem from="1515237271274" duration="105000" />
       <workItem from="1515237589450" duration="439000" />
-      <workItem from="1515322541969" duration="2080000" />
+      <workItem from="1515322541969" duration="2630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223745000" />
+    <option name="totallyTimeSpent" value="224295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
@@ -433,16 +438,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp</url>
-          <line>114</line>
+          <line>115</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp</url>
-          <line>20</line>
-          <option name="timeStamp" value="71" />
+          <line>64</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -766,18 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Processor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="126" column="35" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ForthLibs/libs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -790,10 +787,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Processor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="42" />
           <folding />
         </state>
       </provider>

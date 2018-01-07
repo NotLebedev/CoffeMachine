@@ -9,6 +9,7 @@
 ModulesInterface::ModulesInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm) {
 
     commands = new std::unordered_map<std::string, size_t>();
+    modules = new std::vector<ModuleContainer>;
 
     executionProcessor = exec;
     inputProcessor = inpu;

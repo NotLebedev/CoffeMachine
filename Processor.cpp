@@ -133,6 +133,13 @@ void Processor::initLibs() {
 
             load(path.c_str());
 
+        } else if(strcmp(child->Value(), "module") == 0) {
+
+            std::string path = "Modules\\";
+            path.append(child->GetText());
+
+            modulesInterface->initModule(path);
+
         }
 
     }
@@ -141,6 +148,6 @@ void Processor::initLibs() {
 
 void Processor::initModules() {
 
-    modulesInterface->initModules();
+    //modulesInterface->initModules();
 
 }
