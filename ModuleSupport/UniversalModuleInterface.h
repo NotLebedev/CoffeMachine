@@ -17,19 +17,19 @@ class UniversalModuleInterface {
 
 public:
 
-    virtual ERROR_TYPE executeCommand(std::string command);
+    virtual ERROR_TYPE executeCommand(char *command);
 
-    virtual ERROR_TYPE getStack(iWORD *data);
+    virtual iWORD * getStack();
 
-    virtual ERROR_TYPE getDictionary(iWORD *data, size_t startAdr, size_t size);
+    virtual iWORD * getDictionary(size_t startAdr, size_t size);
 
-    virtual ERROR_TYPE setStack(iWORD *data);
+    virtual void setStack(iWORD *data);
 
-    virtual ERROR_TYPE setDictionary(iWORD *data, size_t startAdr, size_t size);
+    virtual void setDictionary(iWORD *data, size_t startAdr, size_t size);
 
-    virtual ERROR_TYPE getInput(std::string *word);
+    virtual const char * getInputString();
 
-    virtual ERROR_TYPE getInput(char *letter);
+    virtual const char * getInputChar();
 
     UniversalModuleInterface(ExecutionProcessor *exec, InputProcessor* inpu, CommandProcessor *comm);
 

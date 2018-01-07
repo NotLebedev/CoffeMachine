@@ -66,7 +66,7 @@ ERROR_TYPE ModulesInterface::initModules() {
 
         initFunction = (f_init) GetProcAddress(hGetProcIDDLL, "_Z6f_initP24UniversalModuleInterface");
         deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "_Z8f_deletev");
-        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "_Z10f_execWordSs");
+        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "_Z10f_execWordPc");
 
         if (!initFunction || !deleteFunction || !execWordFunction) {
 
@@ -107,7 +107,7 @@ ERROR_TYPE ModulesInterface::executeWord(std::string input) {
 
     if(got._M_cur) {
 
-        modules[got->second].execWordFunction(input);
+        modules[got->second].execWordFunction(const_cast<char *>(input.c_str()));
 
     }
 

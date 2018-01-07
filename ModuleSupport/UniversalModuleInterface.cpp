@@ -15,7 +15,7 @@ UniversalModuleInterface::UniversalModuleInterface(ExecutionProcessor *exec, Inp
 
 UniversalModuleInterface::~UniversalModuleInterface() = default;
 
-ERROR_TYPE UniversalModuleInterface::executeCommand(std::string command) {
+ERROR_TYPE UniversalModuleInterface::executeCommand(char *command) {
 
     inputProcessor->stash();
 
@@ -26,16 +26,18 @@ ERROR_TYPE UniversalModuleInterface::executeCommand(std::string command) {
     return 0;
 }
 
-ERROR_TYPE UniversalModuleInterface::getStack(iWORD *data) {
+iWORD * UniversalModuleInterface::getStack() {
+
+    auto *data = new iWORD;
 
     executionProcessor->stackOut(data);
 
-    return 0;
+    return data;
 }
 
-ERROR_TYPE UniversalModuleInterface::getDictionary(iWORD *data, size_t startAdr, size_t size) {
+iWORD * UniversalModuleInterface::getDictionary(size_t startAdr, size_t size) {
 
-    data = new iWORD[size];
+    auto *data = new iWORD[size];
 
     for (int i = 0; i < size; ++i) {
 
@@ -47,17 +49,15 @@ ERROR_TYPE UniversalModuleInterface::getDictionary(iWORD *data, size_t startAdr,
 
     }
 
-    return 0;
+    return data;
 }
 
-ERROR_TYPE UniversalModuleInterface::setStack(iWORD *data) {
+void UniversalModuleInterface::setStack(iWORD *data) {
 
     executionProcessor->stackIN(data);
-
-    return 0;
 }
 
-ERROR_TYPE UniversalModuleInterface::setDictionary(iWORD *data, size_t startAdr, size_t size) {
+void UniversalModuleInterface::setDictionary(iWORD *data, size_t startAdr, size_t size) {
 
     for (int i = 0; i < size; ++i) {
 
@@ -69,19 +69,22 @@ ERROR_TYPE UniversalModuleInterface::setDictionary(iWORD *data, size_t startAdr,
 
     }
 
-    return 0;
 }
 
-ERROR_TYPE UniversalModuleInterface::getInput(std::string *word) {
+const char * UniversalModuleInterface::getInputString() {
 
-    inputProcessor->pop(*word);
+    std::string str;
 
-    return 0;
+    inputProcessor->pop(str);
+
+    return str.c_str();
 }
 
-ERROR_TYPE UniversalModuleInterface::getInput(char *letter) {
+const char *  UniversalModuleInterface::getInputChar() {
 
-    inputProcessor->pop(*letter);
+    auto *c = new char;
 
-    return 0;
+    inputProcessor->pop(*c);
+
+    return c;
 }
