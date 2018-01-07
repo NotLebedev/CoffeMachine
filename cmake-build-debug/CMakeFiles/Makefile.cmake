@@ -47,9 +47,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "ForthLibs/ForthBase.4th"
-  "ForthLibs/Examples.4th"
-  "ForthLibs/libs.xml"
+  "Modules/ForthBase.4th"
+  "Modules/Examples.4th"
+  "Modules/libs.xml"
   "Modules/FMPML/FMPML.dll"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )

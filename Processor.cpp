@@ -115,7 +115,7 @@ void Processor::initLibs() {
 
     tinyxml2::XMLDocument doc;
 
-    if(doc.LoadFile("ForthLibs/libs.xml")) {
+    if(doc.LoadFile("Modules/libs.xml")) {
 
         printf("Fatal error - LoadFile failed, can not read libs xml config\n");
         return;
@@ -128,7 +128,7 @@ void Processor::initLibs() {
 
         if(strcmp(child->Value(), "lib") == 0) {
 
-            std::string path = "ForthLibs/";
+            std::string path = "Modules/";
             path.append(child->GetText());
 
             load(path.c_str());
