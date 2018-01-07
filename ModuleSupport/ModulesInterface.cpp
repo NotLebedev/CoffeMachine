@@ -49,56 +49,62 @@ ERROR_TYPE ModulesInterface::initModules() {
     modulesSize = path->size();
     modules = new ModuleContainer[modulesSize];
 
-    HINSTANCE hGetProcIDDLL;
-    f_init initFunction;
-    f_delete deleteFunction;
-    f_execWord execWordFunction;
-
     for (int i = 0; i < modulesSize; ++i) {
 
-        hGetProcIDDLL = LoadLibrary(path->at((unsigned long)i).c_str());
-
-        if (!hGetProcIDDLL) { //TODO: function must skip unloadable libraries and not crash
-
-            return ERROR_LOADING_MODULES;
-
-        }
-
-        initFunction = (f_init) GetProcAddress(hGetProcIDDLL, "_Z6f_initP24UniversalModuleInterface");
-        deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "_Z8f_deletev");
-        execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "_Z10f_execWordPc");
-
-        if (!initFunction || !deleteFunction || !execWordFunction) {
-
-            return ERROR_LOADING_MODULES;
-
-        }
-
-        modules[i].hProcIDDLL = hGetProcIDDLL;
-
-        modules[i].initFunction = initFunction;
-        modules[i].deleteFunction = deleteFunction;
-        modules[i].execWordFunction = execWordFunction;
-
-        std::vector<std::string> words = modules[i].initFunction(constructUniversalModulesInterface());
-
-        for (auto &word : words) {
-
-            std::pair<std::string, size_t> pair(word, (const size_t &)(i));
-
-            commands->insert(pair);
-
-            std::string command = "ADDMODULE ";
-            command.append(word);
-            executeCommand(command);
-
-        }
+        initModule(path->at(i), i);
 
     }
 
     delete path;
 
     return SUCCES;
+}
+
+ERROR_TYPE ModulesInterface::initModule(std::string path, size_t idx) {
+
+    HINSTANCE hGetProcIDDLL;
+    f_init initFunction;
+    f_delete deleteFunction;
+    f_execWord execWordFunction;
+
+    hGetProcIDDLL = LoadLibrary(path.c_str());
+
+    if (!hGetProcIDDLL) {
+
+        return ERROR_LOADING_MODULES;
+
+    }
+
+    initFunction = (f_init) GetProcAddress(hGetProcIDDLL, "_Z6f_initP24UniversalModuleInterface");
+    deleteFunction = (f_delete) GetProcAddress(hGetProcIDDLL, "_Z8f_deletev");
+    execWordFunction = (f_execWord) GetProcAddress(hGetProcIDDLL, "_Z10f_execWordPc");
+
+    if (!initFunction || !deleteFunction || !execWordFunction) {
+
+        return ERROR_LOADING_MODULES;
+
+    }
+
+    modules[idx].hProcIDDLL = hGetProcIDDLL;
+
+    modules[idx].initFunction = initFunction;
+    modules[idx].deleteFunction = deleteFunction;
+    modules[idx].execWordFunction = execWordFunction;
+
+    std::vector<std::string> words = modules[idx].initFunction(constructUniversalModulesInterface());
+
+    for (auto &word : words) {
+
+        std::pair<std::string, size_t> pair(word, (const size_t &)(idx));
+
+        commands->insert(pair);
+
+        std::string command = "ADDMODULE ";
+        command.append(word);
+        executeCommand(command);
+
+    }
+
 }
 
 ERROR_TYPE ModulesInterface::executeWord(std::string input) {

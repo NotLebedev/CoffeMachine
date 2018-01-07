@@ -13,11 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="91b69feb-2d79-4eca-92c1-1c692dff75d5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/ModuleContainer.h" afterPath="$PROJECT_DIR$/ModuleSupport/ModuleContainer.h" />
       <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" afterPath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" afterPath="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CoffeMachine.exe.stackdump" afterPath="$PROJECT_DIR$/cmake-build-debug/CoffeMachine.exe.stackdump" />
+      <change beforePath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" afterPath="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -31,21 +28,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModulesInterface.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="68" column="87" lean-forward="false" selection-start-line="68" selection-start-column="87" selection-end-line="68" selection-end-column="87" />
+            <state relative-caret-position="-491">
+              <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModulesInterface.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModulesInterface.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -112,14 +109,14 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Processor.cpp" />
         <option value="$PROJECT_DIR$/ForthLibs/Examples.4th" />
-        <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
         <option value="$PROJECT_DIR$/InputProcessor.h" />
         <option value="$PROJECT_DIR$/InputProcessor.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/ModuleSupport/ModuleContainer.h" />
-        <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
         <option value="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.h" />
         <option value="$PROJECT_DIR$/ModuleSupport/UniversalModuleInterface.cpp" />
+        <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.h" />
+        <option value="$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp" />
       </list>
     </option>
   </component>
@@ -371,29 +368,28 @@
       <workItem from="1515236804890" duration="43000" />
       <workItem from="1515237271274" duration="105000" />
       <workItem from="1515237589450" duration="439000" />
-      <workItem from="1515322541969" duration="55000" />
+      <workItem from="1515322541969" duration="614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221720000" />
+    <option name="totallyTimeSpent" value="222279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20125" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27537593" sideWeight="0.5025" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32518798" sideWeight="0.4975" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32518798" sideWeight="0.4975" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39849624" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -415,7 +411,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp</url>
-          <line>105</line>
+          <line>111</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -761,18 +757,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
+    <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="68" column="87" lean-forward="false" selection-start-line="68" selection-start-column="87" selection-end-line="68" selection-end-column="87" />
+        <state relative-caret-position="357">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.h">
+    <entry file="file://$PROJECT_DIR$/ModuleSupport/ModulesInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="-491">
+          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding />
         </state>
       </provider>
