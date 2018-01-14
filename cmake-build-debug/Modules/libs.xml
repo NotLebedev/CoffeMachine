@@ -3,5 +3,6 @@
     <lib>ForthBase.4th</lib>
     <module>FMPML\FMPML.dll</module>
     <lib>Examples.4th</lib>
+    <lib>List.4th</lib>
 
 </libraries>
