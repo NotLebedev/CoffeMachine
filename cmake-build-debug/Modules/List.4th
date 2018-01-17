@@ -53,15 +53,4 @@
 				-1 ( n -> n, succes )
 			
 			THEN ;
-
-11 LIST L
-
-: PUSH L PUSHBACK . L 50 DUMP ;
-: POP L POPFRONT . . L 50 DUMP ;
-
-13 PUSH 13 PUSH 13 PUSH POP POP POP
-1 PUSH
-2 PUSH
-3 PUSH
-4 PUSH
 			

@@ -275,7 +275,8 @@ VARIABLE DUMPCOUNTER
 
             DUMPCOUNTER ++!
 
-        LOOP ;
+        LOOP
+        DROP DROP ;
 
 : FORGET    FIND
             DUP @ + 2 +
