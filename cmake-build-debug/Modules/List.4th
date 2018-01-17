@@ -23,7 +23,7 @@
 			
 				DUP @ ( n, list -> n, list, size )
 				OVER DUP 1 + @ SWAP 2 + @ ( n, list, size -> n, list, size, head ofs, length )
-				+ 3 + SWAP MOD ( n, list, size, head ofs, length -> n, list, empty ofs )
+				+ SWAP MOD 3 + ( n, list, size, head ofs, length -> n, list, empty ofs )
 				OVER + ( n, list, empty ofs -> n, list, empty adr )
 				ROT SWAP ( n, list, empty adr -> list, n, empty adr )
 				! ( list, n, empty adr -> list )
@@ -53,4 +53,15 @@
 				-1 ( n -> n, succes )
 			
 			THEN ;
+
+11 LIST L
+
+: PUSH L PUSHBACK . L 50 DUMP ;
+: POP L POPFRONT . . L 50 DUMP ;
+
+13 PUSH 13 PUSH 13 PUSH POP POP POP
+1 PUSH
+2 PUSH
+3 PUSH
+4 PUSH
 			

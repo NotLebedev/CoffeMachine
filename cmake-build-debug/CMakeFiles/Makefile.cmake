@@ -31,6 +31,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "../ForthLibs/Examples.4th"
   "../ForthLibs/ForthBase.4th"
+  "../ForthLibs/List.4th"
   "../ForthLibs/libs.xml"
   "../Modules/FMPML/FMPML.dll"
   "CMakeFiles/3.9.4/CMakeCCompiler.cmake"
@@ -49,6 +50,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "Modules/ForthBase.4th"
   "Modules/Examples.4th"
+  "Modules/List.4th"
   "Modules/libs.xml"
   "Modules/FMPML/FMPML.dll"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

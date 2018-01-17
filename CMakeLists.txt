@@ -8,6 +8,7 @@ add_executable(CoffeMachine ${SOURCE_FILES})
 
 configure_file(ForthLibs/ForthBase.4th ${CMAKE_CURRENT_BINARY_DIR}/Modules/ForthBase.4th COPYONLY)
 configure_file(ForthLibs/Examples.4th ${CMAKE_CURRENT_BINARY_DIR}/Modules/Examples.4th COPYONLY)
+configure_file(ForthLibs/List.4th ${CMAKE_CURRENT_BINARY_DIR}/Modules/List.4th COPYONLY)
 configure_file(ForthLibs/libs.xml ${CMAKE_CURRENT_BINARY_DIR}/Modules/libs.xml COPYONLY)
 
 configure_file(Modules/FMPML/FMPML.dll ${CMAKE_CURRENT_BINARY_DIR}/Modules/FMPML/FMPML.dll COPYONLY)

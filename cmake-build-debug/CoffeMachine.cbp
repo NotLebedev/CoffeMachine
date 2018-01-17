@@ -164,6 +164,9 @@
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ForthLibs/Examples.4th">
 			<Option virtualFolder="CMake Files\ForthLibs\"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ForthLibs/List.4th">
+			<Option virtualFolder="CMake Files\ForthLibs\"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/endearing/Work/CoffeMachine/ForthLibs/libs.xml">
 			<Option virtualFolder="CMake Files\ForthLibs\"/>
 		</Unit>
