@@ -17,7 +17,7 @@
 			DUP @ OVER 2 + @ = 
 			IF ( If buffer size equals length )
 				
-				DROP DROP 0 ( n, list -> failed )
+				DROP DROP -1 ( n, list -> failed )
 				
 			ELSE
 			
@@ -29,7 +29,7 @@
 				! ( list, n, empty adr -> list )
 				2 + ( list -> length adr )
 				++! ( length adr -> )
-				-1 ( -> succes )
+				0 ( -> succes )
 			
 			THEN ;
 			
@@ -38,7 +38,7 @@
 			DUP 2 + @ 0= 
 			IF ( If list is empty )
 			
-				DROP 0 ( list -> failed )
+				DROP -2 ( list -> failed )
 				
 			ELSE
 			
@@ -50,7 +50,35 @@
 				OVER 2 + ( n, list, new head corrected -> n, list, new head corrected, length adr )
 				--! ( n, list, new head corrected, length adr -> n, list, new head corrected )
 				SWAP 1 + ! ( n, list, new head corrected -> n )
-				-1 ( n -> n, succes )
+				0 ( n -> n, succes )
 			
 			THEN ;
+
+: PUSHFRONT ( n, list -> status )
+
+            DUP @ OVER 2 + @ =
+            IF ( If buffer size equals length )
+
+                DROP DROP -1 ( n, list -> failed )
+
+            ELSE
+
+                DUP 1 + @ ( n, list -> n, list, head ofs )
+                DUP 0= IF
+
+                    DROP DUP @ 1 - ( n, list, head ofs -> n, list, new head ofs )
+
+
+                ELSE
+
+                    1 - ( n, list, head ofs -> n, list, new head ofs )
+
+                THEN
+
+                OVER 1 + OVER SWAP ! ( n, list, new head ofs -> n, list, new head ofs )
+                OVER 2 + ++! ( n, list, new head ofs -> n, list, new head ofs )
+                + 3 + ! ( n, list, new head ofs -> )
+                0 ( -> suuces )
+
+            THEN ;
 			

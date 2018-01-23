@@ -53,4 +53,32 @@
 				0 ( n -> n, succes )
 			
 			THEN ;
+
+: PUSHFRONT ( n, list -> status )
+
+            DUP @ OVER 2 + @ =
+            IF ( If buffer size equals length )
+
+                DROP DROP -1 ( n, list -> failed )
+
+            ELSE
+
+                DUP 1 + @ ( n, list -> n, list, head ofs )
+                DUP 0= IF
+
+                    DROP DUP @ 1 - ( n, list, head ofs -> n, list, new head ofs )
+
+
+                ELSE
+
+                    1 - ( n, list, head ofs -> n, list, new head ofs )
+
+                THEN
+
+                OVER 1 + OVER SWAP ! ( n, list, new head ofs -> n, list, new head ofs )
+                OVER 2 + ++! ( n, list, new head ofs -> n, list, new head ofs )
+                + 3 + ! ( n, list, new head ofs -> )
+                0 ( -> suuces )
+
+            THEN ;
 			
