@@ -8,6 +8,34 @@
 #include "Processor.h"
 #include "TinyXML2/tinyxml2.h"
 
+bool *stop;
+
+BOOL CtrlHandler(DWORD fdwCtrlType) {
+
+    switch (fdwCtrlType) {
+        case CTRL_C_EVENT:
+            *stop = true;
+            break;
+        case CTRL_CLOSE_EVENT:
+            *stop = true;
+            break;
+        case CTRL_BREAK_EVENT:
+            *stop = true;
+            break;
+        case CTRL_LOGOFF_EVENT:
+            *stop = true;
+            break;
+        case CTRL_SHUTDOWN_EVENT:
+            *stop = true;
+            break;
+        default:
+            return FALSE;
+    }
+
+    return TRUE;
+
+}
+
 Processor::Processor() {
 
     executionProcessor = new ExecutionProcessor();
@@ -15,6 +43,8 @@ Processor::Processor() {
 
     halt = new bool;
     *halt = false;
+    stop = halt;
+    SetConsoleCtrlHandler((PHANDLER_ROUTINE) CtrlHandler, TRUE);
 
     commandProcessor = new CommandProcessor(executionProcessor, inputProcessor, halt);
 
@@ -118,7 +148,7 @@ void Processor::initModules() {
 
     tinyxml2::XMLDocument doc;
 
-    if(doc.LoadFile("Modules/libs.xml")) {
+    if (doc.LoadFile("Modules/libs.xml")) {
 
         printf("Fatal error - LoadFile failed, can not read libs xml config\n");
         return;
@@ -127,16 +157,17 @@ void Processor::initModules() {
 
     tinyxml2::XMLElement *element = doc.FirstChildElement("libraries");
 
-    for (tinyxml2::XMLElement* child = element->FirstChildElement(); child != nullptr; child = child->NextSiblingElement()) {
+    for (tinyxml2::XMLElement *child = element->FirstChildElement();
+         child != nullptr; child = child->NextSiblingElement()) {
 
-        if(strcmp(child->Value(), "lib") == 0) {
+        if (strcmp(child->Value(), "lib") == 0) {
 
             std::string path = "Modules/";
             path.append(child->GetText());
 
             load(path.c_str());
 
-        } else if(strcmp(child->Value(), "module") == 0) {
+        } else if (strcmp(child->Value(), "module") == 0) {
 
             std::string path = "Modules\\";
             path.append(child->GetText());
