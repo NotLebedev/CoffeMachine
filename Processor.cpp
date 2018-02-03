@@ -107,6 +107,9 @@ void Processor::load(const char *filename) {
 
     inputProcessor->push(dataPtr);
 
+    CloseHandle(hMapping);
+    CloseHandle(hFile);
+
     commandProcessor->nextCommand();
 
 }
