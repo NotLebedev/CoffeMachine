@@ -178,7 +178,7 @@ KEY " CONSTANT QUOTE
 : ." QUOTE WORD TYPE ;
 
 : SIGN 0< IF 45 EMIT THEN ;
-: DIGIT 10 MOD  48 + ;
+: DIGIT BASE @ MOD DUP 10 < IF 48 + ELSE 55 + THEN ;
 
 VARIABLE DOTCOUNTER
 
@@ -187,7 +187,7 @@ VARIABLE DOTCOUNTER
         BEGIN
             DUP
             DIGIT
-            SWAP 10 /
+            SWAP BASE @ /
             DOTCOUNTER ++!
             DUP 0=
         UNTIL
